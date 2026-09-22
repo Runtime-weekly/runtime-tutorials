@@ -1,0 +1,184 @@
+{
+  "triage": {
+    "laya_version": "0.3.5",
+    "model_revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+    "device": "cpu",
+    "load_ms": 6543.2,
+    "demo": "triage",
+    "note": "Synthetic demonstration inputs; not an accuracy or latency benchmark. Gate thresholds are illustrative. No messages sent.",
+    "results": [
+      {
+        "case": "refund",
+        "input": "I was charged twice. Please refund the duplicate payment.",
+        "department": "billing",
+        "model_probabilities": {
+          "billing": 0.9806,
+          "technical": 0.0062,
+          "sales": 0.0061,
+          "other": 0.007
+        },
+        "model_confidence": 0.9157,
+        "elapsed_ms": 303.4
+      },
+      {
+        "case": "login",
+        "input": "I cannot log in. The app displays an error every time.",
+        "department": "technical",
+        "model_probabilities": {
+          "billing": 0.0443,
+          "technical": 0.8643,
+          "sales": 0.0346,
+          "other": 0.0568
+        },
+        "model_confidence": 0.608,
+        "elapsed_ms": 359.9
+      },
+      {
+        "case": "pricing",
+        "input": "What does the team plan cost for twenty people?",
+        "department": "sales",
+        "model_probabilities": {
+          "billing": 0.3464,
+          "technical": 0.1714,
+          "sales": 0.3655,
+          "other": 0.1167
+        },
+        "model_confidence": 0.0708,
+        "elapsed_ms": 293.9
+      }
+    ]
+  },
+  "clarify": {
+    "laya_version": "0.3.5",
+    "model_revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+    "device": "cpu",
+    "load_ms": 6502.9,
+    "demo": "clarify",
+    "note": "Synthetic demonstration inputs; not an accuracy or latency benchmark. Gate thresholds are illustrative. No messages sent.",
+    "results": [
+      {
+        "case": "refund",
+        "input": "I was charged twice. Please refund the duplicate payment.",
+        "department": "billing",
+        "model_probabilities": {
+          "billing": 0.9806,
+          "technical": 0.0062,
+          "sales": 0.0061,
+          "other": 0.007
+        },
+        "model_confidence": 0.9157,
+        "elapsed_ms": 271.8,
+        "next_step": "prepare_draft"
+      },
+      {
+        "case": "unclear",
+        "input": "There is something strange on my account. Can somebody look into it?",
+        "department": "technical",
+        "model_probabilities": {
+          "billing": 0.2791,
+          "technical": 0.351,
+          "sales": 0.1279,
+          "other": 0.242
+        },
+        "model_confidence": 0.0406,
+        "elapsed_ms": 284.1,
+        "next_step": "ask_for_clarification"
+      }
+    ]
+  },
+  "llm": {
+    "laya_version": "0.3.5",
+    "model_revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+    "device": "cpu",
+    "load_ms": 6602.6,
+    "demo": "llm",
+    "note": "Synthetic demonstration inputs; not an accuracy or latency benchmark. Gate thresholds are illustrative. No messages sent.",
+    "results": [
+      {
+        "case": "refund",
+        "input": "I was charged twice. Please refund the duplicate payment.",
+        "department": "billing",
+        "model_probabilities": {
+          "billing": 0.9806,
+          "technical": 0.0062,
+          "sales": 0.0061,
+          "other": 0.007
+        },
+        "model_confidence": 0.9157,
+        "elapsed_ms": 287.0,
+        "next_step": "prepare_draft",
+        "language_model": {
+          "model": "qwen3.8-27b",
+          "draft": "I'm sorry to hear about the duplicate charge; could you please provide your order number so I can look into this for you? I will review the details to determine the next steps, but I cannot promise a refund or confirm that one has been processed at this stage.",
+          "usage": {
+            "prompt_tokens": 80,
+            "total_tokens": 135,
+            "completion_tokens": 55,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 0
+          },
+          "elapsed_ms": 2993.3,
+          "endpoint": "http://127.0.0.1:30000/v1",
+          "status": "draft_only_not_sent"
+        }
+      }
+    ]
+  },
+  "custom_notes": {
+    "device": "cpu",
+    "note": "Three synthetic examples, not an accuracy evaluation.",
+    "results": [
+      {
+        "input": "The app freezes every time I export a PDF.",
+        "answer": {
+          "type": "choice",
+          "choice": "bug",
+          "probabilities": {
+            "bug": 0.9485,
+            "feature": 0.0136,
+            "setup": 0.0222,
+            "other": 0.0157
+          },
+          "confidence": 0.8137,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      {
+        "input": "Could you add a dark mode option?",
+        "answer": {
+          "type": "choice",
+          "choice": "feature",
+          "probabilities": {
+            "bug": 0.1032,
+            "feature": 0.6801,
+            "setup": 0.1734,
+            "other": 0.0433
+          },
+          "confidence": 0.3247,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      {
+        "input": "Which Python version do I need to install this?",
+        "answer": {
+          "type": "choice",
+          "choice": "setup",
+          "probabilities": {
+            "bug": 0.0779,
+            "feature": 0.0595,
+            "setup": 0.5497,
+            "other": 0.3128
+          },
+          "confidence": 0.2359,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      }
+    ]
+  }
+}
