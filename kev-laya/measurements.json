@@ -1,0 +1,168 @@
+{
+  "experiment_date": "2026-09-22",
+  "tested_platform": "Linux ARM64 CPU",
+  "case_sha256": "f8ae9a541e11e5a760d6eadfbf3fd617e04356b9b8dd79b10220cf5297a0915b",
+  "kev_code_commit": "90990a5fac2995b9faa3190f7d437e84f2067768",
+  "models": {
+    "laya": {
+      "display_name": "Laya English",
+      "loaded_parameters": 421293827,
+      "peak_process_rss_kib": 2995492,
+      "original_runtime_versions": {
+        "torch": "2.13.0+cpu",
+        "transformers": "5.10.0",
+        "numpy": "2.2.6",
+        "safetensors": "0.8.0",
+        "huggingface_hub": "1.32.0"
+      },
+      "device": "CPU",
+      "dtype": "float32",
+      "intraop_threads": 3,
+      "interop_threads": 1,
+      "asset_files": [
+        {
+          "repo": "convaiinnovations/laya",
+          "revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+          "file": "encoder/config.json",
+          "bytes": 2083,
+          "sha256": "bf3ab80598fdccf414855a2ce80f22859e4492d06ca8a62ddd1cfb63972f8979",
+          "role": "support"
+        },
+        {
+          "repo": "convaiinnovations/laya",
+          "revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+          "file": "model.safetensors",
+          "bytes": 842609210,
+          "sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+          "role": "weight"
+        },
+        {
+          "repo": "convaiinnovations/laya",
+          "revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+          "file": "rl_agent_config.json",
+          "bytes": 745,
+          "sha256": "ae287b56bbcf5f8c4f4541ae9dfd00c914c4c48b940b8398c3058af37ba92bbd",
+          "role": "support"
+        },
+        {
+          "repo": "convaiinnovations/laya",
+          "revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+          "file": "tokenizer/tokenizer.json",
+          "bytes": 3583228,
+          "sha256": "6c8aaa9a542084f2457eab775d4eeb51f92a70c0fd9de28d5edb0ddec3c08d30",
+          "role": "support"
+        },
+        {
+          "repo": "convaiinnovations/laya",
+          "revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+          "file": "tokenizer/tokenizer_config.json",
+          "bytes": 308,
+          "sha256": "50044de60daaa73df97d262e15a40d4faf0160e7d742df64b377877a1320dd12",
+          "role": "support"
+        }
+      ],
+      "native_calibration_temperature": 1.7601518630981445
+    },
+    "kev": {
+      "display_name": "Kev-0.8B",
+      "loaded_parameters": 752917824,
+      "peak_process_rss_kib": 5176264,
+      "original_runtime_versions": {
+        "torch": "2.8.0",
+        "transformers": "5.17.0",
+        "numpy": "2.5.3",
+        "safetensors": "0.8.0",
+        "huggingface_hub": "1.32.0"
+      },
+      "device": "CPU",
+      "dtype": "float32",
+      "intraop_threads": 3,
+      "interop_threads": 1,
+      "asset_files": [
+        {
+          "repo": "jaredpalmer/kev-0.8b",
+          "revision": "54f4f8777356cd5bbbb6c6919c657f26e6f2f6d8",
+          "file": "adapter_config.json",
+          "bytes": 1273,
+          "sha256": "748acb2cda88454cb1ba69d745ba336f3fcb5486eac349e90960c8b8d8d3e854",
+          "role": "support"
+        },
+        {
+          "repo": "jaredpalmer/kev-0.8b",
+          "revision": "54f4f8777356cd5bbbb6c6919c657f26e6f2f6d8",
+          "file": "adapter_model.safetensors",
+          "bytes": 43338624,
+          "sha256": "c81d5716f0af7622d8d2b97013c333d48263ca01113f9a7cf4526e96f6ac0b26",
+          "role": "weight"
+        },
+        {
+          "repo": "jaredpalmer/kev-0.8b",
+          "revision": "54f4f8777356cd5bbbb6c6919c657f26e6f2f6d8",
+          "file": "head.pt",
+          "bytes": 2103103,
+          "sha256": "39f4343ccccc65e583bbfff0de0e11bfedb849fcfaaf94b50ac4f2b73bc79c65",
+          "role": "weight"
+        },
+        {
+          "repo": "Qwen/Qwen3.5-0.8B-Base",
+          "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+          "file": "config.json",
+          "bytes": 2907,
+          "sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+          "role": "support"
+        },
+        {
+          "repo": "Qwen/Qwen3.5-0.8B-Base",
+          "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+          "file": "merges.txt",
+          "bytes": 3353259,
+          "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+          "role": "support"
+        },
+        {
+          "repo": "Qwen/Qwen3.5-0.8B-Base",
+          "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+          "file": "model.safetensors-00001-of-00001.safetensors",
+          "bytes": 1746942600,
+          "sha256": "c2b1e5a17d9c1e27685d92ed9b382911ebb99955ecd89052d1721241adfbab6c",
+          "role": "weight"
+        },
+        {
+          "repo": "Qwen/Qwen3.5-0.8B-Base",
+          "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+          "file": "model.safetensors.index.json",
+          "bytes": 50900,
+          "sha256": "ce9a885efdf27d3664fdef5d512ad365216f1074051ef840c7cd8e5431495d0a",
+          "role": "support"
+        },
+        {
+          "repo": "Qwen/Qwen3.5-0.8B-Base",
+          "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+          "file": "tokenizer.json",
+          "bytes": 12807196,
+          "sha256": "fe000e3ed39ed12b8d2481d527d44f93c65d37e87645d2dcc80d1bf9d50d2927",
+          "role": "support"
+        },
+        {
+          "repo": "Qwen/Qwen3.5-0.8B-Base",
+          "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+          "file": "tokenizer_config.json",
+          "bytes": 16712,
+          "sha256": "e611fbccc7c29ef3b1cafb1cb7ea548d189968632901d678fd62be68c47885de",
+          "role": "support"
+        },
+        {
+          "repo": "Qwen/Qwen3.5-0.8B-Base",
+          "revision": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+          "file": "vocab.json",
+          "bytes": 6722759,
+          "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+          "role": "support"
+        }
+      ],
+      "native_calibration_temperature": 2.406050072164233
+    }
+  },
+  "environment_notice": "Historical measured versions only; not installation recommendations. Analysis uses only Python standard library.",
+  "asset_scope": "Stored checkpoint weights plus conservative text tokenizer/config package. Excludes dependencies, source code, documentation, cache metadata and unused image/video processor config. Base weight shard counted whole; physical block allocation not measured."
+}

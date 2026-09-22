@@ -1,0 +1,80 @@
+{
+  "case_sha256": "f8ae9a541e11e5a760d6eadfbf3fd617e04356b9b8dd79b10220cf5297a0915b",
+  "models": {
+    "laya": {
+      "unique_cases": 30,
+      "decisions": 90,
+      "canonical_correct": 12,
+      "canonical_by_group": {
+        "clear": {
+          "correct": 7,
+          "n": 10
+        },
+        "ambiguous": {
+          "correct": 0,
+          "n": 10
+        },
+        "boundary": {
+          "correct": 5,
+          "n": 10
+        }
+      },
+      "all_orders_correct": 33,
+      "stable_correct_cases": 9,
+      "order_unstable_cases": 5,
+      "order_unstable_ids": [
+        "C04",
+        "A05",
+        "P02",
+        "P05",
+        "P08"
+      ],
+      "wrong_max_probability_ge_0_9": 0,
+      "median_ms": 541.0280304495245,
+      "p95_ms_nearest_rank": 607.048159930855,
+      "peak_process_rss_gib": 2.8567237854003906,
+      "model_asset_bytes": 846195574,
+      "model_asset_gib": 0.7880810406059027,
+      "weight_bytes": 842609210,
+      "weight_gib": 0.7847409788519144,
+      "loaded_parameters": 421293827
+    },
+    "kev": {
+      "unique_cases": 30,
+      "decisions": 90,
+      "canonical_correct": 26,
+      "canonical_by_group": {
+        "clear": {
+          "correct": 8,
+          "n": 10
+        },
+        "ambiguous": {
+          "correct": 8,
+          "n": 10
+        },
+        "boundary": {
+          "correct": 10,
+          "n": 10
+        }
+      },
+      "all_orders_correct": 74,
+      "stable_correct_cases": 23,
+      "order_unstable_cases": 4,
+      "order_unstable_ids": [
+        "A01",
+        "A03",
+        "A04",
+        "A10"
+      ],
+      "wrong_max_probability_ge_0_9": 0,
+      "median_ms": 755.9922055224888,
+      "p95_ms_nearest_rank": 802.25210392382,
+      "peak_process_rss_gib": 4.936470031738281,
+      "model_asset_bytes": 1815339333,
+      "model_asset_gib": 1.6906665014103055,
+      "weight_bytes": 1792384327,
+      "weight_gib": 1.6692879861220717,
+      "loaded_parameters": 752917824
+    }
+  }
+}

@@ -49,3 +49,15 @@ but its runtime and model downloads are separate; compare artifact hashes with
 the historical provenance before claiming identical reproduction. See each guide
 for actual failures and for what the recorded timing includes. These small case
 sets are demonstrations, not accuracy or hardware benchmarks.
+
+## Kev vs Laya research companion
+
+[Guide](../kev-laya/README.md) · [Method](../kev-laya/METHOD.md) ·
+[Architecture and resources](../kev-laya/ARCHITECTURE-AND-RESOURCES.md) ·
+[Primary sources](../kev-laya/SOURCES.md)
+
+From the repository root, run `python3 kev-laya/analyze.py --check`.
+This standard-library-only analysis checks the frozen 30-case dataset and all
+180 saved decisions, then reproduces the reported summary. It performs no
+model inference or downloads. Historical runtime versions identify the original
+measurements; they are not installation recommendations.

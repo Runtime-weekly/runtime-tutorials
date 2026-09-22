@@ -10,6 +10,7 @@ with setup instructions, saved outputs and honest limits.
 
 | Guide | What you build | Start / watch |
 | --- | --- | --- |
+| Kev vs Laya | Inspect 180 recorded decisions, compare architectures and resources, recompute findings | [Research and analysis](kev-laya/README.md) |
 | Laya | Classify requests, inspect uncertainty, customize categories, optionally draft with a local LLM | [Guide](laya/README.md) · [Video](https://youtu.be/J-Cn9UUJtdA) |
 | Needle 3 | Convert seven synthetic requests into proposed tool calls and inspect failures | [Guide](needle/README.md) · [Video](https://youtu.be/FnKINBWJPTs) |
 
@@ -37,8 +38,9 @@ own local language-model server.
 
 The [Laya tutorial ZIP](https://github.com/Runtime-weekly/runtime-tutorials/releases/download/laya-v19-r4/laya-tutorial.zip)
 contains the video examples with updated, tested dependency pins.
-The [complete tutorial library](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/tutorials-v1.1)
-includes both guides, historical outputs and navigation. Older releases are
+The [Laya and Needle tutorial library](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/tutorials-v1.1)
+includes those two guides, historical outputs and navigation. The Kev vs Laya
+research companion is available in the current repository ZIP or clone. Older releases are
 retained for reference; use these current downloads for a new installation.
 
 ## Find your way around
@@ -46,6 +48,7 @@ retained for reference; use these current downloads for a new installation.
 | Folder / page | Contents |
 | --- | --- |
 | [START_HERE.md](START_HERE.md) | Downloading files, opening a terminal and creating an environment |
+| [kev-laya/](kev-laya/README.md) | Frozen synthetic cases, saved decisions, architecture and resource measurements, standard-library analysis |
 | [laya/](laya/README.md) | Laya code, requirements, instructions and saved results |
 | [needle/](needle/README.md) | Needle code, test sentences, instructions and saved results |
 | [docs/](docs/TECHNICAL_INDEX.md) | [Glossary](docs/GLOSSARY.md), [troubleshooting](docs/TROUBLESHOOTING.md) and direct technical links |
