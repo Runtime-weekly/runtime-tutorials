@@ -1,0 +1,16 @@
+{
+  "weight_bytes": 35335380,
+  "weight_sha256": "c9d915eca282ed42d1a09b143b592adb4cc6744ffe2d294adf5cfc5548170c38",
+  "package": "cactus-needle 3.0.3",
+  "engine_cache_version": "3.0.1",
+  "source_urls": [
+    "https://github.com/cactus-compute/needle",
+    "https://cactuscompute.com/needle",
+    "https://huggingface.co/Cactus-Compute/needle3"
+  ],
+  "telemetry_env": {
+    "NEEDLE_TELEMETRY": "0",
+    "DO_NOT_TRACK": "1"
+  },
+  "description": "Historical video run: package, weight file identity and upstream sources; local paths excluded."
+}

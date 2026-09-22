@@ -1,0 +1,25 @@
+name: Question or correction
+description: Ask for help, suggest a correction, or clarify a guide.
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: "Please use invented examples. Do not include private logs, personal details, passwords or tokens."
+  - type: input
+    id: page
+    attributes:
+      label: Which guide, article or example?
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like help with?
+      description: If something failed, include your operating system, Python version, command and a short redacted error.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting public sources or expected result
+      description: For corrections, link to a primary source when available.

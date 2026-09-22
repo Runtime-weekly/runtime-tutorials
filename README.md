@@ -1,37 +1,66 @@
 # RUNTIME tutorials
 
-Runnable examples and setup guides from the RUNTIME YouTube channel.
+Small, runnable examples from [RUNTIME on YouTube](https://www.youtube.com/@runtime-weekly),
+with setup instructions, saved outputs and honest limits.
 
-## Laya local setup
+**New to this? [Start here](START_HERE.md).**
+**Already using Python? [Open the technical index](docs/TECHNICAL_INDEX.md).**
 
-[Watch the tutorial on YouTube](https://youtu.be/J-Cn9UUJtdA)
+## Pick a guide
 
-[Read the step-by-step guide](laya/README.md) · [Download the tutorial ZIP](https://github.com/Runtime-weekly/runtime-tutorials/releases/download/laya-v19-r3/laya-tutorial.zip)
+| Guide | What you build | Start / watch |
+| --- | --- | --- |
+| Laya | Classify requests, inspect uncertainty, customize categories, optionally draft with a local LLM | [Guide](laya/README.md) · [Video](https://youtu.be/J-Cn9UUJtdA) |
+| Needle 3 | Convert seven synthetic requests into proposed tool calls and inspect failures | [Guide](needle/README.md) · [Video](https://youtu.be/FnKINBWJPTs) |
 
-Install the independent open-source Laya decision model, sort requests, pause uncertain cases, and connect a local language model to draft a reply. A project-notes example shows how to change the categories.
+For the advanced experiment from our Dream-RSI episode, use the separate
+[dream-rsi-experiment repository](https://github.com/Runtime-weekly/dream-rsi-experiment).
 
-Tested on Linux ARM64 with Python 3.12 and CPU inference. Other platform commands are adaptations, not completed tests. Model weights download separately from their upstream repository.
+These guides were checked on **Python 3.12 / Linux ARM64 / CPU**. Other platform
+commands are adaptations, not completed tests. Model weights download separately.
 
 These small synthetic demonstrations are not performance or accuracy benchmarks. Nothing sends messages or changes accounts.
 
-## Start here
+## Download and run
 
-Download and extract the ZIP, then follow its README. If you prefer Git:
+Use **Code → Download ZIP** above and extract the folder, or clone:
 
 ```sh
 git clone https://github.com/Runtime-weekly/runtime-tutorials.git
-cd runtime-tutorials/laya
+cd runtime-tutorials
 ```
 
-Continue with the [Python 3.12 setup and first example](laya/README.md). The guide
-includes dependency versions, model downloads, expected results, three demos,
-category customization and troubleshooting. No RUNTIME account or private server
-is required. The optional larger-model demo needs your own local model server.
+Then open **one guide** and create its virtual environment inside that example
+folder. The repository root has no shared install command. No RUNTIME account,
+API key or private service is required; Laya's optional drafting step needs your
+own local language-model server.
+
+The [tagged Laya video ZIP](https://github.com/Runtime-weekly/runtime-tutorials/releases/download/laya-v19-r3/laya-tutorial.zip)
+preserves the original tutorial bundle. The main branch includes newer guides
+and navigation. [Needle's tagged companion](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/needle-video-v1)
+contains the standalone demo and historical outputs.
+
+## Find your way around
+
+| Folder / page | Contents |
+| --- | --- |
+| [START_HERE.md](START_HERE.md) | Downloading files, opening a terminal and creating an environment |
+| [laya/](laya/README.md) | Laya code, requirements, instructions and saved results |
+| [needle/](needle/README.md) | Needle code, test sentences, instructions and saved results |
+| [docs/](docs/TECHNICAL_INDEX.md) | [Glossary](docs/GLOSSARY.md), [troubleshooting](docs/TROUBLESHOOTING.md) and direct technical links |
+
+## Validation
+
+The Laya example files are unchanged from the tested video bundle. The Needle
+export was installed in a fresh Python environment and all seven requests were
+rerun; proposed calls and warnings matched the recorded demonstration. Package
+downloads used existing caches. This does not qualify a cold download or other
+operating systems. See each guide for source/version details and actual failures.
 
 ## License and sources
 
 Original RUNTIME example code and accompanying tutorial documentation are available
-under the [MIT License](LICENSE). Upstream Laya code, model weights and dependencies
+under the [MIT License](LICENSE). Upstream code, model weights and dependencies
 retain their own licenses. This license does not cover channel videos, narration,
 portraits, logos or other brand assets. Models and environments are downloaded
 separately; they are not bundled here.

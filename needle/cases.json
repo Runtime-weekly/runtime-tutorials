@@ -1,0 +1,49 @@
+{
+  "tools": [
+    {
+      "name": "set_lights",
+      "description": "Turn lights on or off in a named room.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "room": {
+            "type": "string"
+          },
+          "on": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "room",
+          "on"
+        ]
+      }
+    },
+    {
+      "name": "set_thermostat",
+      "description": "Set the target temperature in Celsius.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "temperature": {
+            "type": "integer",
+            "minimum": 10,
+            "maximum": 30
+          }
+        },
+        "required": [
+          "temperature"
+        ]
+      }
+    }
+  ],
+  "queries": [
+    "Turn off the kitchen lights.",
+    "Switch on the living room lights and set the thermostat to 21 degrees.",
+    "Do not turn off the kitchen lights.",
+    "Turn it off.",
+    "Book me a flight to Tokyo.",
+    "Set the thermostat to 100 degrees.",
+    "Please switch the bedroom lights on."
+  ]
+}

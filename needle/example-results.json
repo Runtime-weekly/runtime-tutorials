@@ -1,0 +1,251 @@
+{
+  "package": "3.0.3",
+  "machine": "aarch64",
+  "load_seconds": 1.795924480073154,
+  "tools": [
+    {
+      "name": "set_lights",
+      "description": "Turn lights on or off in a named room.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "room": {
+            "type": "string"
+          },
+          "on": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "room",
+          "on"
+        ]
+      }
+    },
+    {
+      "name": "set_thermostat",
+      "description": "Set the target temperature in Celsius.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "temperature": {
+            "type": "integer",
+            "minimum": 10,
+            "maximum": 30
+          }
+        },
+        "required": [
+          "temperature"
+        ]
+      }
+    }
+  ],
+  "cases": [
+    {
+      "input": "Turn off the kitchen lights.",
+      "response": {
+        "type": "call",
+        "success": true,
+        "error": null,
+        "error_code": null,
+        "reason": null,
+        "function_calls": [
+          {
+            "name": "set_lights",
+            "arguments": {
+              "room": "kitchen",
+              "on": false
+            }
+          }
+        ],
+        "suppressed_calls": [],
+        "reasoning": "Query says 'turn off the kitchen lights' -> room 'kitchen', action 'off'.",
+        "confidence": 0.9851,
+        "prefill_tps": 3237.2,
+        "decode_tps": 1287.4,
+        "peak_ram_mb": 124.3,
+        "validation": {
+          "ungrounded": [],
+          "negation": false
+        }
+      },
+      "wall_ms": 38.14
+    },
+    {
+      "input": "Switch on the living room lights and set the thermostat to 21 degrees.",
+      "response": {
+        "type": "call",
+        "success": true,
+        "error": null,
+        "error_code": null,
+        "reason": null,
+        "function_calls": [
+          {
+            "name": "set_lights",
+            "arguments": {
+              "room": "living room",
+              "on": true
+            }
+          },
+          {
+            "name": "set_thermostat",
+            "arguments": {
+              "temperature": 21
+            }
+          }
+        ],
+        "suppressed_calls": [],
+        "reasoning": "'living room lights' -> room 'living room', 'on' -> true. '21 degrees' -> temperature 21.",
+        "confidence": 0.9884,
+        "prefill_tps": 3000.6,
+        "decode_tps": 1250.2,
+        "peak_ram_mb": 124.3,
+        "validation": {
+          "ungrounded": [],
+          "negation": false
+        }
+      },
+      "wall_ms": 58.03
+    },
+    {
+      "input": "Do not turn off the kitchen lights.",
+      "response": {
+        "type": "call",
+        "success": true,
+        "error": null,
+        "error_code": null,
+        "reason": null,
+        "function_calls": [
+          {
+            "name": "set_lights",
+            "arguments": {
+              "room": "kitchen",
+              "on": false
+            }
+          }
+        ],
+        "suppressed_calls": [],
+        "reasoning": "Prohibition on turning off kitchen lights. Alternative request: set_lights room 'kitchen' from 'kitchen lights', off from 'do not turn off'.",
+        "confidence": 1.0,
+        "prefill_tps": 2945.9,
+        "decode_tps": 1227.6,
+        "peak_ram_mb": 124.3,
+        "validation": {
+          "ungrounded": [],
+          "negation": true
+        }
+      },
+      "wall_ms": 54.2
+    },
+    {
+      "input": "Turn it off.",
+      "response": {
+        "type": "call",
+        "success": true,
+        "error": null,
+        "error_code": null,
+        "reason": null,
+        "function_calls": [],
+        "suppressed_calls": [
+          {
+            "name": "set_lights",
+            "arguments": {
+              "room": "off",
+              "on": false
+            }
+          }
+        ],
+        "reasoning": "'Turn it off' means turn off -> set_lights with room 'off'.",
+        "confidence": 1.0,
+        "prefill_tps": 2441.2,
+        "decode_tps": 1098.4,
+        "peak_ram_mb": 124.3,
+        "validation": {
+          "ungrounded": [],
+          "negation": false
+        }
+      },
+      "wall_ms": 41.61
+    },
+    {
+      "input": "Book me a flight to Tokyo.",
+      "response": {
+        "type": "call",
+        "success": true,
+        "error": null,
+        "error_code": null,
+        "reason": null,
+        "function_calls": [],
+        "suppressed_calls": [],
+        "reasoning": "No flight booking tool available.",
+        "confidence": 0.9662,
+        "prefill_tps": 2655.9,
+        "decode_tps": 1176.6,
+        "peak_ram_mb": 124.3
+      },
+      "wall_ms": 18.06
+    },
+    {
+      "input": "Set the thermostat to 100 degrees.",
+      "response": {
+        "type": "call",
+        "success": true,
+        "error": null,
+        "error_code": null,
+        "reason": null,
+        "function_calls": [
+          {
+            "name": "set_thermostat",
+            "arguments": {
+              "temperature": 17
+            }
+          }
+        ],
+        "suppressed_calls": [],
+        "reasoning": "Query asks to set temperature to 100 degrees. set_thermostat tool with temperature 100.",
+        "confidence": 1.0,
+        "prefill_tps": 2874.2,
+        "decode_tps": 1243.6,
+        "peak_ram_mb": 124.3,
+        "validation": {
+          "ungrounded": [
+            "set_thermostat.temperature"
+          ],
+          "negation": false
+        }
+      },
+      "wall_ms": 36.43
+    },
+    {
+      "input": "Please switch the bedroom lights on.",
+      "response": {
+        "type": "call",
+        "success": true,
+        "error": null,
+        "error_code": null,
+        "reason": null,
+        "function_calls": [
+          {
+            "name": "set_lights",
+            "arguments": {
+              "room": "bedroom",
+              "on": true
+            }
+          }
+        ],
+        "suppressed_calls": [],
+        "reasoning": "'bedroom lights on' -> room 'bedroom', on true.",
+        "confidence": 0.9787,
+        "prefill_tps": 3281.9,
+        "decode_tps": 1213.7,
+        "peak_ram_mb": 124.3,
+        "validation": {
+          "ungrounded": [],
+          "negation": false
+        }
+      },
+      "wall_ms": 35.28
+    }
+  ],
+  "scope": "Seven synthetic demonstrations, no device actions executed; CPU runtime, telemetry disabled."
+}
