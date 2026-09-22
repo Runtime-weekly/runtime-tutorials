@@ -35,10 +35,11 @@ folder. The repository root has no shared install command. No RUNTIME account,
 API key or private service is required; Laya's optional drafting step needs your
 own local language-model server.
 
-The [tagged Laya video ZIP](https://github.com/Runtime-weekly/runtime-tutorials/releases/download/laya-v19-r3/laya-tutorial.zip)
-preserves the original tutorial bundle. The main branch includes newer guides
-and navigation. [Needle's tagged companion](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/needle-video-v1)
-contains the standalone demo and historical outputs.
+The [Laya tutorial ZIP](https://github.com/Runtime-weekly/runtime-tutorials/releases/download/laya-v19-r4/laya-tutorial.zip)
+contains the video examples with updated, tested dependency pins.
+The [complete tutorial library](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/tutorials-v1.1)
+includes both guides, historical outputs and navigation. Older releases are
+retained for reference; use these current downloads for a new installation.
 
 ## Find your way around
 
@@ -51,7 +52,10 @@ contains the standalone demo and historical outputs.
 
 ## Validation
 
-The Laya example files are unchanged from the tested video bundle. The Needle
+The Laya example code is unchanged from the video; dependency pins were updated
+after an advisory review. The CPU examples were rerun in a fresh environment and
+their labels, rounded probabilities and gate decisions matched. The optional
+LLM integration was not rerun with the updated packages. The Needle
 export was installed in a fresh Python environment and all seven requests were
 rerun; proposed calls and warnings matched the recorded demonstration. Package
 downloads used existing caches. This does not qualify a cold download or other

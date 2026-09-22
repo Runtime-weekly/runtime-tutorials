@@ -4,6 +4,16 @@ RUNTIME tutorial, tested September 21, 2026. Laya is an independent Apache-licen
 open-source decision model, not an official open-source distribution of Jev.
 These examples classify synthetic text and optionally prepare an unsent reply.
 
+**Current download: revision r4.** Dependency pins were updated after GitHub
+reported advisories in the original video environment. A fresh Python 3.12.3
+Linux ARM64 environment with PyTorch 2.13.0+cpu and Transformers 5.10.0 passed
+`pip check`, the first example, triage, clarification and custom categories.
+Labels, rounded probabilities and gate decisions matched the recording. The
+existing pinned checkpoint was reused; this was not a cold model download.
+The optional local-LLM draft step was not rerun with these dependency versions.
+`demo-results.json` and the resource measurements below describe the original
+video run. Example Python code and checkpoint revision are unchanged.
+
 ## What was tested
 
 - Fresh Python 3.12.3 environment on Linux ARM64 / DGX Spark.
@@ -33,6 +43,7 @@ The video shows the Linux path; `python3 --version` must report 3.12.x here.
 python3 --version
 python3 -m venv .venv
 source .venv/bin/activate
+python -m pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 python -m pip check
 ```
@@ -40,18 +51,22 @@ python -m pip check
 The interpreter should be Python 3.12, and pip check should report no broken
 requirements. This installs public packages into the folder's own environment.
 Initial installation/download duration varies with your connection and cache.
+Installing the CPU wheel first avoids pulling in a GPU runtime for this CPU demo.
 
 Windows PowerShell adaptation (avoids changing script execution policy):
 
 ```powershell
 py -3.12 -m venv .venv
+.venv\Scripts\python.exe -m pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cpu
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 .venv\Scripts\python.exe -m pip check
 ```
 
 For subsequent Windows commands below, replace `python` with
 `.venv\Scripts\python.exe`. On macOS with Python 3.12, use the Linux-style venv
-commands; this adaptation is not a macOS validation claim.
+commands but skip the CPU-index install line and install `requirements.txt`
+directly. Check the [PyTorch platform guide](https://pytorch.org/get-started/locally/)
+for wheel availability. These adaptations are not Windows or macOS validation claims.
 
 ## 2. Download one checkpoint
 

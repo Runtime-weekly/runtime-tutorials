@@ -24,7 +24,7 @@ with named fields: look for `input`, then the answer or `function_calls`.
 choose **Code → Download ZIP**, and extract it. Open the `laya` or `needle` folder.
 Do not run files while they are still inside the ZIP viewer.
 
-For the exact Laya video bundle, use [the tagged release](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/laya-v19-r3).
+For the Laya video examples with updated dependencies, use [the current release](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/laya-v19-r4).
 Its README is self-contained; newer navigation pages live in this repository.
 
 **With Git:**
@@ -54,9 +54,11 @@ The guide gives the exact commands; they follow this pattern:
 python3 --version
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -m pip check
 ```
+
+Then follow your guide's package installation commands and run `python -m pip check`.
+Laya installs a CPU PyTorch wheel first on Linux/Windows; Needle has a different
+dependency list. Do not combine their environments or skip the guide-specific steps.
 
 Check the first command reports **3.12.x**. On Windows the guides use
 `py -3.12` and `.venv\Scripts\python.exe` instead. You do not need to change
