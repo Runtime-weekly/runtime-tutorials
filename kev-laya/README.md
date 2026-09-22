@@ -2,6 +2,8 @@
 
 A small, inspectable RUNTIME experiment: **30 synthetic English support messages, three option orders, two local decision models**. September 22, 2026.
 
+[Watch the comparison: Open-Source Jev? Kev vs Laya — We Tested Both](https://youtu.be/ijSZfUtdVaY).
+
 Kev matched more of our predefined routes in this setup. Laya used less process memory and responded faster. Both made mistakes. This is a comparison of two specific configurations, not a general leaderboard or a test of hosted Jev.
 
 | Original option order | Kev-0.8B | Laya English |
