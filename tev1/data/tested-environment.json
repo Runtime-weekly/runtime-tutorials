@@ -1,0 +1,78 @@
+[
+  {
+    "model": "tev1",
+    "model_id": "togethercomputer/Tev1-0.8B-experimental",
+    "revision": "6bb2dff14b38fea90ddb14d870166ccaf77374e9",
+    "settings": {
+      "device": "cuda:0",
+      "dtype": "bfloat16",
+      "attention": "sdpa",
+      "do_sample": false,
+      "max_new_tokens": 8,
+      "enable_thinking": false,
+      "batch_size": 1,
+      "cpu_threads": 3,
+      "constraint": "No logits processor, grammar, forced letter, or retries; ordinary greedy generation",
+      "timing": "Per-request end-to-end chat-template+tokenization+H2D+generation+decode, GPU synchronized. Cold model load and warmups separate."
+    },
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.17.0",
+      "tokenizers": "0.23.2",
+      "accelerate": "1.15.0",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "1.32.0"
+    },
+    "python": "3.12.3",
+    "gpu": "NVIDIA GB10",
+    "load_seconds": 10.759679309034254,
+    "parameter_count": 852985920,
+    "parameter_dtype_counts": {
+      "torch.bfloat16": 852985920
+    },
+    "cuda_after_load_allocated_bytes": 1705995776,
+    "cuda_after_load_reserved_bytes": 1723858944,
+    "process_peak_rss_bytes": 2658615296,
+    "cuda_peak_allocated_bytes": 1768821248,
+    "cuda_peak_reserved_bytes": 1784676352,
+    "completed_cases": 115
+  },
+  {
+    "model": "qwen",
+    "model_id": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "settings": {
+      "device": "cuda:0",
+      "dtype": "bfloat16",
+      "attention": "sdpa",
+      "do_sample": false,
+      "max_new_tokens": 8,
+      "enable_thinking": false,
+      "batch_size": 1,
+      "cpu_threads": 3,
+      "constraint": "No logits processor, grammar, forced letter, or retries; ordinary greedy generation",
+      "timing": "Per-request end-to-end chat-template+tokenization+H2D+generation+decode, GPU synchronized. Cold model load and warmups separate."
+    },
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.17.0",
+      "tokenizers": "0.23.2",
+      "accelerate": "1.15.0",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "1.32.0"
+    },
+    "python": "3.12.3",
+    "gpu": "NVIDIA GB10",
+    "load_seconds": 24.56967810401693,
+    "parameter_count": 852985920,
+    "parameter_dtype_counts": {
+      "torch.bfloat16": 852985920
+    },
+    "cuda_after_load_allocated_bytes": 1705995776,
+    "cuda_after_load_reserved_bytes": 1723858944,
+    "process_peak_rss_bytes": 2680373248,
+    "cuda_peak_allocated_bytes": 1768821248,
+    "cuda_peak_reserved_bytes": 1784676352,
+    "completed_cases": 115
+  }
+]

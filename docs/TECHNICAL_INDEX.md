@@ -61,3 +61,15 @@ This standard-library-only analysis checks the frozen 30-case dataset and all
 180 saved decisions, then reproduces the reported summary. It performs no
 model inference or downloads. Historical runtime versions identify the original
 measurements; they are not installation recommendations.
+
+## Tev1 vs Qwen local decision-model comparison
+
+[Guide](../tev1/README.md) · [Method](../tev1/METHOD.md) ·
+[Primary sources](../tev1/SOURCES.md)
+
+From the repository root, run `python3 tev1/verify.py`. No GPU, model download or
+third-party package is needed to recompute the saved 48/90 versus 26/90 clean
+results, separate stress outcomes and recorded latency. The guide also provides
+pinned model downloads and a standalone optional GPU inference recipe. That
+patched runtime has not been requalified for fresh inference; historical
+measurements and limitations are preserved separately.

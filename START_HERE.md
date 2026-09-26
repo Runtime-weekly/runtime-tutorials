@@ -3,6 +3,14 @@
 You do not need to know Git or train a model to follow these guides. Start with
 one example, get its expected result, then change one thing at a time.
 
+## Inspect the Tev1 video results without installing a model
+
+Download or clone this repository, then run `python3 tev1/verify.py` from its
+root folder. This uses only standard Python and recomputes the saved results.
+Start with the [Tev1 guide](tev1/README.md) for expected scores, exact inputs,
+limitations and the separate optional GPU setup. You can skip the package-install
+steps below if you only want to inspect these saved results.
+
 ## 1. Choose an example
 
 | Guide | What you will do | What you need |

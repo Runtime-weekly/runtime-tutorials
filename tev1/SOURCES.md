@@ -1,0 +1,11 @@
+# Primary sources and attribution
+
+- [Together Tev1-0.8B-experimental pinned model card](https://huggingface.co/togethercomputer/Tev1-0.8B-experimental/blob/6bb2dff14b38fea90ddb14d870166ccaf77374e9/README.md): intended structured state/question/options interface; system instruction; greedy max 8 tokens with thinking disabled; standard autoregressive Qwen head; limitations and fine-tuned license pending. Revision `6bb2dff14b38fea90ddb14d870166ccaf77374e9`.
+- [Qwen3.5-0.8B pinned upstream checkpoint](https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17): corresponding instruction-model baseline, not the separate `-Base` repository. Revision `2fc06364715b967f1860aea9cf38778875588b17`.
+- [Together training repository](https://github.com/togethercomputer/tev1) and [training tutorial](https://www.together.ai/blog/how-to-train-your-own-jev): contextual 4B training material, not evidence of 0.8B scores or a training run performed here.
+- [Transformers Qwen3.5 documentation](https://huggingface.co/docs/transformers/model_doc/qwen3_5): model/runtime reference. Upstream software versions and dependencies have their own licenses; no upstream runtime code is redistributed in this package.
+- [PyTorch installer](https://pytorch.org/get-started/locally/) and [GHSA-rrmf-rvhw-rf47](https://github.com/advisories/GHSA-rrmf-rvhw-rf47): historical Torch 2.11.0 has an advisory affecting torch.jit.script; fixed version 2.13.0 is used in the optional setup recipe, not retroactively claimed as the measured version.
+
+September 26, 2026 direct OSV checks for recorded Torch 2.11.0, Transformers 5.17.0, tokenizers 0.23.2, accelerate 1.15.0, safetensors 0.8.0 and huggingface-hub 1.32.0 returned the Torch advisory and no entries for the other five. This is a dated check of those direct dependencies, not a complete transitive audit or future safety guarantee. Recheck current advisories before optional installation.
+
+RUNTIME authored the synthetic cases, experiment tooling, analysis and explanatory documentation. Saved outputs are actual local observations. Model weights, upstream training data, private media and operational infrastructure are not included. Original package MIT terms do not override any upstream model/dataset license.

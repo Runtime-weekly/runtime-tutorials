@@ -10,6 +10,7 @@ with setup instructions, saved outputs and honest limits.
 
 | Guide | What you build | Start / watch |
 | --- | --- | --- |
+| Tev1 vs Qwen | Recompute 230 saved decisions, inspect failures, and follow an optional local rerun recipe | [Code, evidence and setup](tev1/README.md) |
 | Kev vs Laya | Inspect 180 recorded decisions, compare architectures and resources, recompute findings | [Research and analysis](kev-laya/README.md) |
 | Laya | Classify requests, inspect uncertainty, customize categories, optionally draft with a local LLM | [Guide](laya/README.md) · [Video](https://youtu.be/J-Cn9UUJtdA) |
 | Needle 3 | Convert seven synthetic requests into proposed tool calls and inspect failures | [Guide](needle/README.md) · [Video](https://youtu.be/FnKINBWJPTs) |
@@ -17,8 +18,11 @@ with setup instructions, saved outputs and honest limits.
 For the advanced experiment from our Dream-RSI episode, use the separate
 [dream-rsi-experiment repository](https://github.com/Runtime-weekly/dream-rsi-experiment).
 
-These guides were checked on **Python 3.12 / Linux ARM64 / CPU**. Other platform
-commands are adaptations, not completed tests. Model weights download separately.
+Laya and Needle were checked on **Python 3.12 / Linux ARM64 / CPU**. Tev1
+measurements used a local **NVIDIA GB10 GPU**; its exported saved-result analysis
+is checked offline on Python 3.12, while the optional patched inference recipe
+still needs fresh qualification. See each guide for its exact environment.
+Other platforms are not qualified. Model weights download separately.
 
 These small synthetic demonstrations are not performance or accuracy benchmarks. Nothing sends messages or changes accounts.
 
@@ -39,8 +43,8 @@ own local language-model server.
 The [Laya tutorial ZIP](https://github.com/Runtime-weekly/runtime-tutorials/releases/download/laya-v19-r4/laya-tutorial.zip)
 contains the video examples with updated, tested dependency pins.
 The [Laya and Needle tutorial library](https://github.com/Runtime-weekly/runtime-tutorials/releases/tag/tutorials-v1.1)
-includes those two guides, historical outputs and navigation. The Kev vs Laya
-research companion is available in the current repository ZIP or clone. Older releases are
+includes those two guides, historical outputs and navigation. The Tev1 vs Qwen and Kev vs Laya
+research companions are available in the current repository ZIP or clone. Older releases are
 retained for reference; use these current downloads for a new installation.
 
 ## Find your way around
@@ -48,6 +52,7 @@ retained for reference; use these current downloads for a new installation.
 | Folder / page | Contents |
 | --- | --- |
 | [START_HERE.md](START_HERE.md) | Downloading files, opening a terminal and creating an environment |
+| [tev1/](tev1/README.md) | Exact synthetic cases, model revisions, responses, timing, offline verification and optional local inference |
 | [kev-laya/](kev-laya/README.md) | Frozen synthetic cases, saved decisions, architecture and resource measurements, standard-library analysis |
 | [laya/](laya/README.md) | Laya code, requirements, instructions and saved results |
 | [needle/](needle/README.md) | Needle code, test sentences, instructions and saved results |
