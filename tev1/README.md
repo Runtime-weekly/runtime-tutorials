@@ -57,4 +57,4 @@ Troubleshooting: no CUDA→install the appropriate patched GPU build; missing ch
 
 Original code, documentation and synthetic cases are under the [MIT license](LICENSE). This does not license upstream weights, datasets, brand artwork, narration or video. Tev1's pinned card says its fine-tuned weight license is still being finalized; weights are not redistributed. The baseline is Apache-2.0 according to its upstream card. See [SOURCES.md](SOURCES.md).
 
-Canonical project location: [Runtime-weekly/runtime-tutorials/tev1](https://github.com/Runtime-weekly/runtime-tutorials/tree/main/tev1). The video link will be added when a verified upload URL exists.
+Canonical project location: [Runtime-weekly/runtime-tutorials/tev1](https://github.com/Runtime-weekly/runtime-tutorials/tree/main/tev1). Watch the comparison: [Open-Source Jev? Tev1 vs Qwen — Tested Locally](https://youtu.be/DUgZtU_1ACQ).

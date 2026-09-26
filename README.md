@@ -10,7 +10,7 @@ with setup instructions, saved outputs and honest limits.
 
 | Guide | What you build | Start / watch |
 | --- | --- | --- |
-| Tev1 vs Qwen | Recompute 230 saved decisions, inspect failures, and follow an optional local rerun recipe | [Code, evidence and setup](tev1/README.md) |
+| Tev1 vs Qwen | Recompute 230 saved decisions, inspect failures, and follow an optional local rerun recipe | [Code, evidence and setup](tev1/README.md) · [Video](https://youtu.be/DUgZtU_1ACQ) |
 | Kev vs Laya | Inspect 180 recorded decisions, compare architectures and resources, recompute findings | [Research and analysis](kev-laya/README.md) |
 | Laya | Classify requests, inspect uncertainty, customize categories, optionally draft with a local LLM | [Guide](laya/README.md) · [Video](https://youtu.be/J-Cn9UUJtdA) |
 | Needle 3 | Convert seven synthetic requests into proposed tool calls and inspect failures | [Guide](needle/README.md) · [Video](https://youtu.be/FnKINBWJPTs) |
