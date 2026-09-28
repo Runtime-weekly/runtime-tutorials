@@ -1,0 +1,40 @@
+{
+  "case": "routing-03",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "I forgot my password and cannot sign in.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Account: login and identity",
+          "B": "Billing: charges and invoices",
+          "C": "Technical: broken product features"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 1.0,
+        "probabilities": {
+          "A": 1.0,
+          "B": 0.0,
+          "C": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 342,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.2852974279667251
+}

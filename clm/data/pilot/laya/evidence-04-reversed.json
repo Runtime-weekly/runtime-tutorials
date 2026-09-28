@@ -1,0 +1,53 @@
+{
+  "case": "evidence-04",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "Evidence: Latency fell from 800 ms to 400 ms. Claim: Latency fell by 50 percent.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Contradicted by the evidence",
+          "B": "Supported by the evidence",
+          "A": "Not enough information"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 250,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "C": 0.157,
+            "B": 0.3313,
+            "A": 0.5117
+          },
+          "confidence": 0.0902,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 60,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.24987698899349198
+}

@@ -1,0 +1,40 @@
+{
+  "case": "evidence-02",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Evidence: A used 4 GB; B used 6 GB. Claim: B used less memory.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Supported by the evidence",
+          "B": "Contradicted by the evidence",
+          "C": "Not enough information"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 1.0,
+        "probabilities": {
+          "B": 1.0,
+          "A": 0.0,
+          "C": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 353,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.2654772409587167
+}

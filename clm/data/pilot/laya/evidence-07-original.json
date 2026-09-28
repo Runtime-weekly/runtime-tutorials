@@ -1,0 +1,53 @@
+{
+  "case": "evidence-07",
+  "order": "original",
+  "runtime": "laya",
+  "request": {
+    "state": "Evidence: The test used four easy questions, all answered correctly. Claim: This proves perfect accuracy on all questions.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Not enough information",
+          "B": "Supported by the evidence",
+          "C": "Contradicted by the evidence"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 239,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "B",
+          "probabilities": {
+            "A": 0.3676,
+            "B": 0.4232,
+            "C": 0.2093
+          },
+          "confidence": 0.036,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 62,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.2390228959848173
+}

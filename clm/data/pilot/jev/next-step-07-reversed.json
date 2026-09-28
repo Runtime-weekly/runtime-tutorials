@@ -1,0 +1,40 @@
+{
+  "case": "next-step-07",
+  "order": "reversed",
+  "runtime": "jev",
+  "request": {
+    "state": "Goal: rerun a failed test. The dependency is now repaired, the sandbox is available, and rerunning was approved.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "C": "Run the approved check",
+          "B": "Stop; the evidence says not to proceed",
+          "A": "Ask for the missing information"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 1.0,
+        "probabilities": {
+          "A": 0.0,
+          "C": 1.0,
+          "B": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 363,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.6295660599716939
+}

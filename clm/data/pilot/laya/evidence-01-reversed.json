@@ -1,0 +1,53 @@
+{
+  "case": "evidence-01",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "Evidence: A passed 7 of 10 tests; B passed 8 of 10. Claim: B passed more tests.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Contradicted by the evidence",
+          "B": "Supported by the evidence",
+          "A": "Not enough information"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 258,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "B",
+          "probabilities": {
+            "C": 0.1991,
+            "B": 0.6564,
+            "A": 0.1445
+          },
+          "confidence": 0.2016,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 61,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.2577145319664851
+}

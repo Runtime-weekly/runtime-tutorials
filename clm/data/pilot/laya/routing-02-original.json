@@ -1,0 +1,53 @@
+{
+  "case": "routing-02",
+  "order": "original",
+  "runtime": "laya",
+  "request": {
+    "state": "I can sign in, but exporting a PDF crashes every time.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Technical: broken product features",
+          "B": "Account: login and identity",
+          "C": "Billing: charges and invoices"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 240,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "A": 0.618,
+            "B": 0.3107,
+            "C": 0.0713
+          },
+          "confidence": 0.2273,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 56,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.2397976850043051
+}

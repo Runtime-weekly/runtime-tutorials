@@ -1,0 +1,62 @@
+{
+  "case": "routing-02",
+  "order": "reversed",
+  "request": {
+    "state": "I can sign in, but exporting a PDF crashes every time.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Billing: charges and invoices",
+          "B": "Account: login and identity",
+          "A": "Technical: broken product features"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.9277201311049786,
+        "probabilities": {
+          "C": 0.9518134207366524,
+          "B": 0.010833837874244133,
+          "A": 0.03735274138910337
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 37,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.4085634065186118,
+        "probabilities": {
+          "C": 0.6057089376790745,
+          "B": 0.018524795669176638,
+          "A": 0.37576626665174884
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.20518968702526763,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

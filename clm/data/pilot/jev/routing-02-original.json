@@ -1,0 +1,40 @@
+{
+  "case": "routing-02",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "I can sign in, but exporting a PDF crashes every time.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Technical: broken product features",
+          "B": "Account: login and identity",
+          "C": "Billing: charges and invoices"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 1.0,
+        "probabilities": {
+          "C": 0.0,
+          "A": 1.0,
+          "B": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 346,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.2857429350260645
+}

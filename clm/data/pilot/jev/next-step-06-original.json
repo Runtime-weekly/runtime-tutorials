@@ -1,0 +1,40 @@
+{
+  "case": "next-step-06",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Goal: show the final result. The purported result file fails its checksum and is marked corrupted.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Run the approved check",
+          "B": "Ask for the missing information",
+          "C": "Stop; the evidence says not to proceed"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.81,
+        "probabilities": {
+          "A": 0.08,
+          "C": 0.87,
+          "B": 0.05
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 356,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.5084564550197683
+}

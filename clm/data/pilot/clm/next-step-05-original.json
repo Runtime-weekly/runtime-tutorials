@@ -1,0 +1,62 @@
+{
+  "case": "next-step-05",
+  "order": "original",
+  "request": {
+    "state": "Goal: email the results. The recipient is unspecified, and no address can be inferred.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.9251117846041578,
+        "probabilities": {
+          "A": 0.9500745230694385,
+          "B": 0.016186375950208266,
+          "C": 0.03373910098035326
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 46,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.6670537076577508,
+        "probabilities": {
+          "A": 0.22061507850482528,
+          "B": 0.0013491163900075413,
+          "C": 0.7780358051051672
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.24678996700095013,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

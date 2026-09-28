@@ -1,0 +1,62 @@
+{
+  "case": "evidence-08",
+  "order": "reversed",
+  "request": {
+    "state": "Evidence: Run one took 0.5 seconds and run two took 700 milliseconds. Claim: Run two was faster.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Not enough information",
+          "B": "Contradicted by the evidence",
+          "A": "Supported by the evidence"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.8551955129224414,
+        "probabilities": {
+          "C": 0.031546160723191004,
+          "B": 0.9034636752816276,
+          "A": 0.0649901639951814
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 49,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.32205858321151326,
+        "probabilities": {
+          "C": 0.3356952422484697,
+          "B": 0.5480390554743422,
+          "A": 0.11626570227718808
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.2796314650331624,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

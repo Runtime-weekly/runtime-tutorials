@@ -1,0 +1,53 @@
+{
+  "case": "routing-08",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "I need my email address changed because I no longer control the old address.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Billing: charges and invoices",
+          "B": "Account: login and identity",
+          "A": "Technical: broken product features"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 256,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "B",
+          "probabilities": {
+            "C": 0.2128,
+            "B": 0.4342,
+            "A": 0.353
+          },
+          "confidence": 0.036,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 57,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.25577075802721083
+}

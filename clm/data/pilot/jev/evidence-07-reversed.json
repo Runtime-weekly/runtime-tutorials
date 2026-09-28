@@ -1,0 +1,40 @@
+{
+  "case": "evidence-07",
+  "order": "reversed",
+  "runtime": "jev",
+  "request": {
+    "state": "Evidence: The test used four easy questions, all answered correctly. Claim: This proves perfect accuracy on all questions.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Contradicted by the evidence",
+          "B": "Supported by the evidence",
+          "A": "Not enough information"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.8,
+        "probabilities": {
+          "C": 0.06,
+          "A": 0.87,
+          "B": 0.07
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 355,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.3499586849939078
+}

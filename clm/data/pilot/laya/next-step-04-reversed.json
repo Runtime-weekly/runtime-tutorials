@@ -1,0 +1,53 @@
+{
+  "case": "next-step-04",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "Goal: inspect a local image. The image path exists, and the user asked for visual review. The viewer is available.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "C": "Run the approved check",
+          "B": "Stop; the evidence says not to proceed",
+          "A": "Ask for the missing information"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 253,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "C",
+          "probabilities": {
+            "C": 0.5686,
+            "B": 0.1731,
+            "A": 0.2583
+          },
+          "confidence": 0.1132,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 70,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.25272340897936374
+}

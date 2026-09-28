@@ -1,0 +1,40 @@
+{
+  "case": "evidence-04",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Evidence: Latency fell from 800 ms to 400 ms. Claim: Latency fell by 50 percent.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Not enough information",
+          "B": "Supported by the evidence",
+          "C": "Contradicted by the evidence"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 1.0,
+        "probabilities": {
+          "A": 0.0,
+          "B": 1.0,
+          "C": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 361,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.33381284098140895
+}

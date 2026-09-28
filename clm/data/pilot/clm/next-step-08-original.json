@@ -1,0 +1,62 @@
+{
+  "case": "next-step-08",
+  "order": "original",
+  "request": {
+    "state": "Goal: choose the newest measurement. Two files have identical names but no timestamps or version identifiers.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.3120481269883226,
+        "probabilities": {
+          "A": 0.4225843367102392,
+          "B": 0.036050245297545684,
+          "C": 0.541365417992215
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 47,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.9131090491739677,
+        "probabilities": {
+          "A": 0.057227914656893725,
+          "B": 0.0006993858937945225,
+          "C": 0.9420726994493118
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.23080617300001904,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

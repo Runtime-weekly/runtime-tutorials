@@ -1,0 +1,40 @@
+{
+  "case": "next-step-01",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Goal: inspect tests. The user approved running pytest in this sandbox. pytest is installed. No files need changing.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Ask for the missing information",
+          "B": "Stop; the evidence says not to proceed",
+          "C": "Run the approved check"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.97,
+        "probabilities": {
+          "B": 0.0,
+          "A": 0.02,
+          "C": 0.98
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 360,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 1.039774345990736
+}

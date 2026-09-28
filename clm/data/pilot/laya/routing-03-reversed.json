@@ -1,0 +1,53 @@
+{
+  "case": "routing-03",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "I forgot my password and cannot sign in.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Technical: broken product features",
+          "B": "Billing: charges and invoices",
+          "A": "Account: login and identity"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 249,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "C": 0.1994,
+            "B": 0.1212,
+            "A": 0.6794
+          },
+          "confidence": 0.2355,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 51,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.24871114100096747
+}

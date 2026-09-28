@@ -1,0 +1,62 @@
+{
+  "case": "next-step-02",
+  "order": "original",
+  "request": {
+    "state": "Goal: compare two reports. Only the first report is attached. No source for the second is given.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.7115214181927145,
+        "probabilities": {
+          "A": 0.8076809454618097,
+          "B": 0.003001403641271581,
+          "C": 0.1893176508969187
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 49,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.48963876001170115,
+        "probabilities": {
+          "A": 0.33867308123513834,
+          "B": 0.0015677454237275968,
+          "C": 0.6597591733411341
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.1636970869731158,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

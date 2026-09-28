@@ -1,0 +1,62 @@
+{
+  "case": "routing-05",
+  "order": "original",
+  "request": {
+    "state": "I can log in. The login page displays the wrong company logo, but account access works.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Technical: broken product features",
+          "B": "Account: login and identity",
+          "C": "Billing: charges and invoices"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.6710590935646529,
+        "probabilities": {
+          "A": 0.07935068490594584,
+          "B": 0.13994325271761898,
+          "C": 0.7807060623764353
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 43,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.24165763640769522,
+        "probabilities": {
+          "A": 0.48113482711059474,
+          "B": 0.024426748617608483,
+          "C": 0.49443842427179685
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.15811618202133104,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15149396480,
+  "cuda_peak_reserved_bytes": 15162408960
+}

@@ -1,0 +1,114 @@
+{
+  "scenario": {
+    "id": "02",
+    "title": "Damage takes priority",
+    "color": "green",
+    "observed": "green",
+    "damaged": true,
+    "bins": {
+      "red": 0,
+      "green": 0,
+      "blue": 0
+    }
+  },
+  "model": "laya",
+  "steps": [
+    {
+      "step": 1,
+      "request": {
+        "state": {
+          "observed_color": "green",
+          "damaged": true,
+          "bins": {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          "capacity_per_bin": 2
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose the next action for the current item. First reject damaged items, regardless of color. For an undamaged item, inspect if its observed color is unknown. Otherwise use the bin matching its color if that bin has a free slot. If the matching bin is full, hold the item. Never substitute another color bin. Inspection reveals color and keeps the item for another action.",
+            "criteria": {
+              "red": "Put this item into the red bin.",
+              "green": "Put this item into the green bin.",
+              "blue": "Put this item into the blue bin.",
+              "reject": "Send this damaged item to the reject tray.",
+              "inspect": "Inspect this item to reveal its uncertain color.",
+              "hold": "Hold this item because its matching bin is full."
+            }
+          }
+        }
+      },
+      "response": {
+        "engine": "Laya 0.3.4",
+        "device": "CPU",
+        "elapsed_ms": 562,
+        "result": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "action": {
+              "type": "choice",
+              "choice": "reject",
+              "probabilities": {
+                "red": 0.1151,
+                "green": 0.0979,
+                "blue": 0.1057,
+                "reject": 0.4868,
+                "inspect": 0.1142,
+                "hold": 0.0803
+              },
+              "confidence": 0.1547,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 196,
+            "output_tokens": 0
+          },
+          "routing": {
+            "model": "typed-decisions",
+            "reason": "explicit model='typed-decisions'",
+            "detection": null,
+            "workflow": null
+          }
+        }
+      },
+      "selected": "reject",
+      "expected": "reject",
+      "correct": true,
+      "seconds": 0.5618302180082537,
+      "before": {
+        "observed_color": "green",
+        "damaged": true,
+        "bins": {
+          "red": 0,
+          "green": 0,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": false,
+        "disposition": null
+      },
+      "after": {
+        "observed_color": "green",
+        "damaged": true,
+        "bins": {
+          "red": 0,
+          "green": 0,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": true,
+        "disposition": "reject"
+      },
+      "event": "sent to reject tray"
+    }
+  ],
+  "passed": true,
+  "terminal": true,
+  "budget_exhausted": false
+}

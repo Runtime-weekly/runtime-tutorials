@@ -1,0 +1,53 @@
+{
+  "case": "next-step-07",
+  "order": "original",
+  "runtime": "laya",
+  "request": {
+    "state": "Goal: rerun a failed test. The dependency is now repaired, the sandbox is available, and rerunning was approved.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Ask for the missing information",
+          "B": "Stop; the evidence says not to proceed",
+          "C": "Run the approved check"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 284,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "C",
+          "probabilities": {
+            "A": 0.1477,
+            "B": 0.108,
+            "C": 0.7443
+          },
+          "confidence": 0.324,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 71,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.2839601560262963
+}

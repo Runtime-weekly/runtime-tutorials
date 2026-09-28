@@ -1,0 +1,62 @@
+{
+  "case": "evidence-05",
+  "order": "reversed",
+  "request": {
+    "state": "Evidence: Scores before training were 8/10; after training 6/10. Claim: Training improved this score.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Not enough information",
+          "B": "Contradicted by the evidence",
+          "A": "Supported by the evidence"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.9301000669966732,
+        "probabilities": {
+          "C": 0.01526386560114971,
+          "B": 0.9534000446644488,
+          "A": 0.031336089734401544
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 49,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.489112438302052,
+        "probabilities": {
+          "C": 0.2761034416683428,
+          "B": 0.659408292201368,
+          "A": 0.06448826613028925
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.2686407149885781,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

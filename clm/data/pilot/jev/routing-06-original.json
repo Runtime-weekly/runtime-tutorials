@@ -1,0 +1,40 @@
+{
+  "case": "routing-06",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "The payment succeeded. I lost my recovery codes and am locked out.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Account: login and identity",
+          "B": "Billing: charges and invoices",
+          "C": "Technical: broken product features"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 1.0,
+        "probabilities": {
+          "B": 0.0,
+          "A": 1.0,
+          "C": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 347,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.45292591699399054
+}

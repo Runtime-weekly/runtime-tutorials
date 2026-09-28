@@ -1,0 +1,40 @@
+{
+  "case": "routing-01",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "The app works. My card was charged twice for the same invoice.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Billing: charges and invoices",
+          "B": "Technical: broken product features",
+          "C": "Account: login and identity"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 1.0,
+        "probabilities": {
+          "A": 1.0,
+          "C": 0.0,
+          "B": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 347,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.6936865680036135
+}

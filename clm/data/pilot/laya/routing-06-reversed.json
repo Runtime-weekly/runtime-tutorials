@@ -1,0 +1,53 @@
+{
+  "case": "routing-06",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "The payment succeeded. I lost my recovery codes and am locked out.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Technical: broken product features",
+          "B": "Billing: charges and invoices",
+          "A": "Account: login and identity"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 262,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "B",
+          "probabilities": {
+            "C": 0.2325,
+            "B": 0.5549,
+            "A": 0.2126
+          },
+          "confidence": 0.0942,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 56,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.2623059879988432
+}

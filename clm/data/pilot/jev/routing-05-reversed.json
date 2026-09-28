@@ -1,0 +1,40 @@
+{
+  "case": "routing-05",
+  "order": "reversed",
+  "runtime": "jev",
+  "request": {
+    "state": "I can log in. The login page displays the wrong company logo, but account access works.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Billing: charges and invoices",
+          "B": "Account: login and identity",
+          "A": "Technical: broken product features"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.79,
+        "probabilities": {
+          "A": 0.86,
+          "B": 0.14,
+          "C": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 352,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.2888463030103594
+}

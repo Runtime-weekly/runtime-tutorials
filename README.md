@@ -10,6 +10,7 @@ with setup instructions, saved outputs and honest limits.
 
 | Guide | What you build | Start / watch |
 | --- | --- | --- |
+| CLM / Jev / Laya | Inspect saved decisions, explore the offline visualizer, and run deterministic simulation experiments | [Research, code and viewer](clm/README.md) |
 | Tev1 vs Qwen | Recompute 230 saved decisions, inspect failures, and follow an optional local rerun recipe | [Code, evidence and setup](tev1/README.md) · [Video](https://youtu.be/DUgZtU_1ACQ) |
 | Kev vs Laya | Inspect 180 recorded decisions, compare architectures and resources, recompute findings | [Research and analysis](kev-laya/README.md) |
 | Laya | Classify requests, inspect uncertainty, customize categories, optionally draft with a local LLM | [Guide](laya/README.md) · [Video](https://youtu.be/J-Cn9UUJtdA) |

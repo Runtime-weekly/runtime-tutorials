@@ -1,0 +1,85 @@
+{
+  "scenario": {
+    "id": "05",
+    "title": "A different bin is full",
+    "color": "green",
+    "observed": "green",
+    "damaged": false,
+    "bins": {
+      "red": 2,
+      "green": 0,
+      "blue": 0
+    }
+  },
+  "model": "rule",
+  "steps": [
+    {
+      "step": 1,
+      "request": {
+        "state": {
+          "observed_color": "green",
+          "damaged": false,
+          "bins": {
+            "red": 2,
+            "green": 0,
+            "blue": 0
+          },
+          "capacity_per_bin": 2
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose the next action for the current item. First reject damaged items, regardless of color. For an undamaged item, inspect if its observed color is unknown. Otherwise use the bin matching its color if that bin has a free slot. If the matching bin is full, hold the item. Never substitute another color bin. Inspection reveals color and keeps the item for another action.",
+            "criteria": {
+              "red": "Put this item into the red bin.",
+              "green": "Put this item into the green bin.",
+              "blue": "Put this item into the blue bin.",
+              "reject": "Send this damaged item to the reject tray.",
+              "inspect": "Inspect this item to reveal its uncertain color.",
+              "hold": "Hold this item because its matching bin is full."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "green"
+          }
+        }
+      },
+      "selected": "green",
+      "expected": "green",
+      "correct": true,
+      "seconds": 2.8801150619983673e-07,
+      "before": {
+        "observed_color": "green",
+        "damaged": false,
+        "bins": {
+          "red": 2,
+          "green": 0,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": false,
+        "disposition": null
+      },
+      "after": {
+        "observed_color": "green",
+        "damaged": false,
+        "bins": {
+          "red": 2,
+          "green": 1,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": true,
+        "disposition": "green"
+      },
+      "event": "placed in green bin"
+    }
+  ],
+  "passed": true,
+  "terminal": true,
+  "budget_exhausted": false
+}

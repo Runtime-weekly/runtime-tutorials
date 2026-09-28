@@ -1,0 +1,62 @@
+{
+  "case": "evidence-07",
+  "order": "reversed",
+  "request": {
+    "state": "Evidence: The test used four easy questions, all answered correctly. Claim: This proves perfect accuracy on all questions.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Contradicted by the evidence",
+          "B": "Supported by the evidence",
+          "A": "Not enough information"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.8238398097010136,
+        "probabilities": {
+          "C": 0.8825598731340091,
+          "B": 0.11495737450163936,
+          "A": 0.0024827523643515836
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 45,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.47402008589779066,
+        "probabilities": {
+          "C": 0.6493467239318604,
+          "B": 0.08685437004735075,
+          "A": 0.26379890602078887
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.27800372597994283,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

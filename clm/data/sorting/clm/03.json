@@ -1,0 +1,182 @@
+{
+  "scenario": {
+    "id": "03",
+    "title": "Look again, then sort",
+    "color": "blue",
+    "observed": "unknown",
+    "damaged": false,
+    "bins": {
+      "red": 0,
+      "green": 0,
+      "blue": 0
+    }
+  },
+  "model": "clm",
+  "steps": [
+    {
+      "step": 1,
+      "request": {
+        "state": {
+          "observed_color": "unknown",
+          "damaged": false,
+          "bins": {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          "capacity_per_bin": 2
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose the next action for the current item. First reject damaged items, regardless of color. For an undamaged item, inspect if its observed color is unknown. Otherwise use the bin matching its color if that bin has a free slot. If the matching bin is full, hold the item. Never substitute another color bin. Inspection reveals color and keeps the item for another action.",
+            "criteria": {
+              "red": "Put this item into the red bin.",
+              "green": "Put this item into the green bin.",
+              "blue": "Put this item into the blue bin.",
+              "reject": "Send this damaged item to the reject tray.",
+              "inspect": "Inspect this item to reveal its uncertain color.",
+              "hold": "Hold this item because its matching bin is full."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "clm-latest",
+        "answers": {
+          "action": {
+            "type": "choice",
+            "choice": "inspect",
+            "confidence": 0.6145502091921397,
+            "probabilities": {
+              "red": 0.029507003417348264,
+              "green": 0.00922039357717577,
+              "blue": 0.03736386250513008,
+              "reject": 0.17813813885406996,
+              "inspect": 0.6787918409934497,
+              "hold": 0.06697876065282622
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 1,
+          "input_tokens": 165,
+          "output_tokens": 0
+        }
+      },
+      "selected": "inspect",
+      "expected": "inspect",
+      "correct": true,
+      "seconds": 0.177449080045335,
+      "before": {
+        "observed_color": "unknown",
+        "damaged": false,
+        "bins": {
+          "red": 0,
+          "green": 0,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": false,
+        "disposition": null
+      },
+      "after": {
+        "observed_color": "blue",
+        "damaged": false,
+        "bins": {
+          "red": 0,
+          "green": 0,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": false,
+        "disposition": null
+      },
+      "event": "inspection revealed blue"
+    },
+    {
+      "step": 2,
+      "request": {
+        "state": {
+          "observed_color": "blue",
+          "damaged": false,
+          "bins": {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          "capacity_per_bin": 2
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose the next action for the current item. First reject damaged items, regardless of color. For an undamaged item, inspect if its observed color is unknown. Otherwise use the bin matching its color if that bin has a free slot. If the matching bin is full, hold the item. Never substitute another color bin. Inspection reveals color and keeps the item for another action.",
+            "criteria": {
+              "red": "Put this item into the red bin.",
+              "green": "Put this item into the green bin.",
+              "blue": "Put this item into the blue bin.",
+              "reject": "Send this damaged item to the reject tray.",
+              "inspect": "Inspect this item to reveal its uncertain color.",
+              "hold": "Hold this item because its matching bin is full."
+            }
+          }
+        }
+      },
+      "response": {
+        "model": "clm-latest",
+        "answers": {
+          "action": {
+            "type": "choice",
+            "choice": "inspect",
+            "confidence": 0.6868607981481398,
+            "probabilities": {
+              "red": 0.020927738443229257,
+              "green": 0.00627778859417651,
+              "blue": 0.030446137200904375,
+              "reject": 0.12207513624723638,
+              "inspect": 0.7390506651234499,
+              "hold": 0.08122253439100363
+            }
+          }
+        },
+        "usage": {
+          "billing_units": 1,
+          "input_tokens": 165,
+          "output_tokens": 0
+        }
+      },
+      "selected": "inspect",
+      "expected": "blue",
+      "correct": false,
+      "seconds": 0.17622436000965536,
+      "before": {
+        "observed_color": "blue",
+        "damaged": false,
+        "bins": {
+          "red": 0,
+          "green": 0,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": false,
+        "disposition": null
+      },
+      "after": {
+        "observed_color": "blue",
+        "damaged": false,
+        "bins": {
+          "red": 0,
+          "green": 0,
+          "blue": 0
+        },
+        "capacity_per_bin": 2,
+        "terminal": false,
+        "disposition": null
+      },
+      "event": "inspection revealed blue"
+    }
+  ],
+  "passed": false,
+  "terminal": false,
+  "budget_exhausted": true
+}

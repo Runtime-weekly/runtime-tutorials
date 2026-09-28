@@ -1,0 +1,40 @@
+{
+  "case": "next-step-05",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Goal: email the results. The recipient is unspecified, and no address can be inferred.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.95,
+        "probabilities": {
+          "B": 0.0,
+          "A": 0.03,
+          "C": 0.97
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 355,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.7479414340341464
+}

@@ -1,0 +1,62 @@
+{
+  "case": "evidence-04",
+  "order": "reversed",
+  "request": {
+    "state": "Evidence: Latency fell from 800 ms to 400 ms. Claim: Latency fell by 50 percent.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Contradicted by the evidence",
+          "B": "Supported by the evidence",
+          "A": "Not enough information"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.8807768881521602,
+        "probabilities": {
+          "C": 0.9205179254347735,
+          "B": 0.07066729058589916,
+          "A": 0.008814783979327476
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 51,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.3079034625757391,
+        "probabilities": {
+          "C": 0.5386023083838261,
+          "B": 0.10459300853933579,
+          "A": 0.35680468307683816
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.26611912896623835,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

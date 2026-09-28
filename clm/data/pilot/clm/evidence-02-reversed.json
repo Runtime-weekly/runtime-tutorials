@@ -1,0 +1,62 @@
+{
+  "case": "evidence-02",
+  "order": "reversed",
+  "request": {
+    "state": "Evidence: A used 4 GB; B used 6 GB. Claim: B used less memory.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Not enough information",
+          "B": "Contradicted by the evidence",
+          "A": "Supported by the evidence"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.8553066739394806,
+        "probabilities": {
+          "C": 0.050144030288146235,
+          "B": 0.9035377826263203,
+          "A": 0.04631818708553338
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 43,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.3148611615300609,
+        "probabilities": {
+          "C": 0.374680477307109,
+          "B": 0.5432407743533739,
+          "A": 0.08207874833951707
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.22113552800146863,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

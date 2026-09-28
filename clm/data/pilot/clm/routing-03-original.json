@@ -1,0 +1,62 @@
+{
+  "case": "routing-03",
+  "order": "original",
+  "request": {
+    "state": "I forgot my password and cannot sign in.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Account: login and identity",
+          "B": "Billing: charges and invoices",
+          "C": "Technical: broken product features"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.2980573512527602,
+        "probabilities": {
+          "A": 0.3930553583610503,
+          "B": 0.5320382341685068,
+          "C": 0.07490640747044292
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 33,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.4352809266349911,
+        "probabilities": {
+          "A": 0.0445332871278554,
+          "B": 0.6235206177566608,
+          "C": 0.3319460951154839
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.15871261904248968,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15148861952,
+  "cuda_peak_reserved_bytes": 15162408960
+}

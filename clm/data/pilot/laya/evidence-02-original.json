@@ -1,0 +1,53 @@
+{
+  "case": "evidence-02",
+  "order": "original",
+  "runtime": "laya",
+  "request": {
+    "state": "Evidence: A used 4 GB; B used 6 GB. Claim: B used less memory.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Supported by the evidence",
+          "B": "Contradicted by the evidence",
+          "C": "Not enough information"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 256,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "C",
+          "probabilities": {
+            "A": 0.3825,
+            "B": 0.1972,
+            "C": 0.4203
+          },
+          "confidence": 0.0424,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 58,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.25560888403560966
+}

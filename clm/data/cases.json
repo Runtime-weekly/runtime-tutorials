@@ -1,0 +1,410 @@
+[
+  {
+    "id": "routing-01",
+    "family": "routing",
+    "state": "The app works. My card was charged twice for the same invoice.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Billing: charges and invoices",
+          "B": "Technical: broken product features",
+          "C": "Account: login and identity"
+        }
+      }
+    },
+    "expected": "A"
+  },
+  {
+    "id": "routing-02",
+    "family": "routing",
+    "state": "I can sign in, but exporting a PDF crashes every time.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Technical: broken product features",
+          "B": "Account: login and identity",
+          "C": "Billing: charges and invoices"
+        }
+      }
+    },
+    "expected": "A"
+  },
+  {
+    "id": "routing-03",
+    "family": "routing",
+    "state": "I forgot my password and cannot sign in.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Account: login and identity",
+          "B": "Billing: charges and invoices",
+          "C": "Technical: broken product features"
+        }
+      }
+    },
+    "expected": "A"
+  },
+  {
+    "id": "routing-04",
+    "family": "routing",
+    "state": "My invoice is correct. The chart does not load after signing in.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Billing: charges and invoices",
+          "B": "Technical: broken product features",
+          "C": "Account: login and identity"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "routing-05",
+    "family": "routing",
+    "state": "I can log in. The login page displays the wrong company logo, but account access works.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Technical: broken product features",
+          "B": "Account: login and identity",
+          "C": "Billing: charges and invoices"
+        }
+      }
+    },
+    "expected": "A"
+  },
+  {
+    "id": "routing-06",
+    "family": "routing",
+    "state": "The payment succeeded. I lost my recovery codes and am locked out.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Account: login and identity",
+          "B": "Billing: charges and invoices",
+          "C": "Technical: broken product features"
+        }
+      }
+    },
+    "expected": "A"
+  },
+  {
+    "id": "routing-07",
+    "family": "routing",
+    "state": "The earlier crash is fixed. I now need a corrected tax invoice.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Billing: charges and invoices",
+          "B": "Technical: broken product features",
+          "C": "Account: login and identity"
+        }
+      }
+    },
+    "expected": "A"
+  },
+  {
+    "id": "routing-08",
+    "family": "routing",
+    "state": "I need my email address changed because I no longer control the old address.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Technical: broken product features",
+          "B": "Account: login and identity",
+          "C": "Billing: charges and invoices"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "evidence-01",
+    "family": "evidence",
+    "state": "Evidence: A passed 7 of 10 tests; B passed 8 of 10. Claim: B passed more tests.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Not enough information",
+          "B": "Supported by the evidence",
+          "C": "Contradicted by the evidence"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "evidence-02",
+    "family": "evidence",
+    "state": "Evidence: A used 4 GB; B used 6 GB. Claim: B used less memory.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Supported by the evidence",
+          "B": "Contradicted by the evidence",
+          "C": "Not enough information"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "evidence-03",
+    "family": "evidence",
+    "state": "Evidence: A passed 8 of 10 tests. Claim: A is better than B.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Contradicted by the evidence",
+          "B": "Not enough information",
+          "C": "Supported by the evidence"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "evidence-04",
+    "family": "evidence",
+    "state": "Evidence: Latency fell from 800 ms to 400 ms. Claim: Latency fell by 50 percent.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Not enough information",
+          "B": "Supported by the evidence",
+          "C": "Contradicted by the evidence"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "evidence-05",
+    "family": "evidence",
+    "state": "Evidence: Scores before training were 8/10; after training 6/10. Claim: Training improved this score.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Supported by the evidence",
+          "B": "Contradicted by the evidence",
+          "C": "Not enough information"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "evidence-06",
+    "family": "evidence",
+    "state": "Evidence: A ran locally and B ran remotely. Both returned the right answer. Claim: A is faster.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Contradicted by the evidence",
+          "B": "Not enough information",
+          "C": "Supported by the evidence"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "evidence-07",
+    "family": "evidence",
+    "state": "Evidence: The test used four easy questions, all answered correctly. Claim: This proves perfect accuracy on all questions.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Not enough information",
+          "B": "Supported by the evidence",
+          "C": "Contradicted by the evidence"
+        }
+      }
+    },
+    "expected": "A"
+  },
+  {
+    "id": "evidence-08",
+    "family": "evidence",
+    "state": "Evidence: Run one took 0.5 seconds and run two took 700 milliseconds. Claim: Run two was faster.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Supported by the evidence",
+          "B": "Contradicted by the evidence",
+          "C": "Not enough information"
+        }
+      }
+    },
+    "expected": "B"
+  },
+  {
+    "id": "next-step-01",
+    "family": "next-step",
+    "state": "Goal: inspect tests. The user approved running pytest in this sandbox. pytest is installed. No files need changing.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Ask for the missing information",
+          "B": "Stop; the evidence says not to proceed",
+          "C": "Run the approved check"
+        }
+      }
+    },
+    "expected": "C"
+  },
+  {
+    "id": "next-step-02",
+    "family": "next-step",
+    "state": "Goal: compare two reports. Only the first report is attached. No source for the second is given.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    },
+    "expected": "C"
+  },
+  {
+    "id": "next-step-03",
+    "family": "next-step",
+    "state": "Goal: publish the draft. The owner explicitly said do not publish this version.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Run the approved check",
+          "B": "Ask for the missing information",
+          "C": "Stop; the evidence says not to proceed"
+        }
+      }
+    },
+    "expected": "C"
+  },
+  {
+    "id": "next-step-04",
+    "family": "next-step",
+    "state": "Goal: inspect a local image. The image path exists, and the user asked for visual review. The viewer is available.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Ask for the missing information",
+          "B": "Stop; the evidence says not to proceed",
+          "C": "Run the approved check"
+        }
+      }
+    },
+    "expected": "C"
+  },
+  {
+    "id": "next-step-05",
+    "family": "next-step",
+    "state": "Goal: email the results. The recipient is unspecified, and no address can be inferred.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    },
+    "expected": "C"
+  },
+  {
+    "id": "next-step-06",
+    "family": "next-step",
+    "state": "Goal: show the final result. The purported result file fails its checksum and is marked corrupted.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Run the approved check",
+          "B": "Ask for the missing information",
+          "C": "Stop; the evidence says not to proceed"
+        }
+      }
+    },
+    "expected": "C"
+  },
+  {
+    "id": "next-step-07",
+    "family": "next-step",
+    "state": "Goal: rerun a failed test. The dependency is now repaired, the sandbox is available, and rerunning was approved.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Ask for the missing information",
+          "B": "Stop; the evidence says not to proceed",
+          "C": "Run the approved check"
+        }
+      }
+    },
+    "expected": "C"
+  },
+  {
+    "id": "next-step-08",
+    "family": "next-step",
+    "state": "Goal: choose the newest measurement. Two files have identical names but no timestamps or version identifiers.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    },
+    "expected": "C"
+  }
+]

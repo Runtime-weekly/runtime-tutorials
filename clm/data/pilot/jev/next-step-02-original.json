@@ -1,0 +1,40 @@
+{
+  "case": "next-step-02",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Goal: compare two reports. Only the first report is attached. No source for the second is given.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.94,
+        "probabilities": {
+          "B": 0.0,
+          "A": 0.04,
+          "C": 0.96
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 358,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.8251209660083987
+}

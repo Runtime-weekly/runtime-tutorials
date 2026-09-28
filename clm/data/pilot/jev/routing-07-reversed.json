@@ -1,0 +1,40 @@
+{
+  "case": "routing-07",
+  "order": "reversed",
+  "runtime": "jev",
+  "request": {
+    "state": "The earlier crash is fixed. I now need a corrected tax invoice.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Account: login and identity",
+          "B": "Technical: broken product features",
+          "A": "Billing: charges and invoices"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.99,
+        "probabilities": {
+          "A": 1.0,
+          "B": 0.0,
+          "C": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 347,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.28135882603237405
+}

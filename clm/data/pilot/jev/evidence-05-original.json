@@ -1,0 +1,40 @@
+{
+  "case": "evidence-05",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Evidence: Scores before training were 8/10; after training 6/10. Claim: Training improved this score.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Supported by the evidence",
+          "B": "Contradicted by the evidence",
+          "C": "Not enough information"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.98,
+        "probabilities": {
+          "A": 0.0,
+          "B": 0.99,
+          "C": 0.01
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 359,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.5943452630308457
+}

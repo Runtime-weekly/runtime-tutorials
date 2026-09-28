@@ -1,0 +1,53 @@
+{
+  "case": "next-step-02",
+  "order": "original",
+  "runtime": "laya",
+  "request": {
+    "state": "Goal: compare two reports. Only the first report is attached. No source for the second is given.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Stop; the evidence says not to proceed",
+          "B": "Run the approved check",
+          "C": "Ask for the missing information"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 255,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "C",
+          "probabilities": {
+            "A": 0.3481,
+            "B": 0.2755,
+            "C": 0.3764
+          },
+          "confidence": 0.0076,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 66,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.2551206090138294
+}

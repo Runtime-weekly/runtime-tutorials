@@ -1,0 +1,62 @@
+{
+  "case": "evidence-06",
+  "order": "original",
+  "request": {
+    "state": "Evidence: A ran locally and B ran remotely. Both returned the right answer. Claim: A is faster.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Contradicted by the evidence",
+          "B": "Not enough information",
+          "C": "Supported by the evidence"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.6395580097727621,
+        "probabilities": {
+          "A": 0.7597053398485081,
+          "B": 0.0331716476523993,
+          "C": 0.20712301249909254
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 44,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.437699027033418,
+        "probabilities": {
+          "A": 0.6251326846889453,
+          "B": 0.30321603890283577,
+          "C": 0.07165127640821892
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.16617665602825582,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

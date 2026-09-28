@@ -1,0 +1,62 @@
+{
+  "case": "routing-06",
+  "order": "original",
+  "request": {
+    "state": "The payment succeeded. I lost my recovery codes and am locked out.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Account: login and identity",
+          "B": "Billing: charges and invoices",
+          "C": "Technical: broken product features"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.7106012336030519,
+        "probabilities": {
+          "A": 0.13436482933049973,
+          "B": 0.8070674890687013,
+          "C": 0.05856768160079899
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 38,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.3529431317299896,
+        "probabilities": {
+          "A": 0.027789912110382738,
+          "B": 0.5686287544866597,
+          "C": 0.4035813334029576
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.15994977997615933,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15149396480,
+  "cuda_peak_reserved_bytes": 15162408960
+}

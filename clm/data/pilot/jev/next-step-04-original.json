@@ -1,0 +1,40 @@
+{
+  "case": "next-step-04",
+  "order": "original",
+  "runtime": "jev",
+  "request": {
+    "state": "Goal: inspect a local image. The image path exists, and the user asked for visual review. The viewer is available.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Ask for the missing information",
+          "B": "Stop; the evidence says not to proceed",
+          "C": "Run the approved check"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.85,
+        "probabilities": {
+          "B": 0.0,
+          "C": 0.9,
+          "A": 0.1
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 362,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 1.8971706939628348
+}

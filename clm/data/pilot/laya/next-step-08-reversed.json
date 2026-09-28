@@ -1,0 +1,53 @@
+{
+  "case": "next-step-08",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "Goal: choose the newest measurement. Two files have identical names but no timestamps or version identifiers.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "C": "Ask for the missing information",
+          "B": "Run the approved check",
+          "A": "Stop; the evidence says not to proceed"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 272,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "B",
+          "probabilities": {
+            "C": 0.3288,
+            "B": 0.3423,
+            "A": 0.3289
+          },
+          "confidence": 0.0002,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 66,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.27245279599446803
+}

@@ -1,0 +1,53 @@
+{
+  "case": "next-step-06",
+  "order": "original",
+  "runtime": "laya",
+  "request": {
+    "state": "Goal: show the final result. The purported result file fails its checksum and is marked corrupted.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Run the approved check",
+          "B": "Ask for the missing information",
+          "C": "Stop; the evidence says not to proceed"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 288,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "A": 0.3799,
+            "B": 0.302,
+            "C": 0.3182
+          },
+          "confidence": 0.0045,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 65,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.28755462903063744
+}

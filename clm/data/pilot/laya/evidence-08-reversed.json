@@ -1,0 +1,53 @@
+{
+  "case": "evidence-08",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "Evidence: Run one took 0.5 seconds and run two took 700 milliseconds. Claim: Run two was faster.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Not enough information",
+          "B": "Contradicted by the evidence",
+          "A": "Supported by the evidence"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 234,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "C": 0.2284,
+            "B": 0.261,
+            "A": 0.5106
+          },
+          "confidence": 0.0615,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 62,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.23444528097752482
+}

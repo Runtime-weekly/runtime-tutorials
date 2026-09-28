@@ -1,0 +1,40 @@
+{
+  "case": "evidence-03",
+  "order": "reversed",
+  "runtime": "jev",
+  "request": {
+    "state": "Evidence: A passed 8 of 10 tests. Claim: A is better than B.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "C": "Supported by the evidence",
+          "B": "Not enough information",
+          "A": "Contradicted by the evidence"
+        }
+      }
+    },
+    "model": "jev-1.13.0"
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 1.0,
+        "probabilities": {
+          "B": 1.0,
+          "A": 0.0,
+          "C": 0.0
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 352,
+      "output_tokens": 38
+    }
+  },
+  "seconds": 0.26008101302431896
+}

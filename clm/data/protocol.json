@@ -1,0 +1,29 @@
+{
+  "status": "frozen_before_inference",
+  "cases": 24,
+  "families": 3,
+  "orders": [
+    "original",
+    "reversed"
+  ],
+  "comparison": [
+    "CLM released heads + Qwen3-8B BF16",
+    "Jev 1.13.0 hosted",
+    "Laya typed-decisions CPU"
+  ],
+  "ablation": "same Qwen3-8B embeddings without learned CLM heads; not a generative Qwen baseline",
+  "metrics": [
+    "exact label accuracy",
+    "per-family accuracy",
+    "order consistency",
+    "request wall time with runtime boundaries"
+  ],
+  "limits": [
+    "Small hand-authored diagnostic suite, not a public benchmark",
+    "No model-specific prompt tuning after results",
+    "Laya is an unadapted released checkpoint",
+    "HF last-token encoder adapter is not a vLLM speed reproduction",
+    "No general speed or superiority claims"
+  ],
+  "cases_sha256": "34479f2a6a1f8a9f1510144ac4e8466a4063fbef7e7f5402947a82607440a088"
+}

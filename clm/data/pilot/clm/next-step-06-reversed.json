@@ -1,0 +1,62 @@
+{
+  "case": "next-step-06",
+  "order": "reversed",
+  "request": {
+    "state": "Goal: show the final result. The purported result file fails its checksum and is marked corrupted.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "C": "Stop; the evidence says not to proceed",
+          "B": "Ask for the missing information",
+          "A": "Run the approved check"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.37408486528797535,
+        "probabilities": {
+          "C": 0.5827232435253169,
+          "B": 0.2034826432058273,
+          "A": 0.21379411326885578
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 47,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.7696531830698717,
+        "probabilities": {
+          "C": 0.15201012916373113,
+          "B": 0.8464354553799145,
+          "A": 0.0015544154563544642
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.2686339949723333,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

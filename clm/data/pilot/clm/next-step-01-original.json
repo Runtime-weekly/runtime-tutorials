@@ -1,0 +1,62 @@
+{
+  "case": "next-step-01",
+  "order": "original",
+  "request": {
+    "state": "Goal: inspect tests. The user approved running pytest in this sandbox. pytest is installed. No files need changing.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "What is the next step justified by the stated facts?",
+        "criteria": {
+          "A": "Ask for the missing information",
+          "B": "Stop; the evidence says not to proceed",
+          "C": "Run the approved check"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "C",
+        "confidence": 0.9259390594058831,
+        "probabilities": {
+          "A": 0.00405676211028489,
+          "B": 0.04531719828579306,
+          "C": 0.950626039603922
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 51,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.8944059090310733,
+        "probabilities": {
+          "A": 0.9296039393540488,
+          "B": 0.06636256215180866,
+          "C": 0.004033498494142489
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.166085152013693,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15150466560,
+  "cuda_peak_reserved_bytes": 15164506112
+}

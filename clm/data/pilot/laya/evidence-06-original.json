@@ -1,0 +1,53 @@
+{
+  "case": "evidence-06",
+  "order": "original",
+  "runtime": "laya",
+  "request": {
+    "state": "Evidence: A ran locally and B ran remotely. Both returned the right answer. Claim: A is faster.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Judge the claim using only the supplied evidence.",
+        "criteria": {
+          "A": "Contradicted by the evidence",
+          "B": "Not enough information",
+          "C": "Supported by the evidence"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 237,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "B",
+          "probabilities": {
+            "A": 0.1726,
+            "B": 0.5355,
+            "C": 0.2919
+          },
+          "confidence": 0.0924,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 61,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.23736323596676812
+}

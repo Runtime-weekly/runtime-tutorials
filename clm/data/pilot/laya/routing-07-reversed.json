@@ -1,0 +1,53 @@
+{
+  "case": "routing-07",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "The earlier crash is fixed. I now need a corrected tax invoice.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Account: login and identity",
+          "B": "Technical: broken product features",
+          "A": "Billing: charges and invoices"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 254,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "C": 0.1989,
+            "B": 0.2532,
+            "A": 0.5479
+          },
+          "confidence": 0.091,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 56,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.2544285569456406
+}

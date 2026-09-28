@@ -1,0 +1,53 @@
+{
+  "case": "routing-01",
+  "order": "reversed",
+  "runtime": "laya",
+  "request": {
+    "state": "The app works. My card was charged twice for the same invoice.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "C": "Account: login and identity",
+          "B": "Technical: broken product features",
+          "A": "Billing: charges and invoices"
+        }
+      }
+    }
+  },
+  "response": {
+    "engine": "Laya 0.3.4",
+    "device": "CPU",
+    "elapsed_ms": 263,
+    "result": {
+      "model": "laya-rl-agent",
+      "answers": {
+        "decision": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "C": 0.1735,
+            "B": 0.2341,
+            "A": 0.5924
+          },
+          "confidence": 0.1316,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 56,
+        "output_tokens": 0
+      },
+      "routing": {
+        "model": "typed-decisions",
+        "reason": "explicit model='typed-decisions'",
+        "detection": null,
+        "workflow": null
+      }
+    }
+  },
+  "seconds": 0.26291415200103074
+}

@@ -1,0 +1,62 @@
+{
+  "case": "routing-04",
+  "order": "original",
+  "request": {
+    "state": "My invoice is correct. The chart does not load after signing in.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which team should handle the current unresolved issue?",
+        "criteria": {
+          "A": "Billing: charges and invoices",
+          "B": "Technical: broken product features",
+          "C": "Account: login and identity"
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "clm-latest",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.987179682910151,
+        "probabilities": {
+          "A": 0.9914531219401007,
+          "B": 0.00562160747613485,
+          "C": 0.002925270583764486
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 38,
+      "output_tokens": 0
+    }
+  },
+  "raw_embedding_ablation": {
+    "model": "clm-raw",
+    "answers": {
+      "decision": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.5205258675883861,
+        "probabilities": {
+          "A": 0.6803505783922574,
+          "B": 0.2958295709675837,
+          "C": 0.023819850640158954
+        }
+      }
+    },
+    "usage": {
+      "billing_units": 1,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "seconds": 0.15851412201300263,
+  "timing_scope": "fresh text embedding cache per request; loaded model; in-process",
+  "cuda_peak_allocated_bytes": 15148861952,
+  "cuda_peak_reserved_bytes": 15162408960
+}

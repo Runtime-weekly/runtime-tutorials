@@ -1,0 +1,1647 @@
+{
+  "route": "narrowing",
+  "model": "rule",
+  "steps": [
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 1,
+          "progress": 0,
+          "speed": 1,
+          "ticks": 0,
+          "stalled": 0,
+          "status": "active",
+          "event": "initial"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "accelerate"
+          }
+        }
+      },
+      "action": "accelerate",
+      "seconds": 0.005058898008428514,
+      "before": {
+        "lane": 1,
+        "progress": 0,
+        "speed": 1,
+        "ticks": 0,
+        "stalled": 0,
+        "status": "active",
+        "event": "initial"
+      },
+      "after": {
+        "lane": 1,
+        "progress": 2,
+        "speed": 2,
+        "ticks": 1,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 1,
+          "progress": 2,
+          "speed": 2,
+          "ticks": 1,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "left"
+          }
+        }
+      },
+      "action": "left",
+      "seconds": 0.002087667991872877,
+      "before": {
+        "lane": 1,
+        "progress": 2,
+        "speed": 2,
+        "ticks": 1,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 0,
+        "progress": 4,
+        "speed": 2,
+        "ticks": 2,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 0,
+          "progress": 4,
+          "speed": 2,
+          "ticks": 2,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "accelerate"
+          }
+        }
+      },
+      "action": "accelerate",
+      "seconds": 0.0011083469726145267,
+      "before": {
+        "lane": 0,
+        "progress": 4,
+        "speed": 2,
+        "ticks": 2,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 0,
+        "progress": 6,
+        "speed": 2,
+        "ticks": 3,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 0,
+          "progress": 6,
+          "speed": 2,
+          "ticks": 3,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "accelerate"
+          }
+        }
+      },
+      "action": "accelerate",
+      "seconds": 0.0007079109782353044,
+      "before": {
+        "lane": 0,
+        "progress": 6,
+        "speed": 2,
+        "ticks": 3,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 0,
+        "progress": 8,
+        "speed": 2,
+        "ticks": 4,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 0,
+          "progress": 8,
+          "speed": 2,
+          "ticks": 4,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "right"
+          }
+        }
+      },
+      "action": "right",
+      "seconds": 0.0003615560126490891,
+      "before": {
+        "lane": 0,
+        "progress": 8,
+        "speed": 2,
+        "ticks": 4,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 1,
+        "progress": 10,
+        "speed": 2,
+        "ticks": 5,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 1,
+          "progress": 10,
+          "speed": 2,
+          "ticks": 5,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "left"
+          }
+        }
+      },
+      "action": "left",
+      "seconds": 0.0001786740031093359,
+      "before": {
+        "lane": 1,
+        "progress": 10,
+        "speed": 2,
+        "ticks": 5,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 0,
+        "progress": 12,
+        "speed": 2,
+        "ticks": 6,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 0,
+          "progress": 12,
+          "speed": 2,
+          "ticks": 6,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "right"
+          }
+        }
+      },
+      "action": "right",
+      "seconds": 3.134401049464941e-05,
+      "before": {
+        "lane": 0,
+        "progress": 12,
+        "speed": 2,
+        "ticks": 6,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 1,
+        "progress": 14,
+        "speed": 2,
+        "ticks": 7,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 1,
+          "progress": 14,
+          "speed": 2,
+          "ticks": 7,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "right"
+          }
+        }
+      },
+      "action": "right",
+      "seconds": 2.6495952624827623e-05,
+      "before": {
+        "lane": 1,
+        "progress": 14,
+        "speed": 2,
+        "ticks": 7,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 2,
+        "progress": 16,
+        "speed": 2,
+        "ticks": 8,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 2,
+          "progress": 16,
+          "speed": 2,
+          "ticks": 8,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "left"
+          }
+        }
+      },
+      "action": "left",
+      "seconds": 9.568000677973032e-06,
+      "before": {
+        "lane": 2,
+        "progress": 16,
+        "speed": 2,
+        "ticks": 8,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 1,
+        "progress": 18,
+        "speed": 2,
+        "ticks": 9,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      }
+    },
+    {
+      "request": {
+        "state": {
+          "route": "narrowing",
+          "road": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "obstacles": [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ]
+          ],
+          "lane": 1,
+          "progress": 18,
+          "speed": 2,
+          "ticks": 9,
+          "stalled": 0,
+          "status": "active",
+          "event": "moved"
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Reach progress row 20 safely within 40 actions. Lanes 0,1,2 run left to right. Obstacles are [lane,row]. Road lists permitted lanes at each row starting at 0. Lane changes happen before forward movement and must also be safe at the current row. Check every crossed row: speed 2 cannot jump an obstacle. Avoid collisions and off-road cells. Brake can stop you; accelerate to resume. Choose the next single action, using the complete road geometry. Prefer a short safe route.",
+            "criteria": {
+              "left": "Shift one lane left, then move at the resulting speed.",
+              "right": "Shift one lane right, then move at the resulting speed.",
+              "accelerate": "Increase speed by one (maximum two), then move.",
+              "brake": "Decrease speed by one (minimum zero), then move.",
+              "hold": "Keep lane and speed, then move."
+            }
+          }
+        }
+      },
+      "response": {
+        "answers": {
+          "action": {
+            "choice": "right"
+          }
+        }
+      },
+      "action": "right",
+      "seconds": 3.168010152876377e-06,
+      "before": {
+        "lane": 1,
+        "progress": 18,
+        "speed": 2,
+        "ticks": 9,
+        "stalled": 0,
+        "status": "active",
+        "event": "moved"
+      },
+      "after": {
+        "lane": 2,
+        "progress": 20,
+        "speed": 2,
+        "ticks": 10,
+        "stalled": 0,
+        "status": "finished",
+        "event": "finish"
+      }
+    }
+  ],
+  "final": {
+    "lane": 2,
+    "progress": 20,
+    "speed": 2,
+    "ticks": 10,
+    "stalled": 0,
+    "status": "finished",
+    "event": "finish"
+  },
+  "passed": true,
+  "protocol_sha256": "789e511282127b11349380dc54750800a7c2c6b52a5ee8d2c9fef2b91305f967"
+}
