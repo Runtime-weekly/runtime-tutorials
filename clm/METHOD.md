@@ -47,6 +47,21 @@ finish or the 40-action limit. All three models finish 0/3; the programmed
 breadth-first planner finishes 3/3. The planner searches transitions explicitly;
 it is not another learned model. This is discrete control, not real driving.
 
+## Versioned code-only revision after feedback
+
+The original driving results remain in `data/driving/rule/`; its shortest-path
+planner uses the fixed left/right/accelerate/brake/hold order to break ties.
+It can therefore change lanes when an equally short safe route would stay put.
+
+After feedback on the demonstration, a separate **code v2 lane-keeping planner**
+was added. It optimizes safe completion first by fewest steps, then by fewest
+lane changes; a fixed hold-first action order breaks remaining ties. This is a
+post-feedback controller revision, not the original frozen comparison. Its
+records are separate in `data/driving/rule-v2/`. All CLM, Jev, Laya and original
+rule traces are retained unchanged. No neural model was rerun for this revision.
+Both code planners have privileged access to the exact simulator transition
+rules. The new preference is explicit program logic, not learned driving skill.
+
 ## Timing and limits
 
 `seconds` records wall time around the decision call, before simulator execution.

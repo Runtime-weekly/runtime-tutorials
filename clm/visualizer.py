@@ -33,13 +33,14 @@ def build():
 <script id="records" type="application/json">PAYLOAD</script>
 <script>
 const all=JSON.parse(document.getElementById('records').textContent),get=id=>document.getElementById(id);let index=0;
-function fill(id,values){get(id).replaceChildren(...values.map(v=>{let o=document.createElement('option');o.value=v;o.textContent=v;return o}))}
+function modelLabel(v){return v==='rule-v2'?'Code v2: lane-keeping planner':v==='rule'?(get('group').value==='driving'?'Code original: shortest-path planner':'Code: sorting rules'):v}
+function fill(id,values){get(id).replaceChildren(...values.map(v=>{let o=document.createElement('option');o.value=v;o.textContent=id==='model'?modelLabel(v):v;return o}))}
 function models(){fill('model',[...new Set(all.filter(r=>r.group===get('group').value).map(r=>r.model))]);cases()}
 function cases(){fill('case',all.filter(r=>r.group===get('group').value&&r.model===get('model').value).map(r=>r.name));index=0;draw()}
 function current(){return all.find(r=>r.group===get('group').value&&r.model===get('model').value&&r.name===get('case').value)}
 function show(id,obj){get(id).textContent=typeof obj==='string'?obj:JSON.stringify(obj,null,2)}
 function draw(){let r=current();if(!r)return;let d=r.data,steps=d.steps||[d];index=Math.max(0,Math.min(index,steps.length-1));let s=steps[index];get('slider').max=steps.length-1;get('slider').value=index;
-show('summary',r.model+' / '+r.name+(r.group==='pilot'?'':(' / '+(d.passed?'passed':'not passed'))));
+show('summary',modelLabel(r.model)+' / '+r.name+(r.group==='pilot'?'':(' / '+(d.passed?'passed':'not passed'))));
 show('step',`${index+1} of ${steps.length} recorded steps`);show('request',s.request||{});
 show('outcome',r.group==='pilot'?{expected:r.expected,response:s.response,seconds:s.seconds,raw_embedding_ablation:s.raw_embedding_ablation}: {selected:s.selected||s.action,expected:s.expected,correct:s.correct,before:s.before,after:s.after,event:s.event,seconds:s.seconds,response:s.response});show('raw',d);
 let response=(s.response||{}),answers=(response.result||response).answers||{},answer=answers.action||answers.decision||{};

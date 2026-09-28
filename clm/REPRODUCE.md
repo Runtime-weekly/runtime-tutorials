@@ -40,6 +40,29 @@ Such changes are new experiments and must not be represented as the original
 model results. `replay.py` intentionally rejects records inconsistent with the
 included environment. The tools only read the saved data and print results.
 
+## Additional code-v2 driving baseline
+
+```sh
+python3 -B -m unittest -v test_baseline_v2
+python3 -B verify_baseline_v2.py
+python3 -B visualizer.py
+```
+
+Six controller tests include empty-road lane keeping, a changed obstacle,
+an impossible route and an independently enumerated short-horizon optimum.
+The verifier recomputes all 30 code-v2 decisions against the unchanged simulator
+and compares every saved transition. Expected: all three routes finish in 10
+steps, with 1, 3 and 2 lane changes for straight, slalom and narrowing.
+Select **Code v2: lane-keeping planner** in the driving viewer; **Code original:
+shortest-path planner** remains available alongside it. The original
+`replay.py` still checks its original 103 transitions and model results.
+
+`baseline_v2.py` adapts only the original controller's import to the adjacent
+public simulator module. The trace provenance hashes identify the historical
+measured controller/runner, not this portable import adaptation. Saved timings
+are CPU planning-call wall times, excluding simulator execution; running this
+verifier does not replace them. No model calls or data overwrites occur.
+
 ## Fresh model inference is a separate project
 
 This export does not provide a newly qualified model installation recipe or

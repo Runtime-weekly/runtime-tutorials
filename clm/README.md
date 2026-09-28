@@ -27,6 +27,13 @@ The visualizer is a saved-data inspector, not a chat interface or live model ser
 
 ## Read the results narrowly
 
+**Code baseline revision:** the driving viewer includes both **Code original:
+shortest-path planner** and **Code v2: lane-keeping planner**. The latter was
+added after feedback, prioritizing fewest safe steps and then fewest lane
+changes. It is a new deterministic controller run, not a neural-model rerun.
+Original traces remain unchanged. See [METHOD.md](METHOD.md) for the objective
+and privileged access to simulator rules.
+
 In the original-order pilot, CLM scored 11/24, hosted Jev 24/24 and Laya typed-decisions 12/24. The same 24 cases in reverse option insertion order produced 11/24, 24/24 and 11/24. These are authored diagnostics, not a general leaderboard. The no-head Qwen embedding ablation scored 8/24; it is not a native generative Qwen baseline.
 
 Driving uses supplied numeric road geometry, not camera images. A deterministic shortest-safe-route planner completed the three routes; none of the three tested model configurations completed them. The planner knows the simulator's transition rules, so it is not an equal-information learned baseline. Model outcomes do not establish general driving ability.
