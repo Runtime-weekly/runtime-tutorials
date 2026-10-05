@@ -1,0 +1,458 @@
+[
+  {
+    "arm": "s1",
+    "choice": "technical",
+    "id": "mechanism-02-R1",
+    "probabilities": [
+      8.352283657586668e-06,
+      0.9933119416236877,
+      2.6690910090110265e-05,
+      0.0066530173644423485
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9933119416236877,
+    "seconds": 0.6034393300069496,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "clarify",
+    "id": "mechanism-02-R2",
+    "probabilities": [
+      0.00032263537286780775,
+      7.657952494355413e-08,
+      2.3150765571244847e-07,
+      0.9996770620346069
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9996770620346069,
+    "seconds": 0.6095281289890409,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "retry",
+    "id": "mechanism-02-A1",
+    "probabilities": [
+      3.123712488672936e-08,
+      0.9999996423721313,
+      1.6137788350079063e-07,
+      1.0851625376062657e-07
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999996423721313,
+    "seconds": 0.6469701899914071,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "retry",
+    "id": "mechanism-02-A2",
+    "probabilities": [
+      0.028029238805174828,
+      0.9693641662597656,
+      0.002051990246400237,
+      0.0005545049207285047
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9693641662597656,
+    "seconds": 0.6482266990933567,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "billing",
+    "id": "mechanism-05-R1",
+    "probabilities": [
+      0.9900311231613159,
+      7.797801117703784e-06,
+      0.0002860447275452316,
+      0.009674964472651482
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9900311231613159,
+    "seconds": 0.6109392630169168,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "technical",
+    "id": "mechanism-05-R2",
+    "probabilities": [
+      0.0001965634000953287,
+      0.9350684881210327,
+      4.422779966262169e-05,
+      0.0646907240152359
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9350684881210327,
+    "seconds": 0.6066528839292005,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "clarify",
+    "id": "mechanism-05-A1",
+    "probabilities": [
+      1.5264135981851723e-06,
+      5.272308044368401e-05,
+      0.0009685027180239558,
+      0.9989771842956543
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9989771842956543,
+    "seconds": 0.648649470997043,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "escalate",
+    "id": "mechanism-05-A2",
+    "probabilities": [
+      2.2054544857041947e-08,
+      1.5003126463852823e-05,
+      0.9999849796295166,
+      2.4490926620046594e-08
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999849796295166,
+    "seconds": 0.6534113590605557,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "technical",
+    "id": "mechanism-08-R1",
+    "probabilities": [
+      3.1591489459970035e-06,
+      0.993559718132019,
+      0.00010523626406211406,
+      0.006331856362521648
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.993559718132019,
+    "seconds": 0.6135852100560442,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "security",
+    "id": "mechanism-08-R2",
+    "probabilities": [
+      1.0994779309214664e-08,
+      1.5882198567851447e-05,
+      0.9999793767929077,
+      4.739923042507144e-06
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999793767929077,
+    "seconds": 0.6081273129675537,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "escalate",
+    "id": "mechanism-08-A1",
+    "probabilities": [
+      0.00865156576037407,
+      0.000917416880838573,
+      0.9904196858406067,
+      1.1279475074843504e-05
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9904196858406067,
+    "seconds": 0.6514807159546763,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "collect",
+    "id": "mechanism-08-A2",
+    "probabilities": [
+      0.997818112373352,
+      0.002144966507330537,
+      2.211722676292993e-05,
+      1.4799209566263016e-05
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.997818112373352,
+    "seconds": 0.6551626559812576,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "technical",
+    "id": "mechanism-14-R1",
+    "probabilities": [
+      8.654068551550154e-06,
+      0.9956770539283752,
+      5.994478124193847e-05,
+      0.004254351370036602
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9956770539283752,
+    "seconds": 0.6354128710227087,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "clarify",
+    "id": "mechanism-14-R2",
+    "probabilities": [
+      0.00014624498726334423,
+      2.616381244990862e-08,
+      2.0104332634218736e-06,
+      0.9998517036437988
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9998517036437988,
+    "seconds": 0.6370884079951793,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "retry",
+    "id": "mechanism-14-A1",
+    "probabilities": [
+      1.5110678930341237e-08,
+      0.9999998807907104,
+      5.9578493250000975e-08,
+      2.4056921787973806e-08
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999998807907104,
+    "seconds": 0.8069341849768534,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "collect",
+    "id": "mechanism-14-A2",
+    "probabilities": [
+      0.6652225255966187,
+      0.33235684037208557,
+      0.002047822345048189,
+      0.0003727336588781327
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.6652225255966187,
+    "seconds": 0.7085030709858984,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "billing",
+    "id": "mechanism-17-R1",
+    "probabilities": [
+      0.9932202100753784,
+      5.146356215846026e-06,
+      0.0008326030219905078,
+      0.005942046642303467
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9932202100753784,
+    "seconds": 0.6457375349709764,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "technical",
+    "id": "mechanism-17-R2",
+    "probabilities": [
+      0.0001665740564931184,
+      0.9167224168777466,
+      0.0001921020302688703,
+      0.08291886001825333
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9167224168777466,
+    "seconds": 0.646173060988076,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "clarify",
+    "id": "mechanism-17-A1",
+    "probabilities": [
+      1.2369810065138154e-06,
+      2.657221784829744e-06,
+      9.174666047329083e-05,
+      0.9999043941497803
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999043941497803,
+    "seconds": 0.7077989348908886,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "escalate",
+    "id": "mechanism-17-A2",
+    "probabilities": [
+      8.76086136969434e-09,
+      2.6597151645546546e-06,
+      0.9999973773956299,
+      6.687820963691138e-09
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999973773956299,
+    "seconds": 0.7094308879459277,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "technical",
+    "id": "mechanism-20-R1",
+    "probabilities": [
+      1.7934072502612253e-06,
+      0.9968706965446472,
+      7.093357271514833e-05,
+      0.003056540619581938
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9968706965446472,
+    "seconds": 0.6461597800953314,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "security",
+    "id": "mechanism-20-R2",
+    "probabilities": [
+      5.484145138012764e-09,
+      1.0774891961773392e-05,
+      0.9999881982803345,
+      1.061052898876369e-06
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999881982803345,
+    "seconds": 0.6452707949792966,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "collect",
+    "id": "mechanism-20-A1",
+    "probabilities": [
+      0.9999945163726807,
+      6.934669727343135e-07,
+      4.765027370012831e-06,
+      8.859272426775533e-09
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.9999945163726807,
+    "seconds": 0.7112264420138672,
+    "split": "dev",
+    "status": "ok"
+  },
+  {
+    "arm": "s1",
+    "choice": "collect",
+    "id": "mechanism-20-A2",
+    "probabilities": [
+      0.999995231628418,
+      3.595126145228278e-06,
+      1.2223555359014426e-06,
+      3.152536720563148e-08
+    ],
+    "raw_response": {
+      "num_model_requests": 1,
+      "thinking": {}
+    },
+    "score": 0.999995231628418,
+    "seconds": 0.7150395849021152,
+    "split": "dev",
+    "status": "ok"
+  }
+]

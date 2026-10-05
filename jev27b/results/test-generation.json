@@ -1,0 +1,2018 @@
+[
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-01-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.288877004990354,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-01-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.289362643030472,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-01-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.335993121028878,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-01-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5806213379837573,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-03-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3175870400154963,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-03-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.286855914979242,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-03-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3297693870263174,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-03-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3279202069388703,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-04-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2908845560159534,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-04-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2894516550004482,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-04-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3320172019302845,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-04-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5774499520193785,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-06-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.287983314949088,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-06-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.285973847960122,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-06-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3384574269875884,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-06-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.32896803796757,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-07-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.536808390985243,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-07-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.29006103600841,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-07-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3598234991077334,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-07-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3338837979827076,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-09-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.537318196031265,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-09-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2907884179148823,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-09-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3335398769704625,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-09-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3301863910164684,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-10-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5385234399000183,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-10-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.285185869084671,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-10-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.579881667974405,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-10-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.329338739044033,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-11-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.286926466971636,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-11-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.301620226004161,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-11-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.583542568027042,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-11-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6033073500730097,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-12-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2829124859999865,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-12-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5781276000197977,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-12-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.331056757015176,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-12-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.336885105003603,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-13-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3341022370150313,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-13-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3282589899608865,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-13-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3579630960011855,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-13-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.605388851952739,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-15-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3335773228900507,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-15-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3280018239747733,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-15-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3528307860251516,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-15-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3578268489800394,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-16-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.331321557983756,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-16-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.370098337996751,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-16-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.35598036297597,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-16-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.603739019948989,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-18-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.330801561009139,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-18-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.326304800924845,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-18-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.354551059077494,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-18-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3538763200631365,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-19-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5816013559233397,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-19-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.325871370965615,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-19-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3532305740518495,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-19-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3509405829245225,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-21-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.58621583704371,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-21-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.333620956982486,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-21-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.386315464042127,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-21-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3522830039728433,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-22-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.578183694044128,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-22-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3286023139953613,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-22-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3551511829718947,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-22-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.351548998034559,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-23-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.333532609976828,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-23-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.336147040943615,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-23-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.599653654033318,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-23-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.601803798112087,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-24-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3248138680355623,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-24-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5911234189989045,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-24-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.356716627953574,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-24-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.386928312946111,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-11-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.279788158950396,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-11-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.283116827951744,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-11-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.323196718003601,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-11-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2905050880508497,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5379443179117516,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5323048850987107,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.57008346891962,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.538241478963755,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-12-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3333522269967943,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-12-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3299841600237414,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-12-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.356305758934468,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-12-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3408953660400584,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-22-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.329408611985855,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-22-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3743784840917215,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-22-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.341822333051823,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-22-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.334685896988958,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-18-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3555821389891207,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-18-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.355103360954672,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-18-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4017069489927962,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-18-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.398759657982737,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.567864595912397,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.571872739936225,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.577193415025249,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.579982836963609,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-03-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3270647840108722,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-03-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3342038730625063,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-03-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3730544230202213,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-03-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.343234783038497,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-06-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2910729499999434,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-06-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2893712650984526,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-06-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.325271261972375,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-06-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.29441496997606,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-18-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.354313244926743,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-18-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3509208649629727,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-18-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4019696719478816,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-18-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3960419279756024,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-12-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.290212556021288,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-12-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2811953640775755,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-12-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3025262660812587,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "security",
+    "id": "mechanism-12-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2924944049445912,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-22-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3713131069671363,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-22-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.354148813057691,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-22-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4046001989627257,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "collect",
+    "id": "mechanism-22-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3947082600789145,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-19-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.347142308950424,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-19-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.336817244067788,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-19-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3669484379934147,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-19-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.365665126941167,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-13-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.378632313106209,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-13-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3603287739679217,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-13-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.408507038024254,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-13-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3958175430307165,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5365330590866506,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.566758375032805,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5801444239914417,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5748819530708715,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-18-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.325123952003196,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-18-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3293003810103983,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-18-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3452547249617055,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-18-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3312972499988973,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-19-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3542844080366194,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-19-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3543008289998397,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-19-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4079111609607935,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-19-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3979406969156116,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.539839203003794,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5346919680014253,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5954393959837034,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.545453520026058,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-01-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2933695589890704,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-01-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2907963959733024,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "technical",
+    "id": "mechanism-01-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3288036399753764,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-01-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2998818430351093,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5871811129618436,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5864531529368833,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6005511779803783,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6009940810035914,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-15-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.353579596034251,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-15-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3522668019868433,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-15-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.399964199983515,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-15-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4241879309993237,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-07-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2848983589792624,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-07-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2879180390154943,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-07-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.326122931088321,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-07-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2964610640192404,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-16-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.350400062976405,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-16-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3557566199451685,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-16-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6485486710444093,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "escalate",
+    "id": "mechanism-16-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.649099736008793,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-21-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.328275354928337,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-21-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3314711810089648,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-21-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.352102864999324,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "billing",
+    "id": "mechanism-21-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.341761780087836,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-07-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.3329664430348203,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-07-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.384325371007435,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-07-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.353866762947291,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "generation",
+    "choice": "retry",
+    "id": "mechanism-07-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.340752601972781,
+    "split": "test",
+    "status": "ok"
+  }
+]

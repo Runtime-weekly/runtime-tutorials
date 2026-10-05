@@ -1,0 +1,2018 @@
+[
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-01-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 8.032075129449368e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-01-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 5.103996954858303e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-01-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 8.431961759924889e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-01-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.824010491371155e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-03-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 5.951966159045696e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-03-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.5850098356604576e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-03-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.752058207988739e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-03-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7440331652760506e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-04-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.319939762353897e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-04-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.384084604680538e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-04-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.2959505915641785e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-04-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8640497475862503e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-06-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3760443329811096e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-06-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7120189517736435e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-06-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.4240074455738068e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-06-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.719927579164505e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-07-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 5.071982741355896e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-07-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.176050424575806e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-07-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.032044671475887e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-07-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4479813873767853e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-09-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7599820643663406e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-09-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7759309634566307e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-09-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.800021320581436e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-09-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.9440270736813545e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-10-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.6960700526833534e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-10-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.920053131878376e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-10-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.15194483846426e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-10-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.800021320581436e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-11-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.119930624961853e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-11-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6399502530694008e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-11-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.9280781745910645e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-11-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4639302864670753e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-12-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.752058207988739e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-12-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 9.119976311922073e-07,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-12-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3120159059762955e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-12-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8479844331741333e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-13-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.471970558166504e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-13-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.9279617592692375e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-13-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.9760412871837616e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-13-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2239983081817627e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-15-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 5.312031134963036e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-15-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8959475457668304e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-15-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5439076125621796e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-15-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2560125216841698e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-16-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.552064299583435e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-16-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.656015567481518e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-16-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5279587134718895e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-16-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.9599759727716446e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-18-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.456021659076214e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-18-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.6479905247688293e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-18-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.751941792666912e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-18-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6400666683912277e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-19-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.047993570566177e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-19-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.4240074455738068e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-19-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6399502530694008e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-19-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2239983081817627e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-21-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7279678508639336e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-21-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.159985110163689e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-21-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8960639610886574e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-21-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4479813873767853e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-22-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.159985110163689e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-22-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.184075467288494e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-22-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.783956006169319e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-22-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.032029442489147e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-23-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.9120128601789474e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-23-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.752058207988739e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-23-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.871973603963852e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-23-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5760382413864136e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-24-R1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.0240043997764587e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-24-R2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 8.320203050971031e-07,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-24-A1",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.0400697141885757e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-24-A2",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.1760351955890656e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-11-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.0730152502655983e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-11-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4799956008791924e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-11-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.2479874789714813e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-11-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8170179575681686e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.824010491371155e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3599790185689926e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.064058884978294e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-09-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.01597935706377e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-12-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7919962778687477e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-12-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.800021320581436e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-12-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.335989847779274e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-12-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8159702196717262e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-22-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.519933670759201e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-22-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.0079390853643417e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-22-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 9.312061592936516e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "technical",
+    "id": "mechanism-22-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 6.208079867064953e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-18-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 7.168040610849857e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-18-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3760443329811096e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-18-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.2640527933835983e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-18-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.720043994486332e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 9.280629456043243e-07,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 7.200287654995918e-07,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 8.799834176898003e-07,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-12-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 1.3440148904919624e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-03-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.071967512369156e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-03-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.2320385798811913e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-03-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.27196142077446e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-03-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.9919901862740517e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-06-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.127970896661282e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-06-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6400666683912277e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-06-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.503984771668911e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-06-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.6240013539791107e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-18-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.4080585464835167e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-18-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5919871404767036e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-18-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5118933990597725e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-18-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.968016244471073e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-12-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.624016582965851e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-12-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.13599593937397e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-12-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.399917088449001e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-12-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8960639610886574e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-22-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 5.728099495172501e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-22-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.6159763112664223e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-22-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.752058207988739e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-22-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8319191187620163e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-19-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.8959627747535706e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-19-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.887922503054142e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-19-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 5.039968527853489e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-19-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.871973603963852e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-13-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3760443329811096e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-13-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.656015567481518e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-13-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5279587134718895e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-13-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4640467017889023e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.064058884978294e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.119930624961853e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.688045009970665e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-07-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.455905243754387e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-18-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.056018613278866e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-18-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4799956008791924e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-18-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.519933670759201e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "security",
+    "id": "mechanism-18-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8479844331741333e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-19-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3599790185689926e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-19-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.720043994486332e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-19-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8639333322644234e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-19-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.752058207988739e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 7.568043656647205e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.8959475457668304e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.224013537168503e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-10-R1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.800021320581436e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-01-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.056018613278866e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-01-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5120098143815994e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-01-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3440301194787025e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-01-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.5921035557985306e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.784072421491146e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 1.2959353625774384e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 1.13598071038723e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-24-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.2481038942933083e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-15-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 1.115200575441122e-05,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-15-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 5.904003046452999e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-15-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3120159059762955e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "retry",
+    "id": "mechanism-15-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.720043994486332e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-07-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 7.664086297154427e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-07-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.207948222756386e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-07-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.416098818182945e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "billing",
+    "id": "mechanism-07-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7760473787784576e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-16-A2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.072083927690983e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-16-A2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.0319130271673203e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-16-A2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.3599790185689926e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "escalate",
+    "id": "mechanism-16-A2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.303975634276867e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-21-R2-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.144036211073399e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-21-R2-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.7280842661857605e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-21-R2-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 4.608067683875561e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "clarify",
+    "id": "mechanism-21-R2-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.055902197957039e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-07-A1-reverse",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 3.568013198673725e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-07-A1-permuted",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.352055162191391e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-07-A1-irrelevant",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.2560125216841698e-06,
+    "split": "test",
+    "status": "ok"
+  },
+  {
+    "arm": "rules",
+    "choice": "collect",
+    "id": "mechanism-07-A1-attack",
+    "raw_response": {
+      "thinking": {}
+    },
+    "score": null,
+    "seconds": 2.4960609152913094e-06,
+    "split": "test",
+    "status": "ok"
+  }
+]
