@@ -1,0 +1,40 @@
+[
+  {
+    "id": "energy-shop",
+    "prompt": "Build a polished responsive fictional Energy Juice demo shop in index.html, styles.css and shop.js (no external dependencies/network). Three clearly fictional flavors: Citrus Surge 299 cents, Berry Burst349 cents, Tropical Wave399 cents. Explain this is a demo cart, no checkout; no health/nutrition claims or fabricated reviews. Actual add buttons data-flavor=citrus|berry|tropical; visible data-testid cart-count/cart-total/cart-clear controls. Each click adds exactly one. shop.js must work in browser and CommonJS exports.createCart(): add(id),setQuantity(id,n),getCount(),getTotalCents(),clear(). Reject unknown IDs or negative/noninteger quantities without mutation. Use cents internally. Desktop1440 and mobile390 width. Verify functionality. Do not use a build system.",
+    "files": {},
+    "allowed": [
+      "index.html",
+      "styles.css",
+      "shop.js"
+    ],
+    "check": "import subprocess\nr=subprocess.run(['node','-e', '''const assert=require('assert'), c=require('./shop.js').createCart(); assert.equal(c.getCount(),0); c.add('citrus');c.add('berry');c.add('tropical');assert.equal(c.getCount(),3);assert.equal(c.getTotalCents(),1047);c.setQuantity('berry',2);assert.equal(c.getTotalCents(),1396);for(const f of [()=>c.add('unknown'),()=>c.setQuantity('citrus',-1),()=>c.setQuantity('citrus',1.5)]){assert.throws(f);assert.equal(c.getTotalCents(),1396);}c.clear();assert.equal(c.getCount(),0);assert.equal(c.getTotalCents(),0);'''],capture_output=True,text=True)\nassert r.returncode==0,r.stderr\nfrom pathlib import Path\ns=Path('index.html').read_text()\nfor x in ['Citrus Surge','Berry Burst','Tropical Wave','cart-count','cart-total','cart-clear','data-flavor']:assert x in s,x\nr=subprocess.run(['node','-e', \"const fs=require('fs'),assert=require('assert'),{JSDOM}=require('jsdom');const dom=new JSDOM(fs.readFileSync('index.html','utf8'),{runScripts:'outside-only'});dom.window.eval(fs.readFileSync('shop.js','utf8'));const d=dom.window.document;for(const id of ['citrus','berry','tropical'])d.querySelector('[data-flavor='+id+']').click();assert.equal(d.querySelector('[data-testid=cart-count]').textContent.trim(),'3');assert(d.querySelector('[data-testid=cart-total]').textContent.includes('10.47'));d.querySelector('[data-testid=cart-clear]').click();assert.equal(d.querySelector('[data-testid=cart-count]').textContent.trim(),'0');\"],capture_output=True,text=True)\nassert r.returncode==0,r.stderr\n"
+  },
+  {
+    "id": "repair-cart",
+    "prompt": "Repair the supplied fictional Energy Juice app. Clicking a flavor currently adds twice and currency arithmetic is wrong. Preserve the supplied appearance and all three flavors. Fix shop.js only, including createCart CommonJS API add,setQuantity,getCount,getTotalCents,clear. Prices cents299/349/399. Reject unknownIDs and negative/nonintegerquantities withoutmutation. Clicking adds exactly one; clear updates DOM. Run checks; do not change HTML orCSS.",
+    "files": {
+      "index.html": "<!doctype html><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"stylesheet\" href=\"styles.css\"><h1>Energy Juice \u2014 fictional demo</h1><main><button data-flavor=\"citrus\">Citrus Surge</button><button data-flavor=\"berry\">Berry Burst</button><button data-flavor=\"tropical\">Tropical Wave</button></main><p>Count <b data-testid=\"cart-count\">0</b> Total <b data-testid=\"cart-total\">$0.00</b></p><button data-testid=\"cart-clear\">Clear cart</button><script src=\"shop.js\"></script>",
+      "styles.css": "body{background:#11221c;color:#fff;font:24px sans-serif;padding:30px}button{padding:20px;margin:10px;border-radius:14px;background:#c7ff56}main{display:flex;flex-wrap:wrap}",
+      "shop.js": "const prices={citrus:299,berry:349,tropical:399};function createCart(){let q={};return {add(id){q[id]=(q[id]||0)+1},setQuantity(id,n){q[id]=n},getCount(){return Object.values(q).reduce((a,b)=>a+b,0)},getTotalCents(){return Object.entries(q).reduce((a,[id,n])=>a+prices[id]*n/100,0)},clear(){q={}}}};if(typeof module!=='undefined')module.exports={createCart};if(typeof document!=='undefined'){let cart=createCart();function update(){document.querySelector('[data-testid=cart-count]').textContent=cart.getCount();document.querySelector('[data-testid=cart-total]').textContent='$'+(cart.getTotalCents()/100).toFixed(2)}document.querySelectorAll('[data-flavor]').forEach(b=>b.onclick=()=>{cart.add(b.dataset.flavor);update()});document.querySelector('main').onclick=e=>{if(e.target.dataset.flavor){cart.add(e.target.dataset.flavor);update()}};document.querySelector('[data-testid=cart-clear]').onclick=()=>{cart.clear();update()};}"
+    },
+    "allowed": [
+      "shop.js"
+    ],
+    "check": "import subprocess\nr=subprocess.run(['node','-e', '''const assert=require('assert'), c=require('./shop.js').createCart(); assert.equal(c.getCount(),0); c.add('citrus');c.add('berry');c.add('tropical');assert.equal(c.getCount(),3);assert.equal(c.getTotalCents(),1047);c.setQuantity('berry',2);assert.equal(c.getTotalCents(),1396);for(const f of [()=>c.add('unknown'),()=>c.setQuantity('citrus',-1),()=>c.setQuantity('citrus',1.5)]){assert.throws(f);assert.equal(c.getTotalCents(),1396);}c.clear();assert.equal(c.getCount(),0);assert.equal(c.getTotalCents(),0);'''],capture_output=True,text=True)\nassert r.returncode==0,r.stderr\nfrom pathlib import Path\ns=Path('index.html').read_text()\nfor x in ['Citrus Surge','Berry Burst','Tropical Wave','cart-count','cart-total','cart-clear','data-flavor']:assert x in s,x\nr=subprocess.run(['node','-e', \"const fs=require('fs'),assert=require('assert'),{JSDOM}=require('jsdom');const dom=new JSDOM(fs.readFileSync('index.html','utf8'),{runScripts:'outside-only'});dom.window.eval(fs.readFileSync('shop.js','utf8'));const d=dom.window.document;for(const id of ['citrus','berry','tropical'])d.querySelector('[data-flavor='+id+']').click();assert.equal(d.querySelector('[data-testid=cart-count]').textContent.trim(),'3');assert(d.querySelector('[data-testid=cart-total]').textContent.includes('10.47'));d.querySelector('[data-testid=cart-clear]').click();assert.equal(d.querySelector('[data-testid=cart-count]').textContent.trim(),'0');\"],capture_output=True,text=True)\nassert r.returncode==0,r.stderr\n"
+  },
+  {
+    "id": "tool-recovery",
+    "prompt": "Implement summarize.py: function totals(csv_text) returns dict mapping customer to integer total cents. CSV columns customer,amount,status; amount is signed decimalUSD; include only status=posted, ignore pending; preserve exact cents using decimal arithmetic. Reject malformed amount or missing columns using ValueError. Names can contain quoted commas. Use only Python standardlibrary. Inspect notes and example input. Your shelltool may return one transient error; recover using the actual toolfeedback. Verify behavior.",
+    "files": {
+      "notes.txt": "Amounts may be negative refunds. A malformedamount must not silently becomezero.",
+      "example.csv": "customer,amount,status\nAda,0.10,posted\nAda,0.20,posted\nAda,9.99,pending\n",
+      "summarize.py": "def totals(csv_text):\n    raise NotImplementedError\n"
+    },
+    "allowed": [
+      "summarize.py"
+    ],
+    "inject_first_tool_error": true,
+    "check": "from summarize import totals\nassert totals('customer,amount,status\\nAda,0.10,posted\\nAda,0.20,posted\\nAda,9.99,pending\\n')=={'Ada':30}\nassert totals('customer,amount,status\\n\"Lee, Jr\",3.40,posted\\n\"Lee, Jr\",-1.20,posted\\n')=={'Lee, Jr':220}\nfor t in ['customer,amount,status\\nAda,nope,posted\\n','customer,status\\nAda,posted\\n']:\n try:totals(t)\n except ValueError:pass\n else:raise AssertionError('Expected ValueError')\n"
+  }
+]

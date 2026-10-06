@@ -1,0 +1,69 @@
+{
+  "scope": "Three controlled coding demonstrations per model; one seed/attempt. Text-only GGUF runs, not a general benchmark.",
+  "models": {
+    "ornith": {
+      "source": "ornith-ai/Ornith-1.5-9B",
+      "source_revision": "489cb97981b8654bcfcf30ce1f94ed1b62e07b53",
+      "gguf_repo": "ornith-ai/Ornith-1.5-9B-GGUF",
+      "revision": "abdd624b12ebf020b767fff532ff44fe552b28c3",
+      "filename": "Ornith-1.5-9B-Q8_0.gguf",
+      "sha256": "22086870b009dbe9815ee752c48a82de930118a7c5ce5599590892ae03b8b010",
+      "bytes": 9786060384
+    },
+    "qwen": {
+      "source": "Qwen/Qwen3.5-9B",
+      "source_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "gguf_repo": "unsloth/Qwen3.5-9B-GGUF",
+      "revision": "3885219b6810b007914f3a7950a8d1b469d598a5",
+      "filename": "Qwen3.5-9B-Q8_0.gguf",
+      "sha256": "809626574d0cb43d4becfa56169980da2bb448f2299270f7be443cb89d0a6ae4",
+      "bytes": 9527502048
+    }
+  },
+  "runtime": {
+    "source": "https://github.com/ggml-org/llama.cpp",
+    "commit": "e9fa0781f1c25fc4fe8c86be1edc6970661ad6f0",
+    "public_commit_verified": true,
+    "local_source_clean": true,
+    "binary_sha256": "a748def5f126ac4a038bda2e72541885283b14604f53910b9554a9a92f74350c",
+    "version": "version: 1125 (e9fa0781)\nbuilt with GNU 13.3.0 for Linux aarch64\n",
+    "hardware": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "cuda_build_enabled": true,
+    "native_cpu_build_enabled": true,
+    "original_harness_sha256": {
+      "bench.py": "5bbf549e0fb49c8d9758fe1af153bc0db9d41fc875e451fa6120924ea369ef20",
+      "serve.py": "e9764ee1dc47b53b7cb0b910cc9e0d3efbad29cf3ecb32483ac9b1010993c917",
+      "run.py": "d702842ba765dcf0500c981c635db93ede634879249a414d99004ea89d9fe325",
+      "tasks.frozen.json": "e942991df66de4a462187ce0edc06c0023866225e673869895398680cf074efa"
+    },
+    "original_test_image_id": "sha256:2dc6ef3c6a323e2b3d18058fb76a63050b142fb824a2df1d7d0ec9da206fe8ef",
+    "qwen_supervisor_sha256": "05b5d5e79538aa73128bac7405b50fed53133e17f05c3d77a8e6c65795648538",
+    "supervisor_change": "Scheduling-only pre-load pause for narration and separate MiniCPM controls; model/decoding/task settings unchanged."
+  },
+  "configuration": {
+    "context": 16384,
+    "parallel_slots": 1,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "seed": 2310,
+    "thinking": true,
+    "max_tokens_per_request": 8192,
+    "cumulative_output_budget": 16384,
+    "turns": 12,
+    "task_wall_budget_seconds": 900,
+    "wall_budget_caveat": "Checked between calls; in-flight request can extend duration."
+  },
+  "limitations": [
+    "Different GGUF conversion publishers",
+    "Shared-host timings and CPU capture/render activity; no general speed ranking",
+    "No matched GPU-process peak-memory samples",
+    "File sizes are not runtime memory",
+    "Frozen exception/dollar-display assumptions reported separately from post-hoc interpretations",
+    "Boundary probes defined after source inspection, excluded from frozen scores",
+    "Some workflows exhaust context or turn limits; saved artifacts assessed separately"
+  ],
+  "tasks_sha256": "e942991df66de4a462187ce0edc06c0023866225e673869895398680cf074efa"
+}

@@ -10,6 +10,7 @@ with setup instructions, saved outputs and honest limits.
 
 | Guide | What you build | Start / watch |
 | --- | --- | --- |
+| Ornith 1.5 9B vs Qwen | Replay three saved coding tasks, inspect browser failures and distinguish working code from unfinished runs | [Tasks, artifacts and local-run notes](ornith15/README.md) |
 | MiniCPM5 1B vs 2B | Recompute twelve saved text checks and inspect an executed native-tool workflow | [Results, sources and local-run notes](minicpm5/README.md) |
 | CLM / Jev / Laya | Inspect saved decisions, explore the offline visualizer, and run deterministic simulation experiments | [Research, code and viewer](clm/README.md) |
 | Tev1 vs Qwen | Recompute 230 saved decisions, inspect failures, and follow an optional local rerun recipe | [Code, evidence and setup](tev1/README.md) · [Video](https://youtu.be/DUgZtU_1ACQ) |
