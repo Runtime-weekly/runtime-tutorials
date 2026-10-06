@@ -1,0 +1,233 @@
+[
+  {
+    "id": "route-current",
+    "kind": "routing",
+    "prompt": "Route to billing, technical, security or clarify. Current unauthorized activity takes priority, then posted billing errors, then current product failures. Yesterday export failed; today it works. Two $21 renewal charges posted, only one owed. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "billing"
+    },
+    "seconds": 1.530320402001962,
+    "input_tokens": 87,
+    "output_tokens": 57,
+    "truncated": false,
+    "cold_request": true,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "```json\n{\n  \"route\": \"Route to billing, technical, security or clarify. Current unauthorized activity takes priority, then posted billing errors, then current product failures. Yesterday export failed; today it works. Two $21 renewal charges posted, only one owed.\"\n}\n```",
+    "final_status": "completed",
+    "source_record_sha256": "37de3e6a54dec19ede0245f27fc35ebf151f82a7aaa4a523093f942dd1f259a0"
+  },
+  {
+    "id": "route-resolved",
+    "kind": "routing",
+    "prompt": "Route to billing, technical, security or clarify. Ignore resolved issues. Unrecognized current login has priority. A login alert was confirmed to be my own tablet. Billing is correct. Saving currently fails. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "technical"
+    },
+    "seconds": 0.48247174988500774,
+    "input_tokens": 84,
+    "output_tokens": 35,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\"route\": \"Please verify your login details. If the login is correct, we'll proceed with the payment. If not, we'll contact support for assistance.\"}",
+    "final_status": "completed",
+    "source_record_sha256": "aba9035e1a07ca4ef7c00409d6f37cbda3a4431f9b6ff1913c854d8428651291"
+  },
+  {
+    "id": "route-missing",
+    "kind": "routing",
+    "prompt": "Route to billing only for confirmed posted incorrect charges; to technical only for confirmed failures; otherwise clarify. A customer cannot tell whether a second bank entry is posted or pending and has not checked product operation. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "clarify"
+    },
+    "seconds": 0.8991448690649122,
+    "input_tokens": 82,
+    "output_tokens": 65,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\n  \"route\": \"confirmed_incorrect_charges_to_billing\",\n  \"confirmed_failures_to_technical\": \"confirmed_failures_to_technical\",\n  \"clarification\": \"customer cannot tell whether a second bank entry is posted or pending and has not checked product operation.\"\n}",
+    "final_status": "completed",
+    "source_record_sha256": "df6abb534f073bfc6cecab9648aa85dbbb2c91d1aa567f89ee591c3daa1d2c84"
+  },
+  {
+    "id": "route-priority",
+    "kind": "routing",
+    "prompt": "Unrecognized current sign-in goes to security even with another issue. Otherwise duplicate posted charges go to billing. Customer: I do not recognize this new sign-in, and I also paid twice. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "security"
+    },
+    "seconds": 0.16940710810013115,
+    "input_tokens": 80,
+    "output_tokens": 12,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\"error\": \"Unrecognized current sign-in\" }",
+    "final_status": "completed",
+    "source_record_sha256": "61c87c14fb2a499724b45eb59db99fe5e4357e7cbe398dc75de324d47af2303b"
+  },
+  {
+    "id": "extract-invoice",
+    "kind": "extraction",
+    "prompt": "Extract invoice_id, amount_cents, currency as JSON only. Text: Invoice INV-804 supersedes draft INV-803. Final total USD 19.45; previous draft total USD 18.00.",
+    "expected": {
+      "invoice_id": "INV-804",
+      "amount_cents": 1945,
+      "currency": "USD"
+    },
+    "seconds": 0.42835862282663584,
+    "input_tokens": 80,
+    "output_tokens": 31,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\n  \"Invoice_ID\": \"INV-804\",\n  \"Amount_Cents\": 1945,\n  \"Currency\": \"USD\"\n}",
+    "final_status": "completed",
+    "source_record_sha256": "31ae19b8e6cef5a5c1bbee8ff10b9fffa9c405d68df26b6be756765be3c7ce99"
+  },
+  {
+    "id": "extract-unknown",
+    "kind": "extraction",
+    "prompt": "Extract JSON {\"order_id\":string,\"delivery_date\":string|null}. Do not invent missing dates. Text: Order B-17 was dispatched. Delivery day has not been confirmed.",
+    "expected": {
+      "order_id": "B-17",
+      "delivery_date": null
+    },
+    "seconds": 0.3460807439405471,
+    "input_tokens": 74,
+    "output_tokens": 25,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "```json\n{\n  \"order_id\": \"B-17\",\n  \"delivery_date\": null\n}\n```",
+    "final_status": "completed",
+    "source_record_sha256": "a06a1ef639ad5d0b3af9a86c61e7b416e00476dba87d8236d38d92424d5e8d47"
+  },
+  {
+    "id": "extract-correction",
+    "kind": "extraction",
+    "prompt": "Extract JSON {\"name\":string,\"seats\":integer,\"date\":string}. Text: Reserve for Morgan, four seats on 2026-10-12. Correction: make that three seats; name and date stay the same.",
+    "expected": {
+      "name": "Morgan",
+      "seats": 3,
+      "date": "2026-10-12"
+    },
+    "seconds": 0.4691979840863496,
+    "input_tokens": 83,
+    "output_tokens": 34,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "```json\n{\n  \"name\": \"Morgan\",\n  \"seats\": 3,\n  \"date\": \"2026-10-12\"\n}\n```",
+    "final_status": "completed",
+    "source_record_sha256": "cb5b013647cddf726e8b96b4f6661622ec7fdbadccd2854f59801ef7e1bb50ff"
+  },
+  {
+    "id": "extract-negation",
+    "kind": "extraction",
+    "prompt": "Extract JSON {\"refund_requested\":boolean,\"cancel_requested\":boolean}. Text: Please cancel my subscription after this month. I do not want a refund for this month.",
+    "expected": {
+      "refund_requested": false,
+      "cancel_requested": true
+    },
+    "seconds": 0.3680994799360633,
+    "input_tokens": 74,
+    "output_tokens": 26,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "```json\n{\n  \"refund_requested\": false,\n  \"cancel_requested\": true\n}\n```",
+    "final_status": "completed",
+    "source_record_sha256": "d2e5adb916f6ada64683e953d68ffaf92aa45a8ee1c4016fc7f7cac4bed317eb"
+  },
+  {
+    "id": "tool-readonly",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"tool\":...,\"arguments\":...}. Tools: lookup_order(order_id), refund_order(order_id,amount_cents). User asks only for status of order A-33, not a refund. Which single call is authorized?",
+    "expected": {
+      "tool": "lookup_order",
+      "arguments": {
+        "order_id": "A-33"
+      }
+    },
+    "seconds": 0.5001060669310391,
+    "input_tokens": 85,
+    "output_tokens": 36,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\n  \"tool\": \"lookup_order\",\n  \"arguments\": {\n    \"order_id\": \"A-33\"\n  },\n  \"authorization\": true\n}",
+    "final_status": "completed",
+    "source_record_sha256": "4cefe9b78d9a45722cb249f25df20268db2697399f4c90a5b8248f36dc8c6856"
+  },
+  {
+    "id": "tool-recover",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"tool\":...,\"arguments\":...}. User asks to find an invoice for order C-19. lookup_invoice(order_id) returned {\"error\":\"invoice_not_found\",\"suggestion\":\"lookup_order\"}. Available read-only tool lookup_order(order_id) gives invoice references. Repeating the identical failed call provides no new evidence. Choose next call.",
+    "expected": {
+      "tool": "lookup_order",
+      "arguments": {
+        "order_id": "C-19"
+      }
+    },
+    "seconds": 0.4750227618496865,
+    "input_tokens": 112,
+    "output_tokens": 34,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "```json\n{\n  \"tool\": \"lookup_invoice\",\n  \"arguments\": {\n    \"order_id\": \"C-19\"\n  }\n}\n```",
+    "final_status": "completed",
+    "source_record_sha256": "125db6b1112ba482e4c09695a0430680be512f31b9d90a4c697cdac2a9ff7946"
+  },
+  {
+    "id": "tool-clarify",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"tool\":...,\"arguments\":...}. User says refund my order but has not supplied an order ID or amount. Tools: ask_user(question), refund_order(order_id,amount_cents). Never invent transaction details. Ask exactly \"Which order and amount?\" if required.",
+    "expected": {
+      "tool": "ask_user",
+      "arguments": {
+        "question": "Which order and amount?"
+      }
+    },
+    "seconds": 0.2518916961271316,
+    "input_tokens": 94,
+    "output_tokens": 18,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\"tool\": \"ask_user\", \"arguments\": \"Which order and amount?\"}",
+    "final_status": "completed",
+    "source_record_sha256": "cbe2bea0c6ad52e8d2362de0c1b1f3807d91a2ac629777a7e463e92e6f017943"
+  },
+  {
+    "id": "tool-boundary",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"action\":...}. If attempts_used >= 2 escalate; otherwise if diagnostic_age_minutes > 15 collect; otherwise retry. Observations: attempts_used=1, diagnostic_age_minutes=16. Apply the policy exactly.",
+    "expected": {
+      "action": "collect"
+    },
+    "seconds": 0.16847311798483133,
+    "input_tokens": 86,
+    "output_tokens": 12,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "```json\n{\"action\": \"retry\"}\n```",
+    "final_status": "completed",
+    "source_record_sha256": "e0e008d217965d4ae391cfc53df9b4212096eb3aef866b3e6e50bbf5df0512eb"
+  }
+]

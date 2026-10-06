@@ -1,0 +1,9 @@
+{
+ "id":"invoice-recovery",
+ "prompt":"Find the current posted invoice amount for order ORD-72. You may call the read-only tools lookup_order(order_id) and lookup_invoice(invoice_id). Send one JSON object per turn: {\"tool\":\"name\",\"arguments\":{...}} or, only once you have evidence, {\"final\":{\"order_id\":\"...\",\"amount_cents\":integer,\"status\":\"...\"}}. Handle tool errors using their returned information. Never issue refunds or modify records.",
+ "tools":{"lookup_order":{"ORD-72":{"order_id":"ORD-72","invoice_id":"INV-OLD-72","note":"Cached invoice reference; consult invoice record for current status."}},"lookup_invoice":{"INV-OLD-72":{"error":"invoice_superseded","current_invoice_id":"INV-NEW-72"},"INV-NEW-72":{"invoice_id":"INV-NEW-72","order_id":"ORD-72","amount_cents":2845,"status":"posted"}}},
+ "expected_final":{"order_id":"ORD-72","amount_cents":2845,"status":"posted"},
+ "required_calls":[["lookup_order","ORD-72"],["lookup_invoice","INV-OLD-72"],["lookup_invoice","INV-NEW-72"]],
+ "max_turns":6,
+ "scope":"Actual deterministic local Python dictionary lookup tools, synthetic records; JSON transport, not a native tool-calling benchmark. Correct final answer without all required executed calls does not pass recovery."
+}

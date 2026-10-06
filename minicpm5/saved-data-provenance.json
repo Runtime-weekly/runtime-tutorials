@@ -1,0 +1,20 @@
+{
+  "scope": "Final-answer projections of saved measurements. Intermediate reasoning and hardware-private operational fields omitted. A response truncated before the end-of-thinking delimiter has no completed final answer; its unfinished reasoning text is omitted, not represented as an empty generated response.",
+  "datasets": [
+    {
+      "configuration": "1b-think",
+      "source_sha256": "7da93e57a92236d92c61341460fa971f2b10e5e6a4d7d2340f6f30b305769425",
+      "projection_sha256": "c2fa51a55ea289551737b7d8fe105d2fe78fd77bc0d8fdf1e2cc67aeeca66f22"
+    },
+    {
+      "configuration": "2b-think",
+      "source_sha256": "bcba6a95f3ef2458f64bfc24b7657e559f82545db3d3dcee123a104b13780da2",
+      "projection_sha256": "a5d6f4e22f18fecb3eb128d61c99f13bcefb11d567ccb173089a069616d7641f"
+    },
+    {
+      "configuration": "1b-nothink",
+      "source_sha256": "638f38b25d1649427b0e0237b9a5f0933a6dcc64b1381d5bf52884662bbbdbdc",
+      "projection_sha256": "7127ecebc2e73a73423336efc300f2a02d2db83ea464bca5f1c873d06cf56c0e"
+    }
+  ]
+}

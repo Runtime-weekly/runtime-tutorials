@@ -1,0 +1,80 @@
+{
+  "1b": {
+    "repo_id": "openbmb/MiniCPM5-1B",
+    "revision": "87179e5c1f455ef22e6223592d2d61351b525bfc",
+    "files": {
+      "chat_template.jinja": {
+        "sha256": "7451a05cf1e28a79d97d7c0bc951028c0b1915119bf9046acd06a0e3d931f47c",
+        "size": 9062
+      },
+      "config.json": {
+        "sha256": "6a6509b646cb3169616c5ffc3196e7ccaf9d4d6bc17b266581d241a31c217714",
+        "size": 726
+      },
+      "generation_config.json": {
+        "sha256": "92afd6424501426eddcf7e1542f013d19e5987544977b4ee7bd26359bd5fd2ab",
+        "size": 213
+      },
+      "model-00000-of-00001.safetensors": {
+        "sha256": "7ab8fd86563125929be78aeec8cb3969c7ed2ead3be1ab9d3ec0a9fa69c8660d",
+        "size": 2161290912
+      },
+      "model.safetensors.index.json": {
+        "sha256": "162add042e75abc3d571c4a8679523fa4f1ffc55d1fea25fc6658a19d6e957ee",
+        "size": 18004
+      },
+      "special_tokens_map.json": {
+        "sha256": "82d96d7a9e6ced037f12394b7ea6a5b02e6ca87e0d11edaa8d60d9be857ce7db",
+        "size": 551
+      },
+      "tokenizer.json": {
+        "sha256": "3e065a558a034185fe299917b398685c1facd0169a9eea1e629eb30c171fed81",
+        "size": 9894271
+      },
+      "tokenizer_config.json": {
+        "sha256": "094efb3cf1ff412284cc5945fc99dff58673a912760d04483a04aa1c716f66fd",
+        "size": 94416
+      }
+    },
+    "provenance": "Pinned local download; hf cache verify checked all9 files. Weight SHA256 from verified LFS ETag; small assets SHA256 computed from verified local bytes."
+  },
+  "2b": {
+    "repo_id": "openbmb/MiniCPM5-2B",
+    "revision": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+    "files": {
+      "chat_template.jinja": {
+        "sha256": "bc1f78ef8a86b6bdf64a056cf89dd0ac506db4f198ab363d85168e2500ab44dd",
+        "size": 5435
+      },
+      "config.json": {
+        "sha256": "59613157e5357d62bcb121e04cb90f2170b43d789b142380c12c3d4277d95180",
+        "size": 704
+      },
+      "generation_config.json": {
+        "sha256": "9ac4f32e5f32358697a9f438a3ea89ef80e6ba786c72c49e932f9f21c122fdb1",
+        "size": 213
+      },
+      "model-00000-of-00001.safetensors": {
+        "sha256": "14fb8e7f0a18d53d1f239773758bf581cee7e456a4523a54622c3a245b64402c",
+        "size": 5033557096
+      },
+      "model.safetensors.index.json": {
+        "sha256": "6d839cd76e8395de548a0e6cc310386f66d1ecbb2c75d198a8dfd3d70892b756",
+        "size": 31378
+      },
+      "special_tokens_map.json": {
+        "sha256": "82d96d7a9e6ced037f12394b7ea6a5b02e6ca87e0d11edaa8d60d9be857ce7db",
+        "size": 551
+      },
+      "tokenizer.json": {
+        "sha256": "3e065a558a034185fe299917b398685c1facd0169a9eea1e629eb30c171fed81",
+        "size": 9894271
+      },
+      "tokenizer_config.json": {
+        "sha256": "e9b1064649e771d7a8e15637c68b2d2749724877ba3648bd74a4ece31c26303b",
+        "size": 94391
+      }
+    },
+    "provenance": "Pinned local download; hf cache verify checked all9 files. Weight SHA256 from verified LFS ETag; small assets SHA256 computed from verified local bytes."
+  }
+}

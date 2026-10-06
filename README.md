@@ -10,6 +10,7 @@ with setup instructions, saved outputs and honest limits.
 
 | Guide | What you build | Start / watch |
 | --- | --- | --- |
+| MiniCPM5 1B vs 2B | Recompute twelve saved text checks and inspect an executed native-tool workflow | [Results, sources and local-run notes](minicpm5/README.md) |
 | CLM / Jev / Laya | Inspect saved decisions, explore the offline visualizer, and run deterministic simulation experiments | [Research, code and viewer](clm/README.md) |
 | Tev1 vs Qwen | Recompute 230 saved decisions, inspect failures, and follow an optional local rerun recipe | [Code, evidence and setup](tev1/README.md) · [Video](https://youtu.be/DUgZtU_1ACQ) |
 | Kev vs Laya | Inspect 180 recorded decisions, compare architectures and resources, recompute findings | [Research and analysis](kev-laya/README.md) |
@@ -52,6 +53,7 @@ retained for reference; use these current downloads for a new installation.
 
 | Folder / page | Contents |
 | --- | --- |
+| [minicpm5/](minicpm5/README.md) | Frozen synthetic tasks, final answers, native tool traces and qualified reproduction notes |
 | [START_HERE.md](START_HERE.md) | Downloading files, opening a terminal and creating an environment |
 | [tev1/](tev1/README.md) | Exact synthetic cases, model revisions, responses, timing, offline verification and optional local inference |
 | [kev-laya/](kev-laya/README.md) | Frozen synthetic cases, saved decisions, architecture and resource measurements, standard-library analysis |

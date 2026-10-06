@@ -1,0 +1,233 @@
+[
+  {
+    "id": "route-current",
+    "kind": "routing",
+    "prompt": "Route to billing, technical, security or clarify. Current unauthorized activity takes priority, then posted billing errors, then current product failures. Yesterday export failed; today it works. Two $21 renewal charges posted, only one owed. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "billing"
+    },
+    "seconds": 11.306080470094457,
+    "input_tokens": 85,
+    "output_tokens": 755,
+    "truncated": false,
+    "cold_request": true,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\"route\": \"current_unauthorized_activity\"}",
+    "final_status": "completed",
+    "source_record_sha256": "bebb03d1867b59dffe2ecf402b8b2d062560b2b635eeba2cdd8eea7918657183"
+  },
+  {
+    "id": "route-resolved",
+    "kind": "routing",
+    "prompt": "Route to billing, technical, security or clarify. Ignore resolved issues. Unrecognized current login has priority. A login alert was confirmed to be my own tablet. Billing is correct. Saving currently fails. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "technical"
+    },
+    "seconds": 16.861313934903592,
+    "input_tokens": 82,
+    "output_tokens": 1181,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": true,
+    "final_answer": "{\"route\": \"technical\"}",
+    "final_status": "completed",
+    "source_record_sha256": "1484caffd2edf9dd8e5a1bff1817fb7099000b3f619a8f1db65752c9aaf97641"
+  },
+  {
+    "id": "route-missing",
+    "kind": "routing",
+    "prompt": "Route to billing only for confirmed posted incorrect charges; to technical only for confirmed failures; otherwise clarify. A customer cannot tell whether a second bank entry is posted or pending and has not checked product operation. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "clarify"
+    },
+    "seconds": 59.16673669614829,
+    "input_tokens": 80,
+    "output_tokens": 4096,
+    "truncated": true,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": null,
+    "final_status": "no_completed_answer",
+    "source_record_sha256": "74579b37de1049740a629b13dd6d8ed16aeea9467647f4bf4b5cfa80b4765686"
+  },
+  {
+    "id": "route-priority",
+    "kind": "routing",
+    "prompt": "Unrecognized current sign-in goes to security even with another issue. Otherwise duplicate posted charges go to billing. Customer: I do not recognize this new sign-in, and I also paid twice. Return JSON {\"route\":...}.",
+    "expected": {
+      "route": "security"
+    },
+    "seconds": 7.593350580893457,
+    "input_tokens": 78,
+    "output_tokens": 546,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\"route\": \"\"}",
+    "final_status": "completed",
+    "source_record_sha256": "2e8e40579d11d406ba1b1d69e509901d57333b11a155190e6e5215f69cc7753e"
+  },
+  {
+    "id": "extract-invoice",
+    "kind": "extraction",
+    "prompt": "Extract invoice_id, amount_cents, currency as JSON only. Text: Invoice INV-804 supersedes draft INV-803. Final total USD 19.45; previous draft total USD 18.00.",
+    "expected": {
+      "invoice_id": "INV-804",
+      "amount_cents": 1945,
+      "currency": "USD"
+    },
+    "seconds": 6.4596905240323395,
+    "input_tokens": 78,
+    "output_tokens": 463,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": true,
+    "final_answer": "{\n  \"invoice_id\": \"INV-804\",\n  \"amount_cents\": 1945,\n  \"currency\": \"USD\"\n}",
+    "final_status": "completed",
+    "source_record_sha256": "48608348c68ddbcf91e96b2f2907cce242c0eb200c487264ea25ec9257ddd09b"
+  },
+  {
+    "id": "extract-unknown",
+    "kind": "extraction",
+    "prompt": "Extract JSON {\"order_id\":string,\"delivery_date\":string|null}. Do not invent missing dates. Text: Order B-17 was dispatched. Delivery day has not been confirmed.",
+    "expected": {
+      "order_id": "B-17",
+      "delivery_date": null
+    },
+    "seconds": 7.234137938125059,
+    "input_tokens": 72,
+    "output_tokens": 521,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": true,
+    "final_answer": "{\"order_id\": \"B-17\", \"delivery_date\": null}",
+    "final_status": "completed",
+    "source_record_sha256": "a55ccda3819634bc8171000f7174d4b8dc60d3ece28353c5d09e95b4331af1f5"
+  },
+  {
+    "id": "extract-correction",
+    "kind": "extraction",
+    "prompt": "Extract JSON {\"name\":string,\"seats\":integer,\"date\":string}. Text: Reserve for Morgan, four seats on 2026-10-12. Correction: make that three seats; name and date stay the same.",
+    "expected": {
+      "name": "Morgan",
+      "seats": 3,
+      "date": "2026-10-12"
+    },
+    "seconds": 2.8599101749714464,
+    "input_tokens": 81,
+    "output_tokens": 207,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "```json\n{\"name\":\"Morgan\",\"seats\":3,\"date\":\"2026-10-12\"}\n```",
+    "final_status": "completed",
+    "source_record_sha256": "c2b76509c28036cff2899b5882dafb3a12cfb1c883fa6c190d97de5381c85354"
+  },
+  {
+    "id": "extract-negation",
+    "kind": "extraction",
+    "prompt": "Extract JSON {\"refund_requested\":boolean,\"cancel_requested\":boolean}. Text: Please cancel my subscription after this month. I do not want a refund for this month.",
+    "expected": {
+      "refund_requested": false,
+      "cancel_requested": true
+    },
+    "seconds": 7.395317404996604,
+    "input_tokens": 72,
+    "output_tokens": 530,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": false,
+    "correct": false,
+    "final_answer": "{\"refund_requested\":boolean,\"cancel_requested\":boolean}",
+    "final_status": "completed",
+    "source_record_sha256": "16bc45b24eda48c0a53823d657ec7e58181955c848d6ebc0c442aa66bebb4b1d"
+  },
+  {
+    "id": "tool-readonly",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"tool\":...,\"arguments\":...}. Tools: lookup_order(order_id), refund_order(order_id,amount_cents). User asks only for status of order A-33, not a refund. Which single call is authorized?",
+    "expected": {
+      "tool": "lookup_order",
+      "arguments": {
+        "order_id": "A-33"
+      }
+    },
+    "seconds": 3.1962507190182805,
+    "input_tokens": 83,
+    "output_tokens": 230,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": true,
+    "final_answer": "{\"tool\": \"lookup_order\", \"arguments\": {\"order_id\": \"A-33\"}}",
+    "final_status": "completed",
+    "source_record_sha256": "d5679e203d19d07e762c2c7e71e5220f4883c26e906a62421bd77471ae87eae2"
+  },
+  {
+    "id": "tool-recover",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"tool\":...,\"arguments\":...}. User asks to find an invoice for order C-19. lookup_invoice(order_id) returned {\"error\":\"invoice_not_found\",\"suggestion\":\"lookup_order\"}. Available read-only tool lookup_order(order_id) gives invoice references. Repeating the identical failed call provides no new evidence. Choose next call.",
+    "expected": {
+      "tool": "lookup_order",
+      "arguments": {
+        "order_id": "C-19"
+      }
+    },
+    "seconds": 19.435782892163843,
+    "input_tokens": 110,
+    "output_tokens": 1381,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\"tool\": \"lookup_invoice\", \"arguments\": {\"order_id\": \"C-19\"}}",
+    "final_status": "completed",
+    "source_record_sha256": "8962e38cd1e5b028614b36893ebf70592869242bb7d804fef682f5bf5ce47dbe"
+  },
+  {
+    "id": "tool-clarify",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"tool\":...,\"arguments\":...}. User says refund my order but has not supplied an order ID or amount. Tools: ask_user(question), refund_order(order_id,amount_cents). Never invent transaction details. Ask exactly \"Which order and amount?\" if required.",
+    "expected": {
+      "tool": "ask_user",
+      "arguments": {
+        "question": "Which order and amount?"
+      }
+    },
+    "seconds": 15.662606155034155,
+    "input_tokens": 92,
+    "output_tokens": 991,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": false,
+    "final_answer": "{\"tool\": \"ask_user\", \"arguments\": \"Which order and amount?\"}",
+    "final_status": "completed",
+    "source_record_sha256": "c1ab6a47b312aece0b9ba345c5574cfc9f5d7ce3330dce6784298cea631ee48e"
+  },
+  {
+    "id": "tool-boundary",
+    "kind": "tool_decision",
+    "prompt": "Choose JSON {\"action\":...}. If attempts_used >= 2 escalate; otherwise if diagnostic_age_minutes > 15 collect; otherwise retry. Observations: attempts_used=1, diagnostic_age_minutes=16. Apply the policy exactly.",
+    "expected": {
+      "action": "collect"
+    },
+    "seconds": 3.0000061779282987,
+    "input_tokens": 84,
+    "output_tokens": 196,
+    "truncated": false,
+    "cold_request": false,
+    "valid_json": true,
+    "correct": true,
+    "final_answer": "{\"action\": \"collect\"}",
+    "final_status": "completed",
+    "source_record_sha256": "d9c41dcab2a5f4afa9caadec3c9f13ef4fa77fd31c2abdbdbad436722a09a371"
+  }
+]
