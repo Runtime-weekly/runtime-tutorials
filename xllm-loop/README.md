@@ -6,7 +6,7 @@ payload**, while total observed allocation barely changed and decoding was
 effectively the same speed in this small test. This is a compatibility/mechanics
 study, not a reproduction of the paper's benchmark suite.
 
-[RUNTIME videos](https://www.youtube.com/@runtime-weekly) ·
+[Watch the full RUNTIME test](https://youtu.be/apypDwmOwyI) ·
 [Paper](https://arxiv.org/abs/2610.06833v1) ·
 [Official implementation](https://github.com/ifm-ai/xllm-loop)
 
