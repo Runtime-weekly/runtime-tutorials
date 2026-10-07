@@ -1,0 +1,4 @@
+{
+  "passed": true,
+  "scope": "Pinned original terminal_kv_forward AST executed with port blocks; exact logits and cache values across3 chunks, FP32 CPU. This validates schedule, not fused kernels."
+}

@@ -1,0 +1,17 @@
+RUNTIME xLLM-Loop compatibility study, 2026.
+
+Custom PyTorch SDPA inference port and experiment scripts by RUNTIME.
+Based on equations and inference schedules from the xLLM project:
+https://github.com/ifm-ai/xllm-loop
+Pinned source: df0ed1ea415b55f0a944a291f90da9d47c98b5d5
+
+Paper: Towards Looped Models Done Right, Part II: Rethinking at Fixed Points
+Benhao Huang, Chufan Shi, Junlin Chen, Shicheng Wen, Zhengzhong Liu,
+Eric Xing, Xuezhe Ma; Institute of Foundation Models, USC and CMU.
+https://arxiv.org/abs/2610.06833v1
+
+Modifications: standalone inference-only SDPA blocks, strict released checkpoint
+loading, local paired cache/timing probes, offline result analysis and controls.
+This is not the official fused backend, and its numerical equivalence is not
+established. Model weights and tokenizer are downloaded separately and retain
+their upstream Apache-2.0 license and notices.

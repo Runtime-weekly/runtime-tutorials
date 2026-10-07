@@ -1,0 +1,305 @@
+{
+  "qualification": {
+    "status": "completed",
+    "smokes": [
+      {
+        "model": "learned-s",
+        "load_seconds": 4.199419942917302,
+        "coverage": {
+          "keys": 42,
+          "parameters": 303579648,
+          "unused_keys": [],
+          "manifest_verified": true
+        },
+        "BF16_full_prefix_vs_cached_max_abs": 0.0859375,
+        "BF16_R1_exact": true
+      },
+      {
+        "model": "fixed-s",
+        "load_seconds": 4.003637689864263,
+        "coverage": {
+          "keys": 42,
+          "parameters": 303579648,
+          "unused_keys": [],
+          "manifest_verified": true
+        },
+        "BF16_full_prefix_vs_cached_max_abs": 0.0703125,
+        "BF16_R1_exact": true
+      }
+    ],
+    "torch": "2.11.0+cu130",
+    "device": "NVIDIA GB10",
+    "platform": "Linux-6.17.0-1026-nvidia-aarch64-with-glibc2.39",
+    "dtype": "BF16",
+    "backend": "custom source-faithful PyTorch SDPA port",
+    "min_host_available_bytes": 34055696384,
+    "study_sha256": "20a032005a53e3012d00ef52c5004661e1a8dda22d253bfeedc4eb26bd61e478",
+    "source_sha256": {
+      "reference_model.py": "124bd97a6024f9f72016d2bc7f6159d74c5c3c04c41754664a7d4efdbb54efd3",
+      "qualify.py": "37a261d1de8b593dd6988b9bf19e230155d94de5b10e36dfc863add64b50fa43",
+      "run_study.py": "b1574ac49c6a56a617e23918b1680edc25af961f1695e147920ff1492723748c"
+    },
+    "limitations": [
+      "No official fused-backend numerical equivalence established",
+      "Whole-host available memory overlaps unrelated workloads",
+      "Batch1 short-context synthetic timings are not paper H200 batch8/8192 benchmark",
+      "KV payload excludes GQA temporaries and allocator overhead",
+      "Three authored passages are illustrative, not representative benchmark"
+    ]
+  },
+  "continuation": [
+    {
+      "model": "learned-s",
+      "mode": "full",
+      "passages": 3,
+      "tokens": 96,
+      "mean_nll": 3.389643692293248,
+      "next_token_argmax_matches": 26
+    },
+    {
+      "model": "learned-s",
+      "mode": "terminal",
+      "passages": 3,
+      "tokens": 96,
+      "mean_nll": 3.383579984568011,
+      "next_token_argmax_matches": 27
+    },
+    {
+      "model": "fixed-s",
+      "mode": "full",
+      "passages": 3,
+      "tokens": 96,
+      "mean_nll": 3.441110541448628,
+      "next_token_argmax_matches": 34
+    },
+    {
+      "model": "fixed-s",
+      "mode": "terminal",
+      "passages": 3,
+      "tokens": 96,
+      "mean_nll": 3.5182246487456723,
+      "next_token_argmax_matches": 34
+    }
+  ],
+  "timing": [
+    {
+      "model": "learned-s",
+      "mode": "full",
+      "prefix_length": 128,
+      "n": 3,
+      "prefill_median_seconds": 0.016406700015068054,
+      "decode32_median_seconds": 0.2620986378751695,
+      "prefill_range_seconds": [
+        0.01637937198393047,
+        0.01650636293925345
+      ],
+      "decode32_range_seconds": [
+        0.26049844012595713,
+        0.26372110890224576
+      ],
+      "retained_kv_bytes": 2949120,
+      "torch_peak_allocated_max_bytes": 627465728,
+      "torch_peak_reserved_max_bytes": 654311424
+    },
+    {
+      "model": "learned-s",
+      "mode": "full",
+      "prefix_length": 512,
+      "n": 3,
+      "prefill_median_seconds": 0.020763292908668518,
+      "decode32_median_seconds": 0.27171880402602255,
+      "prefill_range_seconds": [
+        0.02075308607891202,
+        0.021447926061227918
+      ],
+      "decode32_range_seconds": [
+        0.2709435180295259,
+        0.27181089483201504
+      ],
+      "retained_kv_bytes": 10027008,
+      "torch_peak_allocated_max_bytes": 653905408,
+      "torch_peak_reserved_max_bytes": 687865856
+    },
+    {
+      "model": "learned-s",
+      "mode": "terminal",
+      "prefix_length": 128,
+      "n": 3,
+      "prefill_median_seconds": 0.016432780073955655,
+      "decode32_median_seconds": 0.26041671400889754,
+      "prefill_range_seconds": [
+        0.016387868206948042,
+        0.01646117912605405
+      ],
+      "decode32_range_seconds": [
+        0.25929366098716855,
+        0.2611647890880704
+      ],
+      "retained_kv_bytes": 983040,
+      "torch_peak_allocated_max_bytes": 625901056,
+      "torch_peak_reserved_max_bytes": 654311424
+    },
+    {
+      "model": "learned-s",
+      "mode": "terminal",
+      "prefix_length": 512,
+      "n": 3,
+      "prefill_median_seconds": 0.020831356989219785,
+      "decode32_median_seconds": 0.2704159419517964,
+      "prefill_range_seconds": [
+        0.020830414025112987,
+        0.02164419600740075
+      ],
+      "decode32_range_seconds": [
+        0.2685747209470719,
+        0.27280936390161514
+      ],
+      "retained_kv_bytes": 3342336,
+      "torch_peak_allocated_max_bytes": 647622144,
+      "torch_peak_reserved_max_bytes": 687865856
+    },
+    {
+      "model": "fixed-s",
+      "mode": "full",
+      "prefix_length": 128,
+      "n": 3,
+      "prefill_median_seconds": 0.016479905927553773,
+      "decode32_median_seconds": 0.26020269514992833,
+      "prefill_range_seconds": [
+        0.016449153190478683,
+        0.01651019207201898
+      ],
+      "decode32_range_seconds": [
+        0.26006881101056933,
+        0.2606062681879848
+      ],
+      "retained_kv_bytes": 2949120,
+      "torch_peak_allocated_max_bytes": 626548224,
+      "torch_peak_reserved_max_bytes": 654311424
+    },
+    {
+      "model": "fixed-s",
+      "mode": "full",
+      "prefix_length": 512,
+      "n": 3,
+      "prefill_median_seconds": 0.020920611917972565,
+      "decode32_median_seconds": 0.27099345717579126,
+      "prefill_range_seconds": [
+        0.020905331941321492,
+        0.02100254688411951
+      ],
+      "decode32_range_seconds": [
+        0.27040714188478887,
+        0.27459070505574346
+      ],
+      "retained_kv_bytes": 10027008,
+      "torch_peak_allocated_max_bytes": 654061056,
+      "torch_peak_reserved_max_bytes": 687865856
+    },
+    {
+      "model": "fixed-s",
+      "mode": "terminal",
+      "prefix_length": 128,
+      "n": 3,
+      "prefill_median_seconds": 0.016446369932964444,
+      "decode32_median_seconds": 0.2615505149587989,
+      "prefill_range_seconds": [
+        0.01639590598642826,
+        0.016541345044970512
+      ],
+      "decode32_range_seconds": [
+        0.2604880379512906,
+        0.261981172952801
+      ],
+      "retained_kv_bytes": 983040,
+      "torch_peak_allocated_max_bytes": 624983552,
+      "torch_peak_reserved_max_bytes": 654311424
+    },
+    {
+      "model": "fixed-s",
+      "mode": "terminal",
+      "prefix_length": 512,
+      "n": 3,
+      "prefill_median_seconds": 0.021126416977494955,
+      "decode32_median_seconds": 0.27050099801272154,
+      "prefill_range_seconds": [
+        0.0208940040320158,
+        0.021808570018038154
+      ],
+      "decode32_range_seconds": [
+        0.2702902569435537,
+        0.27090160897932947
+      ],
+      "retained_kv_bytes": 3342336,
+      "torch_peak_allocated_max_bytes": 647777792,
+      "torch_peak_reserved_max_bytes": 687865856
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "learned-s",
+      "case": "garden",
+      "terminal_minus_full_nll": 0.00014159479178488255,
+      "greedy_tokens_equal": false,
+      "next_argmax_changes": 1,
+      "prompt": "A small community garden stood behind the library. Volunteers planted beans along the fence and tomatoes beside the path. During a dry week they watered the beds each morning. Rain finally arrived on Friday, so the group skipped watering",
+      "full_output": " the beds. The garden was full of plants, and the volunteers were excited to see the plants grow. The garden was",
+      "terminal_output": " the beds. The garden was filled with plants, and the children enjoyed the time spent in the garden. The garden was"
+    },
+    {
+      "model": "learned-s",
+      "case": "parcel",
+      "terminal_minus_full_nll": -0.044118213932961226,
+      "greedy_tokens_equal": false,
+      "next_argmax_changes": 3,
+      "prompt": "The parcel arrived at the station on Tuesday morning. Its label named a village near the river, but the street number had been smudged by rain. The clerk placed it on a shelf and called the sender. After confirming",
+      "full_output": " the sender, the sender returned to the station. The sender then called the sender, who was in",
+      "terminal_output": " the sender, the sender returned to the station. The sender then called the sender again, and the"
+    },
+    {
+      "model": "learned-s",
+      "case": "workshop",
+      "terminal_minus_full_nll": 0.02578549596546509,
+      "greedy_tokens_equal": false,
+      "next_argmax_changes": 4,
+      "prompt": "The workshop opened early on Monday. Mara checked the wooden shelves and counted the boxes of screws. A loose handle on the blue cabinet needed repair. She brought a screwdriver from the bench and tightened the two screws. The handle",
+      "full_output": " was tightened, and the screws were tightened. The screws were tightened, and the screws were tightened again",
+      "terminal_output": " was tightened, and the screws were tightened. The screws were tightened, and the handle was tightened."
+    },
+    {
+      "model": "fixed-s",
+      "case": "garden",
+      "terminal_minus_full_nll": 0.21739248931407928,
+      "greedy_tokens_equal": false,
+      "next_argmax_changes": 8,
+      "prompt": "A small community garden stood behind the library. Volunteers planted beans along the fence and tomatoes beside the path. During a dry week they watered the beds each morning. Rain finally arrived on Friday, so the group skipped watering",
+      "full_output": ". The garden was filled with flowers, and the volunteers planted the beans. The garden was filled with flowers, and",
+      "terminal_output": " the garden. The garden was full of flowers, and the flowers were blooming. The garden was full of flowers,"
+    },
+    {
+      "model": "fixed-s",
+      "case": "parcel",
+      "terminal_minus_full_nll": -0.054745228961110115,
+      "greedy_tokens_equal": false,
+      "next_argmax_changes": 9,
+      "prompt": "The parcel arrived at the station on Tuesday morning. Its label named a village near the river, but the street number had been smudged by rain. The clerk placed it on a shelf and called the sender. After confirming",
+      "full_output": " the number, the sender asked for a copy of the parcel\u2019s address. The sender explained that the address was",
+      "terminal_output": " the number, the owner, who had been in the store, was taken to the nearest branch. The owner, who"
+    },
+    {
+      "model": "fixed-s",
+      "case": "workshop",
+      "terminal_minus_full_nll": 0.06869506153816474,
+      "greedy_tokens_equal": false,
+      "next_argmax_changes": 5,
+      "prompt": "The workshop opened early on Monday. Mara checked the wooden shelves and counted the boxes of screws. A loose handle on the blue cabinet needed repair. She brought a screwdriver from the bench and tightened the two screws. The handle",
+      "full_output": " was tightened and the screws were tightened. The screws were tightened and the screws were tightened. The screws",
+      "terminal_output": " was tightened. The screws were tightened. The screws were tightened. The screws were tightened. The screws"
+    }
+  ],
+  "source_hashes": {
+    "continuations.json": "7ffeaf6aa487afc4b8a0ff837ca223641cea43d57208e29d358b7da156925354",
+    "timings.json": "d5ed50b1831517ae4298bc67addac9288ee21a328b815daa0a0b864bad819902",
+    "qualification.json": "bc883c8e751768b4fb3fbdaa3f197dd85a416592ac5d50122dc085f97918014d"
+  }
+}

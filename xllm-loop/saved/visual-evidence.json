@@ -1,0 +1,1795 @@
+{
+  "kind": "Saved actual model evidence; no rerun",
+  "study_sha256": "20a032005a53e3012d00ef52c5004661e1a8dda22d253bfeedc4eb26bd61e478",
+  "source_results_sha256": "7ffeaf6aa487afc4b8a0ff837ca223641cea43d57208e29d358b7da156925354",
+  "cases": [
+    {
+      "model": "learned-s",
+      "case": "workshop",
+      "prompt": "The workshop opened early on Monday. Mara checked the wooden shelves and counted the boxes of screws. A loose handle on the blue cabinet needed repair. She brought a screwdriver from the bench and tightened the two screws. The handle",
+      "full_text": " was tightened, and the screws were tightened. The screws were tightened, and the screws were tightened again",
+      "terminal_text": " was tightened, and the screws were tightened. The screws were tightened, and the handle was tightened.",
+      "tokens": [
+        {
+          "position": 0,
+          "target_id": 1026,
+          "target_piece": " no",
+          "full_target_probability": 0.004138977117050892,
+          "terminal_target_probability": 0.004240376169836395,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 1,
+          "target_id": 6817,
+          "target_piece": " longer",
+          "full_target_probability": 0.9896758146277477,
+          "terminal_target_probability": 0.979199815514601,
+          "full_argmax_piece": " longer",
+          "terminal_argmax_piece": " longer"
+        },
+        {
+          "position": 2,
+          "target_id": 13842,
+          "target_piece": " moved",
+          "full_target_probability": 0.01147146482458632,
+          "terminal_target_probability": 0.011628114020353571,
+          "full_argmax_piece": " held",
+          "terminal_argmax_piece": " worked"
+        },
+        {
+          "position": 3,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.24686427133991548,
+          "terminal_target_probability": 0.2354631513485864,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 4,
+          "target_id": 15993,
+          "target_piece": " Before",
+          "full_target_probability": 0.0020386956543753196,
+          "terminal_target_probability": 0.0019055560660758439,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 5,
+          "target_id": 15068,
+          "target_piece": " leaving",
+          "full_target_probability": 0.006088380285248227,
+          "terminal_target_probability": 0.0050617853874039154,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 6,
+          "target_id": 13,
+          "target_piece": ",",
+          "full_target_probability": 0.7781810423420135,
+          "terminal_target_probability": 0.7592270053092156,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 7,
+          "target_id": 1717,
+          "target_piece": " she",
+          "full_target_probability": 0.6453757349862964,
+          "terminal_target_probability": 0.6241578479379577,
+          "full_argmax_piece": " she",
+          "terminal_argmax_piece": " she"
+        },
+        {
+          "position": 8,
+          "target_id": 14609,
+          "target_piece": " wrote",
+          "full_target_probability": 0.0033484591652584938,
+          "terminal_target_probability": 0.002893041050636522,
+          "full_argmax_piece": " checked",
+          "terminal_argmax_piece": " checked"
+        },
+        {
+          "position": 9,
+          "target_id": 265,
+          "target_piece": " a",
+          "full_target_probability": 0.14888626210807582,
+          "terminal_target_probability": 0.1547492777411229,
+          "full_argmax_piece": " down",
+          "terminal_argmax_piece": " down"
+        },
+        {
+          "position": 10,
+          "target_id": 3852,
+          "target_piece": " short",
+          "full_target_probability": 0.10998151212721438,
+          "terminal_target_probability": 0.11095195718653285,
+          "full_argmax_piece": " note",
+          "terminal_argmax_piece": " note"
+        },
+        {
+          "position": 11,
+          "target_id": 8099,
+          "target_piece": " note",
+          "full_target_probability": 0.3072237406598581,
+          "terminal_target_probability": 0.32293534552312503,
+          "full_argmax_piece": " note",
+          "terminal_argmax_piece": " note"
+        },
+        {
+          "position": 12,
+          "target_id": 42181,
+          "target_piece": " explaining",
+          "full_target_probability": 0.026517319349827564,
+          "terminal_target_probability": 0.025245137079698887,
+          "full_argmax_piece": " about",
+          "terminal_argmax_piece": " about"
+        },
+        {
+          "position": 13,
+          "target_id": 1024,
+          "target_piece": " which",
+          "full_target_probability": 0.001380670532591463,
+          "terminal_target_probability": 0.0013227312832145657,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 14,
+          "target_id": 27221,
+          "target_piece": " cabinet",
+          "full_target_probability": 0.002063365599041979,
+          "terminal_target_probability": 0.0015989640712733243,
+          "full_argmax_piece": " screws",
+          "terminal_argmax_piece": " screws"
+        },
+        {
+          "position": 15,
+          "target_id": 1538,
+          "target_piece": " had",
+          "full_target_probability": 0.08556235059995242,
+          "terminal_target_probability": 0.0840540100806069,
+          "full_argmax_piece": " she",
+          "terminal_argmax_piece": " she"
+        },
+        {
+          "position": 16,
+          "target_id": 1292,
+          "target_piece": " been",
+          "full_target_probability": 0.2545391062767879,
+          "terminal_target_probability": 0.21874946480781082,
+          "full_argmax_piece": " been",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 17,
+          "target_id": 4634,
+          "target_piece": " rep",
+          "full_target_probability": 0.0013566699229785287,
+          "terminal_target_probability": 0.0013152092525515692,
+          "full_argmax_piece": " damaged",
+          "terminal_argmax_piece": " damaged"
+        },
+        {
+          "position": 18,
+          "target_id": 34209,
+          "target_piece": "aired",
+          "full_target_probability": 0.9853149610537563,
+          "terminal_target_probability": 0.9851251945236243,
+          "full_argmax_piece": "aired",
+          "terminal_argmax_piece": "aired"
+        },
+        {
+          "position": 19,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.2045398407435297,
+          "terminal_target_probability": 0.18796011773526466,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 20,
+          "target_id": 14145,
+          "target_piece": " returned",
+          "full_target_probability": 0.0004588117444016329,
+          "terminal_target_probability": 0.00041743325338329854,
+          "full_argmax_piece": " which",
+          "terminal_argmax_piece": " which"
+        },
+        {
+          "position": 21,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.2624397191161872,
+          "terminal_target_probability": 0.3191882545075201,
+          "full_argmax_piece": " it",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 22,
+          "target_id": 7001,
+          "target_piece": " tool",
+          "full_target_probability": 0.002446724086621464,
+          "terminal_target_probability": 0.0022741666842827695,
+          "full_argmax_piece": " screws",
+          "terminal_argmax_piece": " screws"
+        },
+        {
+          "position": 23,
+          "target_id": 325,
+          "target_piece": " to",
+          "full_target_probability": 0.249430470729868,
+          "terminal_target_probability": 0.32947108420180604,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 24,
+          "target_id": 1268,
+          "target_piece": " its",
+          "full_target_probability": 0.028085625885098664,
+          "terminal_target_probability": 0.028509232303373308,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 25,
+          "target_id": 62962,
+          "target_piece": " drawer",
+          "full_target_probability": 0.0024213354080845103,
+          "terminal_target_probability": 0.003303729728413908,
+          "full_argmax_piece": " original",
+          "terminal_argmax_piece": " original"
+        },
+        {
+          "position": 26,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.7563452724173784,
+          "terminal_target_probability": 0.721840936767681,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 27,
+          "target_id": 5390,
+          "target_piece": " Her",
+          "full_target_probability": 0.012487661500502527,
+          "terminal_target_probability": 0.013028919682870368,
+          "full_argmax_piece": " She",
+          "terminal_argmax_piece": " She"
+        },
+        {
+          "position": 28,
+          "target_id": 21004,
+          "target_piece": " colle",
+          "full_target_probability": 0.009650319682592168,
+          "terminal_target_probability": 0.0066716048028290795,
+          "full_argmax_piece": " friend",
+          "terminal_argmax_piece": " mother"
+        },
+        {
+          "position": 29,
+          "target_id": 6674,
+          "target_piece": "ague",
+          "full_target_probability": 0.9992804939421228,
+          "terminal_target_probability": 0.9990345033907124,
+          "full_argmax_piece": "ague",
+          "terminal_argmax_piece": "ague"
+        },
+        {
+          "position": 30,
+          "target_id": 18506,
+          "target_piece": " arrived",
+          "full_target_probability": 0.0014374409267316494,
+          "terminal_target_probability": 0.0014771375176069297,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 31,
+          "target_id": 265,
+          "target_piece": " a",
+          "full_target_probability": 0.007549407023816251,
+          "terminal_target_probability": 0.006835020299146283,
+          "full_argmax_piece": " at",
+          "terminal_argmax_piece": " at"
+        }
+      ],
+      "generation_note": "Greedy fixed24-token continuation; no correctness label or chat instruction following claim"
+    },
+    {
+      "model": "learned-s",
+      "case": "garden",
+      "prompt": "A small community garden stood behind the library. Volunteers planted beans along the fence and tomatoes beside the path. During a dry week they watered the beds each morning. Rain finally arrived on Friday, so the group skipped watering",
+      "full_text": " the beds. The garden was full of plants, and the volunteers were excited to see the plants grow. The garden was",
+      "terminal_text": " the beds. The garden was filled with plants, and the children enjoyed the time spent in the garden. The garden was",
+      "tokens": [
+        {
+          "position": 0,
+          "target_id": 412,
+          "target_piece": " on",
+          "full_target_probability": 0.014561129246369375,
+          "terminal_target_probability": 0.013571856521319925,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 1,
+          "target_id": 9996,
+          "target_piece": " Saturday",
+          "full_target_probability": 0.14100183867481494,
+          "terminal_target_probability": 0.15348015366277346,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 2,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.3008893018526886,
+          "terminal_target_probability": 0.2921329953644804,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 3,
+          "target_id": 4261,
+          "target_piece": " One",
+          "full_target_probability": 0.01812355383990397,
+          "terminal_target_probability": 0.017698784407459592,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 4,
+          "target_id": 39341,
+          "target_piece": " volunteer",
+          "full_target_probability": 0.12127518609254759,
+          "terminal_target_probability": 0.11360374410758547,
+          "full_argmax_piece": " of",
+          "terminal_argmax_piece": " of"
+        },
+        {
+          "position": 5,
+          "target_id": 23160,
+          "target_piece": " checked",
+          "full_target_probability": 0.001603500182009412,
+          "terminal_target_probability": 0.001520742066094608,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 6,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.582229120954186,
+          "terminal_target_probability": 0.5492791089485526,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 7,
+          "target_id": 18245,
+          "target_piece": " soil",
+          "full_target_probability": 0.09141755310028642,
+          "terminal_target_probability": 0.08377126086761173,
+          "full_argmax_piece": " water",
+          "terminal_argmax_piece": " water"
+        },
+        {
+          "position": 8,
+          "target_id": 1543,
+          "target_piece": " under",
+          "full_target_probability": 0.0017269956579804018,
+          "terminal_target_probability": 0.001671275156889728,
+          "full_argmax_piece": " and",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 9,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.6436824522476603,
+          "terminal_target_probability": 0.63865144409956,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 10,
+          "target_id": 15690,
+          "target_piece": " leaves",
+          "full_target_probability": 0.004169144729990333,
+          "terminal_target_probability": 0.0042092274549539906,
+          "full_argmax_piece": " garden",
+          "terminal_argmax_piece": " garden"
+        },
+        {
+          "position": 11,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.28524666878104377,
+          "terminal_target_probability": 0.25717846475725803,
+          "full_argmax_piece": " and",
+          "terminal_argmax_piece": " and"
+        },
+        {
+          "position": 12,
+          "target_id": 2461,
+          "target_piece": " found",
+          "full_target_probability": 0.024540572721716076,
+          "terminal_target_probability": 0.02473871431030028,
+          "full_argmax_piece": " noticed",
+          "terminal_argmax_piece": " noticed"
+        },
+        {
+          "position": 13,
+          "target_id": 497,
+          "target_piece": " it",
+          "full_target_probability": 0.034034870968239817,
+          "terminal_target_probability": 0.038564805185886716,
+          "full_argmax_piece": " that",
+          "terminal_argmax_piece": " that"
+        },
+        {
+          "position": 14,
+          "target_id": 2961,
+          "target_piece": " still",
+          "full_target_probability": 0.016890770503306927,
+          "terminal_target_probability": 0.018253996461990996,
+          "full_argmax_piece": " to",
+          "terminal_argmax_piece": " to"
+        },
+        {
+          "position": 15,
+          "target_id": 39746,
+          "target_piece": " damp",
+          "full_target_probability": 0.1827337413260745,
+          "terminal_target_probability": 0.20037198637325596,
+          "full_argmax_piece": " wet",
+          "terminal_argmax_piece": " wet"
+        },
+        {
+          "position": 16,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.6129525391996168,
+          "terminal_target_probability": 0.6159297162958655,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 17,
+          "target_id": 585,
+          "target_piece": " The",
+          "full_target_probability": 0.2518729631931764,
+          "terminal_target_probability": 0.24716954534519225,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 18,
+          "target_id": 13100,
+          "target_piece": " garden",
+          "full_target_probability": 0.07299043511404227,
+          "terminal_target_probability": 0.08221603033389104,
+          "full_argmax_piece": " next",
+          "terminal_argmax_piece": " next"
+        },
+        {
+          "position": 19,
+          "target_id": 50320,
+          "target_piece": " notebook",
+          "full_target_probability": 3.5869631309846195e-05,
+          "terminal_target_probability": 3.476620455170272e-05,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 20,
+          "target_id": 17439,
+          "target_piece": " recorded",
+          "full_target_probability": 0.00034973396803912165,
+          "terminal_target_probability": 0.0004129595185467212,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 21,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.4028605101756859,
+          "terminal_target_probability": 0.43672479120399404,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 22,
+          "target_id": 14316,
+          "target_piece": " rain",
+          "full_target_probability": 0.016008889300155867,
+          "terminal_target_probability": 0.01730938988297777,
+          "full_argmax_piece": " soil",
+          "terminal_argmax_piece": " soil"
+        },
+        {
+          "position": 23,
+          "target_id": 15593,
+          "target_piece": "fall",
+          "full_target_probability": 0.11108875058927714,
+          "terminal_target_probability": 0.11205616777541141,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 24,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.150033064233166,
+          "terminal_target_probability": 0.1598369957676078,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 25,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.26661090204763793,
+          "terminal_target_probability": 0.2727853978361027,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 26,
+          "target_id": 3544,
+          "target_piece": " change",
+          "full_target_probability": 0.0005833801732719215,
+          "terminal_target_probability": 0.0005893335756339733,
+          "full_argmax_piece": " time",
+          "terminal_argmax_piece": " time"
+        },
+        {
+          "position": 27,
+          "target_id": 316,
+          "target_piece": " in",
+          "full_target_probability": 0.9184025417322124,
+          "terminal_target_probability": 0.9126184380380636,
+          "full_argmax_piece": " in",
+          "terminal_argmax_piece": " in"
+        },
+        {
+          "position": 28,
+          "target_id": 13125,
+          "target_piece": " schedule",
+          "full_target_probability": 3.647433723116575e-05,
+          "terminal_target_probability": 2.343938670222253e-05,
+          "full_argmax_piece": " soil",
+          "terminal_argmax_piece": " soil"
+        },
+        {
+          "position": 29,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.5038446611835528,
+          "terminal_target_probability": 0.5166691927834582,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 30,
+          "target_id": 1861,
+          "target_piece": " On",
+          "full_target_probability": 0.019681817189045853,
+          "terminal_target_probability": 0.020239009268747596,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 31,
+          "target_id": 9632,
+          "target_piece": " Sunday",
+          "full_target_probability": 0.12744695789258134,
+          "terminal_target_probability": 0.1302548494410658,
+          "full_argmax_piece": " Saturday",
+          "terminal_argmax_piece": " Saturday"
+        }
+      ],
+      "generation_note": "Greedy fixed24-token continuation; no correctness label or chat instruction following claim"
+    },
+    {
+      "model": "learned-s",
+      "case": "parcel",
+      "prompt": "The parcel arrived at the station on Tuesday morning. Its label named a village near the river, but the street number had been smudged by rain. The clerk placed it on a shelf and called the sender. After confirming",
+      "full_text": " the sender, the sender returned to the station. The sender then called the sender, who was in",
+      "terminal_text": " the sender, the sender returned to the station. The sender then called the sender again, and the",
+      "tokens": [
+        {
+          "position": 0,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.5362131104693254,
+          "terminal_target_probability": 0.5283650010996811,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 1,
+          "target_id": 4086,
+          "target_piece": " address",
+          "full_target_probability": 0.06067241569192716,
+          "terminal_target_probability": 0.06028771724064331,
+          "full_argmax_piece": " s",
+          "terminal_argmax_piece": " s"
+        },
+        {
+          "position": 2,
+          "target_id": 13,
+          "target_piece": ",",
+          "full_target_probability": 0.7952102762820898,
+          "terminal_target_probability": 0.8092730525240626,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 3,
+          "target_id": 592,
+          "target_piece": " he",
+          "full_target_probability": 0.18911541985503924,
+          "terminal_target_probability": 0.175276870151629,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 4,
+          "target_id": 21458,
+          "target_piece": " printed",
+          "full_target_probability": 0.0002689370834301143,
+          "terminal_target_probability": 0.0002567882753046832,
+          "full_argmax_piece": " asked",
+          "terminal_argmax_piece": " asked"
+        },
+        {
+          "position": 5,
+          "target_id": 265,
+          "target_piece": " a",
+          "full_target_probability": 0.2634383624870433,
+          "terminal_target_probability": 0.2666061347158284,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 6,
+          "target_id": 16854,
+          "target_piece": " replacement",
+          "full_target_probability": 0.0021272757817193746,
+          "terminal_target_probability": 0.0022831883645286263,
+          "full_argmax_piece": " note",
+          "terminal_argmax_piece": " note"
+        },
+        {
+          "position": 7,
+          "target_id": 9091,
+          "target_piece": " label",
+          "full_target_probability": 0.13259377665203564,
+          "terminal_target_probability": 0.14530214607660435,
+          "full_argmax_piece": " address",
+          "terminal_argmax_piece": " label"
+        },
+        {
+          "position": 8,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.2101066763793393,
+          "terminal_target_probability": 0.21773067056563183,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 9,
+          "target_id": 585,
+          "target_piece": " The",
+          "full_target_probability": 0.4208526295480467,
+          "terminal_target_probability": 0.44823380986736155,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 10,
+          "target_id": 2911,
+          "target_piece": " next",
+          "full_target_probability": 0.006906955012041507,
+          "terminal_target_probability": 0.006765437911630279,
+          "full_argmax_piece": " s",
+          "terminal_argmax_piece": " s"
+        },
+        {
+          "position": 11,
+          "target_id": 7446,
+          "target_piece": " delivery",
+          "full_target_probability": 4.073754983312452e-05,
+          "terminal_target_probability": 4.054051267972217e-05,
+          "full_argmax_piece": " morning",
+          "terminal_argmax_piece": " morning"
+        },
+        {
+          "position": 12,
+          "target_id": 12235,
+          "target_piece": " truck",
+          "full_target_probability": 0.0031110419257765003,
+          "terminal_target_probability": 0.0036885322483498654,
+          "full_argmax_piece": " arrived",
+          "terminal_argmax_piece": " arrived"
+        },
+        {
+          "position": 13,
+          "target_id": 696,
+          "target_piece": " was",
+          "full_target_probability": 0.06886557521975484,
+          "terminal_target_probability": 0.06500747587966459,
+          "full_argmax_piece": " arrived",
+          "terminal_argmax_piece": " arrived"
+        },
+        {
+          "position": 14,
+          "target_id": 22616,
+          "target_piece": " scheduled",
+          "full_target_probability": 0.014420640448722195,
+          "terminal_target_probability": 0.01521209906048937,
+          "full_argmax_piece": " loaded",
+          "terminal_argmax_piece": " loaded"
+        },
+        {
+          "position": 15,
+          "target_id": 388,
+          "target_piece": " for",
+          "full_target_probability": 0.4038957140177453,
+          "terminal_target_probability": 0.39984728695079236,
+          "full_argmax_piece": " to",
+          "terminal_argmax_piece": " to"
+        },
+        {
+          "position": 16,
+          "target_id": 10796,
+          "target_piece": " Wednesday",
+          "full_target_probability": 0.03628332710327782,
+          "terminal_target_probability": 0.047480078361913106,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 17,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.12072049515812569,
+          "terminal_target_probability": 0.12359859225068998,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 18,
+          "target_id": 1462,
+          "target_piece": " He",
+          "full_target_probability": 0.01263956832566235,
+          "terminal_target_probability": 0.014881522655075951,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 19,
+          "target_id": 5746,
+          "target_piece": " added",
+          "full_target_probability": 0.0056673549986547556,
+          "terminal_target_probability": 0.005559098116397836,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 20,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.23244887104078157,
+          "terminal_target_probability": 0.25047920223803305,
+          "full_argmax_piece": " a",
+          "terminal_argmax_piece": " a"
+        },
+        {
+          "position": 21,
+          "target_id": 56251,
+          "target_piece": " parcel",
+          "full_target_probability": 0.062218333625939336,
+          "terminal_target_probability": 0.06659501735001859,
+          "full_argmax_piece": " name",
+          "terminal_argmax_piece": " replacement"
+        },
+        {
+          "position": 22,
+          "target_id": 325,
+          "target_piece": " to",
+          "full_target_probability": 0.6592602446491892,
+          "terminal_target_probability": 0.6722356807252899,
+          "full_argmax_piece": " to",
+          "terminal_argmax_piece": " to"
+        },
+        {
+          "position": 23,
+          "target_id": 480,
+          "target_piece": " that",
+          "full_target_probability": 0.00031699020889654607,
+          "terminal_target_probability": 0.00036561211973841457,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 24,
+          "target_id": 15240,
+          "target_piece": " route",
+          "full_target_probability": 0.004283667648040792,
+          "terminal_target_probability": 0.00499493107867907,
+          "full_argmax_piece": " truck",
+          "terminal_argmax_piece": " truck"
+        },
+        {
+          "position": 25,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.14861355605112356,
+          "terminal_target_probability": 0.15176876553730548,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 26,
+          "target_id": 9590,
+          "target_piece": " updated",
+          "full_target_probability": 0.0012478292107324417,
+          "terminal_target_probability": 0.0011868618381986383,
+          "full_argmax_piece": " ordered",
+          "terminal_argmax_piece": " ordered"
+        },
+        {
+          "position": 27,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.6423260941492372,
+          "terminal_target_probability": 0.6521856940594474,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 28,
+          "target_id": 19702,
+          "target_piece": " tracking",
+          "full_target_probability": 0.006961658043699005,
+          "terminal_target_probability": 0.007550551859029804,
+          "full_argmax_piece": " address",
+          "terminal_argmax_piece": " address"
+        },
+        {
+          "position": 29,
+          "target_id": 5233,
+          "target_piece": " record",
+          "full_target_probability": 0.0024039970671443176,
+          "terminal_target_probability": 0.0029289388146373175,
+          "full_argmax_piece": " number",
+          "terminal_argmax_piece": " system"
+        },
+        {
+          "position": 30,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.4484112179147326,
+          "terminal_target_probability": 0.45016700109633495,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 31,
+          "target_id": 585,
+          "target_piece": " The",
+          "full_target_probability": 0.4041691434127386,
+          "terminal_target_probability": 0.39241725743764977,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        }
+      ],
+      "generation_note": "Greedy fixed24-token continuation; no correctness label or chat instruction following claim"
+    },
+    {
+      "model": "fixed-s",
+      "case": "workshop",
+      "prompt": "The workshop opened early on Monday. Mara checked the wooden shelves and counted the boxes of screws. A loose handle on the blue cabinet needed repair. She brought a screwdriver from the bench and tightened the two screws. The handle",
+      "full_text": " was tightened and the screws were tightened. The screws were tightened and the screws were tightened. The screws",
+      "terminal_text": " was tightened. The screws were tightened. The screws were tightened. The screws were tightened. The screws",
+      "tokens": [
+        {
+          "position": 0,
+          "target_id": 1026,
+          "target_piece": " no",
+          "full_target_probability": 0.0001748895819600531,
+          "terminal_target_probability": 0.0002286155861761645,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 1,
+          "target_id": 6817,
+          "target_piece": " longer",
+          "full_target_probability": 0.9948147204787215,
+          "terminal_target_probability": 0.9726017033333685,
+          "full_argmax_piece": " longer",
+          "terminal_argmax_piece": " longer"
+        },
+        {
+          "position": 2,
+          "target_id": 13842,
+          "target_piece": " moved",
+          "full_target_probability": 0.005105761292384879,
+          "terminal_target_probability": 0.005716158587322373,
+          "full_argmax_piece": " held",
+          "terminal_argmax_piece": " held"
+        },
+        {
+          "position": 3,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.24015585267552408,
+          "terminal_target_probability": 0.28449430295993827,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 4,
+          "target_id": 15993,
+          "target_piece": " Before",
+          "full_target_probability": 0.0016121674207735717,
+          "terminal_target_probability": 0.0013424213791328318,
+          "full_argmax_piece": " She",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 5,
+          "target_id": 15068,
+          "target_piece": " leaving",
+          "full_target_probability": 0.0038654490733908173,
+          "terminal_target_probability": 0.008198020373561146,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 6,
+          "target_id": 13,
+          "target_piece": ",",
+          "full_target_probability": 0.6753748313487077,
+          "terminal_target_probability": 0.5360512854424655,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 7,
+          "target_id": 1717,
+          "target_piece": " she",
+          "full_target_probability": 0.5155690126057447,
+          "terminal_target_probability": 0.49619632683380127,
+          "full_argmax_piece": " she",
+          "terminal_argmax_piece": " she"
+        },
+        {
+          "position": 8,
+          "target_id": 14609,
+          "target_piece": " wrote",
+          "full_target_probability": 0.002152971422724316,
+          "terminal_target_probability": 0.000900857777676203,
+          "full_argmax_piece": " checked",
+          "terminal_argmax_piece": " removed"
+        },
+        {
+          "position": 9,
+          "target_id": 265,
+          "target_piece": " a",
+          "full_target_probability": 0.25191674431822736,
+          "terminal_target_probability": 0.23695223392824313,
+          "full_argmax_piece": " a",
+          "terminal_argmax_piece": " a"
+        },
+        {
+          "position": 10,
+          "target_id": 3852,
+          "target_piece": " short",
+          "full_target_probability": 0.11041099360145656,
+          "terminal_target_probability": 0.05083395071740966,
+          "full_argmax_piece": " note",
+          "terminal_argmax_piece": " note"
+        },
+        {
+          "position": 11,
+          "target_id": 8099,
+          "target_piece": " note",
+          "full_target_probability": 0.3456069024245244,
+          "terminal_target_probability": 0.2214390147014602,
+          "full_argmax_piece": " note",
+          "terminal_argmax_piece": " note"
+        },
+        {
+          "position": 12,
+          "target_id": 42181,
+          "target_piece": " explaining",
+          "full_target_probability": 0.007190307068431088,
+          "terminal_target_probability": 0.0067578900306408465,
+          "full_argmax_piece": " about",
+          "terminal_argmax_piece": " to"
+        },
+        {
+          "position": 13,
+          "target_id": 1024,
+          "target_piece": " which",
+          "full_target_probability": 0.0015075713125353401,
+          "terminal_target_probability": 0.0027316168423423205,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 14,
+          "target_id": 27221,
+          "target_piece": " cabinet",
+          "full_target_probability": 0.0016575094783954619,
+          "terminal_target_probability": 0.0007058176898257657,
+          "full_argmax_piece": " screws",
+          "terminal_argmax_piece": " screws"
+        },
+        {
+          "position": 15,
+          "target_id": 1538,
+          "target_piece": " had",
+          "full_target_probability": 0.0370300065676806,
+          "terminal_target_probability": 0.03328439638776873,
+          "full_argmax_piece": " to",
+          "terminal_argmax_piece": " to"
+        },
+        {
+          "position": 16,
+          "target_id": 1292,
+          "target_piece": " been",
+          "full_target_probability": 0.17461646801521435,
+          "terminal_target_probability": 0.11270537644879172,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 17,
+          "target_id": 4634,
+          "target_piece": " rep",
+          "full_target_probability": 0.004547316317022885,
+          "terminal_target_probability": 0.007003009520418558,
+          "full_argmax_piece": " damaged",
+          "terminal_argmax_piece": " damaged"
+        },
+        {
+          "position": 18,
+          "target_id": 34209,
+          "target_piece": "aired",
+          "full_target_probability": 0.9895541659413655,
+          "terminal_target_probability": 0.9002927237538028,
+          "full_argmax_piece": "aired",
+          "terminal_argmax_piece": "aired"
+        },
+        {
+          "position": 19,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.22462172540964692,
+          "terminal_target_probability": 0.16190614964657232,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 20,
+          "target_id": 14145,
+          "target_piece": " returned",
+          "full_target_probability": 0.0001498131321498285,
+          "terminal_target_probability": 0.0002891592835782268,
+          "full_argmax_piece": " which",
+          "terminal_argmax_piece": " which"
+        },
+        {
+          "position": 21,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.11573003388839156,
+          "terminal_target_probability": 0.10657153720960186,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": " to"
+        },
+        {
+          "position": 22,
+          "target_id": 7001,
+          "target_piece": " tool",
+          "full_target_probability": 0.0018450269712060338,
+          "terminal_target_probability": 0.002867421790478888,
+          "full_argmax_piece": " screws",
+          "terminal_argmax_piece": " screws"
+        },
+        {
+          "position": 23,
+          "target_id": 325,
+          "target_piece": " to",
+          "full_target_probability": 0.26485784755186814,
+          "terminal_target_probability": 0.2588776044864794,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 24,
+          "target_id": 1268,
+          "target_piece": " its",
+          "full_target_probability": 0.028444251134453404,
+          "terminal_target_probability": 0.06337818759776322,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 25,
+          "target_id": 62962,
+          "target_piece": " drawer",
+          "full_target_probability": 0.0008704081080887807,
+          "terminal_target_probability": 0.0013538678162522382,
+          "full_argmax_piece": " original",
+          "terminal_argmax_piece": " original"
+        },
+        {
+          "position": 26,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.661899613185963,
+          "terminal_target_probability": 0.6603670314339923,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 27,
+          "target_id": 5390,
+          "target_piece": " Her",
+          "full_target_probability": 0.007799539197798327,
+          "terminal_target_probability": 0.0068621382801585355,
+          "full_argmax_piece": " She",
+          "terminal_argmax_piece": " She"
+        },
+        {
+          "position": 28,
+          "target_id": 21004,
+          "target_piece": " colle",
+          "full_target_probability": 0.007380818807330018,
+          "terminal_target_probability": 0.0022747002752036474,
+          "full_argmax_piece": " notes",
+          "terminal_argmax_piece": " husband"
+        },
+        {
+          "position": 29,
+          "target_id": 6674,
+          "target_piece": "ague",
+          "full_target_probability": 0.9989305263125693,
+          "terminal_target_probability": 0.9970862183013018,
+          "full_argmax_piece": "ague",
+          "terminal_argmax_piece": "ague"
+        },
+        {
+          "position": 30,
+          "target_id": 18506,
+          "target_piece": " arrived",
+          "full_target_probability": 0.0015722547535045178,
+          "terminal_target_probability": 0.0007401386678492612,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 31,
+          "target_id": 265,
+          "target_piece": " a",
+          "full_target_probability": 0.005220310068798547,
+          "terminal_target_probability": 0.004319025359278691,
+          "full_argmax_piece": " and",
+          "terminal_argmax_piece": " and"
+        }
+      ],
+      "generation_note": "Greedy fixed24-token continuation; no correctness label or chat instruction following claim"
+    },
+    {
+      "model": "fixed-s",
+      "case": "garden",
+      "prompt": "A small community garden stood behind the library. Volunteers planted beans along the fence and tomatoes beside the path. During a dry week they watered the beds each morning. Rain finally arrived on Friday, so the group skipped watering",
+      "full_text": ". The garden was filled with flowers, and the volunteers planted the beans. The garden was filled with flowers, and",
+      "terminal_text": " the garden. The garden was full of flowers, and the flowers were blooming. The garden was full of flowers,",
+      "tokens": [
+        {
+          "position": 0,
+          "target_id": 412,
+          "target_piece": " on",
+          "full_target_probability": 0.010202907697076456,
+          "terminal_target_probability": 0.01441468680467384,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 1,
+          "target_id": 9996,
+          "target_piece": " Saturday",
+          "full_target_probability": 0.24698289674529295,
+          "terminal_target_probability": 0.10423488691657687,
+          "full_argmax_piece": " Saturday",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 2,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.4921144147358082,
+          "terminal_target_probability": 0.29832836191198836,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 3,
+          "target_id": 4261,
+          "target_piece": " One",
+          "full_target_probability": 0.021091376677956554,
+          "terminal_target_probability": 0.014445747011074426,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 4,
+          "target_id": 39341,
+          "target_piece": " volunteer",
+          "full_target_probability": 0.12668543621101655,
+          "terminal_target_probability": 0.09772610526767532,
+          "full_argmax_piece": " day",
+          "terminal_argmax_piece": " of"
+        },
+        {
+          "position": 5,
+          "target_id": 23160,
+          "target_piece": " checked",
+          "full_target_probability": 0.0008801342076634163,
+          "terminal_target_probability": 0.0005824640208726369,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 6,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.62672007191089,
+          "terminal_target_probability": 0.5119851893687815,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 7,
+          "target_id": 18245,
+          "target_piece": " soil",
+          "full_target_probability": 0.4175183701077385,
+          "terminal_target_probability": 0.23524436791211703,
+          "full_argmax_piece": " soil",
+          "terminal_argmax_piece": " soil"
+        },
+        {
+          "position": 8,
+          "target_id": 1543,
+          "target_piece": " under",
+          "full_target_probability": 0.00043733301827596373,
+          "terminal_target_probability": 0.0003783742582632646,
+          "full_argmax_piece": " and",
+          "terminal_argmax_piece": " and"
+        },
+        {
+          "position": 9,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.6545351807724301,
+          "terminal_target_probability": 0.565561309133276,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 10,
+          "target_id": 15690,
+          "target_piece": " leaves",
+          "full_target_probability": 0.001454731125591816,
+          "terminal_target_probability": 0.0046055434897668696,
+          "full_argmax_piece": " fence",
+          "terminal_argmax_piece": " fence"
+        },
+        {
+          "position": 11,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.32235637141868556,
+          "terminal_target_probability": 0.27580951618198474,
+          "full_argmax_piece": " and",
+          "terminal_argmax_piece": " and"
+        },
+        {
+          "position": 12,
+          "target_id": 2461,
+          "target_piece": " found",
+          "full_target_probability": 0.40761372417636865,
+          "terminal_target_probability": 0.15862877578822412,
+          "full_argmax_piece": " found",
+          "terminal_argmax_piece": " found"
+        },
+        {
+          "position": 13,
+          "target_id": 497,
+          "target_piece": " it",
+          "full_target_probability": 0.05368081816523621,
+          "terminal_target_probability": 0.04821101904741018,
+          "full_argmax_piece": " a",
+          "terminal_argmax_piece": " a"
+        },
+        {
+          "position": 14,
+          "target_id": 2961,
+          "target_piece": " still",
+          "full_target_probability": 0.031159034107628398,
+          "terminal_target_probability": 0.02317604586027849,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 15,
+          "target_id": 39746,
+          "target_piece": " damp",
+          "full_target_probability": 0.017593294800760457,
+          "terminal_target_probability": 0.0037378120350567883,
+          "full_argmax_piece": " wet",
+          "terminal_argmax_piece": " had"
+        },
+        {
+          "position": 16,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.5300165824202077,
+          "terminal_target_probability": 0.5454793296884819,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 17,
+          "target_id": 585,
+          "target_piece": " The",
+          "full_target_probability": 0.2623618303980175,
+          "terminal_target_probability": 0.22258705499203327,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 18,
+          "target_id": 13100,
+          "target_piece": " garden",
+          "full_target_probability": 0.06656825328245658,
+          "terminal_target_probability": 0.08339967786003906,
+          "full_argmax_piece": " next",
+          "terminal_argmax_piece": " soil"
+        },
+        {
+          "position": 19,
+          "target_id": 50320,
+          "target_piece": " notebook",
+          "full_target_probability": 1.4451333091240812e-05,
+          "terminal_target_probability": 8.39594835840466e-06,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 20,
+          "target_id": 17439,
+          "target_piece": " recorded",
+          "full_target_probability": 0.0010187802618210524,
+          "terminal_target_probability": 0.0003934970702782779,
+          "full_argmax_piece": " was",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 21,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.5147570204380012,
+          "terminal_target_probability": 0.45549435909891706,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 22,
+          "target_id": 14316,
+          "target_piece": " rain",
+          "full_target_probability": 0.07369271975224077,
+          "terminal_target_probability": 0.05437545911082809,
+          "full_argmax_piece": " date",
+          "terminal_argmax_piece": " soil"
+        },
+        {
+          "position": 23,
+          "target_id": 15593,
+          "target_piece": "fall",
+          "full_target_probability": 0.2312972763852363,
+          "terminal_target_probability": 0.39031487208776305,
+          "full_argmax_piece": "fall",
+          "terminal_argmax_piece": "fall"
+        },
+        {
+          "position": 24,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.152694317089271,
+          "terminal_target_probability": 0.1306748943658753,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": " and"
+        },
+        {
+          "position": 25,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.17653363224793883,
+          "terminal_target_probability": 0.22027696414542705,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 26,
+          "target_id": 3544,
+          "target_piece": " change",
+          "full_target_probability": 0.0006094953500899945,
+          "terminal_target_probability": 0.000510713687283364,
+          "full_argmax_piece": " number",
+          "terminal_argmax_piece": " soil"
+        },
+        {
+          "position": 27,
+          "target_id": 316,
+          "target_piece": " in",
+          "full_target_probability": 0.7359945305628529,
+          "terminal_target_probability": 0.6813817612460391,
+          "full_argmax_piece": " in",
+          "terminal_argmax_piece": " in"
+        },
+        {
+          "position": 28,
+          "target_id": 13125,
+          "target_piece": " schedule",
+          "full_target_probability": 5.011736144696156e-05,
+          "terminal_target_probability": 5.443525133682446e-05,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 29,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.5027175209112377,
+          "terminal_target_probability": 0.47214240575812627,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 30,
+          "target_id": 1861,
+          "target_piece": " On",
+          "full_target_probability": 0.029895460649501725,
+          "terminal_target_probability": 0.0211803786481684,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 31,
+          "target_id": 9632,
+          "target_piece": " Sunday",
+          "full_target_probability": 0.12376089169348867,
+          "terminal_target_probability": 0.11187603131492603,
+          "full_argmax_piece": " Saturday",
+          "terminal_argmax_piece": " Saturday"
+        }
+      ],
+      "generation_note": "Greedy fixed24-token continuation; no correctness label or chat instruction following claim"
+    },
+    {
+      "model": "fixed-s",
+      "case": "parcel",
+      "prompt": "The parcel arrived at the station on Tuesday morning. Its label named a village near the river, but the street number had been smudged by rain. The clerk placed it on a shelf and called the sender. After confirming",
+      "full_text": " the number, the sender asked for a copy of the parcel\u2019s address. The sender explained that the address was",
+      "terminal_text": " the number, the owner, who had been in the store, was taken to the nearest branch. The owner, who",
+      "tokens": [
+        {
+          "position": 0,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.5019730702944754,
+          "terminal_target_probability": 0.4619003787227809,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 1,
+          "target_id": 4086,
+          "target_piece": " address",
+          "full_target_probability": 0.09261294581014068,
+          "terminal_target_probability": 0.036722246017113894,
+          "full_argmax_piece": " number",
+          "terminal_argmax_piece": " number"
+        },
+        {
+          "position": 2,
+          "target_id": 13,
+          "target_piece": ",",
+          "full_target_probability": 0.7819921436844569,
+          "terminal_target_probability": 0.7355571581001366,
+          "full_argmax_piece": ",",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 3,
+          "target_id": 592,
+          "target_piece": " he",
+          "full_target_probability": 0.16218259795253642,
+          "terminal_target_probability": 0.182308977126023,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 4,
+          "target_id": 21458,
+          "target_piece": " printed",
+          "full_target_probability": 0.0007423679201884907,
+          "terminal_target_probability": 0.000151715749957619,
+          "full_argmax_piece": " asked",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 5,
+          "target_id": 265,
+          "target_piece": " a",
+          "full_target_probability": 0.339181097384296,
+          "terminal_target_probability": 0.33361422261703383,
+          "full_argmax_piece": " a",
+          "terminal_argmax_piece": " a"
+        },
+        {
+          "position": 6,
+          "target_id": 16854,
+          "target_piece": " replacement",
+          "full_target_probability": 0.0010042551665885428,
+          "terminal_target_probability": 0.0010243460729193736,
+          "full_argmax_piece": " note",
+          "terminal_argmax_piece": " note"
+        },
+        {
+          "position": 7,
+          "target_id": 9091,
+          "target_piece": " label",
+          "full_target_probability": 0.024324680854516372,
+          "terminal_target_probability": 0.01365144981124831,
+          "full_argmax_piece": " address",
+          "terminal_argmax_piece": " address"
+        },
+        {
+          "position": 8,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.14929580592471067,
+          "terminal_target_probability": 0.14529050658513662,
+          "full_argmax_piece": " and",
+          "terminal_argmax_piece": " and"
+        },
+        {
+          "position": 9,
+          "target_id": 585,
+          "target_piece": " The",
+          "full_target_probability": 0.36326221742704906,
+          "terminal_target_probability": 0.3033704776483041,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 10,
+          "target_id": 2911,
+          "target_piece": " next",
+          "full_target_probability": 0.019069236663180153,
+          "terminal_target_probability": 0.014927903689770435,
+          "full_argmax_piece": " parcel",
+          "terminal_argmax_piece": " parcel"
+        },
+        {
+          "position": 11,
+          "target_id": 7446,
+          "target_piece": " delivery",
+          "full_target_probability": 0.00010567070683653816,
+          "terminal_target_probability": 0.000642812769596376,
+          "full_argmax_piece": " morning",
+          "terminal_argmax_piece": " morning"
+        },
+        {
+          "position": 12,
+          "target_id": 12235,
+          "target_piece": " truck",
+          "full_target_probability": 0.010607478753210187,
+          "terminal_target_probability": 0.02801125680420904,
+          "full_argmax_piece": " arrived",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 13,
+          "target_id": 696,
+          "target_piece": " was",
+          "full_target_probability": 0.06843152145620612,
+          "terminal_target_probability": 0.11256326449294429,
+          "full_argmax_piece": " arrived",
+          "terminal_argmax_piece": " arrived"
+        },
+        {
+          "position": 14,
+          "target_id": 22616,
+          "target_piece": " scheduled",
+          "full_target_probability": 0.05197137231437005,
+          "terminal_target_probability": 0.062271877748509126,
+          "full_argmax_piece": " scheduled",
+          "terminal_argmax_piece": " scheduled"
+        },
+        {
+          "position": 15,
+          "target_id": 388,
+          "target_piece": " for",
+          "full_target_probability": 0.4984698798832975,
+          "terminal_target_probability": 0.5874591505048652,
+          "full_argmax_piece": " for",
+          "terminal_argmax_piece": " for"
+        },
+        {
+          "position": 16,
+          "target_id": 10796,
+          "target_piece": " Wednesday",
+          "full_target_probability": 0.0054550182684797695,
+          "terminal_target_probability": 0.0063197871643028035,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " delivery"
+        },
+        {
+          "position": 17,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.09661056963597038,
+          "terminal_target_probability": 0.10825077545862183,
+          "full_argmax_piece": " morning",
+          "terminal_argmax_piece": ","
+        },
+        {
+          "position": 18,
+          "target_id": 1462,
+          "target_piece": " He",
+          "full_target_probability": 0.01576704617159433,
+          "terminal_target_probability": 0.030008296790116445,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        },
+        {
+          "position": 19,
+          "target_id": 5746,
+          "target_piece": " added",
+          "full_target_probability": 0.0037491147886561057,
+          "terminal_target_probability": 0.003356594484319472,
+          "full_argmax_piece": " had",
+          "terminal_argmax_piece": " was"
+        },
+        {
+          "position": 20,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.2786388703829615,
+          "terminal_target_probability": 0.2762894084710599,
+          "full_argmax_piece": " a",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 21,
+          "target_id": 56251,
+          "target_piece": " parcel",
+          "full_target_probability": 0.08419537100232873,
+          "terminal_target_probability": 0.05866301348750712,
+          "full_argmax_piece": " parcel",
+          "terminal_argmax_piece": " address"
+        },
+        {
+          "position": 22,
+          "target_id": 325,
+          "target_piece": " to",
+          "full_target_probability": 0.5289292474654566,
+          "terminal_target_probability": 0.2709513337887533,
+          "full_argmax_piece": " to",
+          "terminal_argmax_piece": " to"
+        },
+        {
+          "position": 23,
+          "target_id": 480,
+          "target_piece": " that",
+          "full_target_probability": 0.0006533289436163171,
+          "terminal_target_probability": 0.0017611440903454916,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 24,
+          "target_id": 15240,
+          "target_piece": " route",
+          "full_target_probability": 0.0015512233889304937,
+          "terminal_target_probability": 0.0021758916720042002,
+          "full_argmax_piece": " truck",
+          "terminal_argmax_piece": " list"
+        },
+        {
+          "position": 25,
+          "target_id": 328,
+          "target_piece": " and",
+          "full_target_probability": 0.17058939682531882,
+          "terminal_target_probability": 0.26873844393108576,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 26,
+          "target_id": 9590,
+          "target_piece": " updated",
+          "full_target_probability": 0.0010806139312231088,
+          "terminal_target_probability": 0.0016364890734777155,
+          "full_argmax_piece": " called",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 27,
+          "target_id": 294,
+          "target_piece": " the",
+          "full_target_probability": 0.6960176455345449,
+          "terminal_target_probability": 0.6564830443065076,
+          "full_argmax_piece": " the",
+          "terminal_argmax_piece": " the"
+        },
+        {
+          "position": 28,
+          "target_id": 19702,
+          "target_piece": " tracking",
+          "full_target_probability": 0.005906395162577218,
+          "terminal_target_probability": 0.014348086112086616,
+          "full_argmax_piece": " address",
+          "terminal_argmax_piece": " address"
+        },
+        {
+          "position": 29,
+          "target_id": 5233,
+          "target_piece": " record",
+          "full_target_probability": 0.007465315086459052,
+          "terminal_target_probability": 0.0028524875879819634,
+          "full_argmax_piece": " number",
+          "terminal_argmax_piece": " number"
+        },
+        {
+          "position": 30,
+          "target_id": 15,
+          "target_piece": ".",
+          "full_target_probability": 0.4587116261384934,
+          "terminal_target_probability": 0.4175999793884225,
+          "full_argmax_piece": ".",
+          "terminal_argmax_piece": "."
+        },
+        {
+          "position": 31,
+          "target_id": 585,
+          "target_piece": " The",
+          "full_target_probability": 0.3681947156822843,
+          "terminal_target_probability": 0.3578856074736505,
+          "full_argmax_piece": " The",
+          "terminal_argmax_piece": " The"
+        }
+      ],
+      "generation_note": "Greedy fixed24-token continuation; no correctness label or chat instruction following claim"
+    }
+  ]
+}

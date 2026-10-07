@@ -1,0 +1,5 @@
+# Tested on Linux aarch64 with NVIDIA CUDA13.0.
+# PyTorch2.11.0+cu130 was inherited read-only from system site packages.
+# A fresh installation of the equivalent ARM64 CUDA wheel is not requalified here.
+safetensors==0.8.0
+tokenizers==0.23.2

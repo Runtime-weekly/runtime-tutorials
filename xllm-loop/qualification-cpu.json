@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "CPU FP32 mathematical controls, not official fused-kernel equivalence",
+  "coverage": {
+    "keys": 42,
+    "parameters": 303579648,
+    "unused_keys": [],
+    "manifest_verified": true
+  },
+  "identity_state_original_AST_exact": true,
+  "R1_cache_modes_exact": true,
+  "cache_bytes": {
+    "full": 294912,
+    "terminal": 98304
+  },
+  "checks": [
+    {
+      "name": "full_cache_vs_recompute_depth1",
+      "max_absolute_difference": 2.3365020751953125e-05
+    },
+    {
+      "name": "full_cache_vs_recompute_depth5",
+      "max_absolute_difference": 2.09808349609375e-05
+    },
+    {
+      "name": "SDPA_vs_explicit_FP32",
+      "max_absolute_difference": 2.5033950805664062e-05
+    }
+  ]
+}

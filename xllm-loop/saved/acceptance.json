@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "rows": 12,
+  "timings": 32,
+  "identical_scored_tokens": true,
+  "cache_ratio_all_pairs": 3,
+  "memory_floor_maintained": true,
+  "scope": "saved arithmetic/schema/integrity checks, not fused-backend or language-quality validation"
+}

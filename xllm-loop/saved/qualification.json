@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "smokes": [
+    {
+      "model": "learned-s",
+      "load_seconds": 4.199419942917302,
+      "coverage": {
+        "keys": 42,
+        "parameters": 303579648,
+        "unused_keys": [],
+        "manifest_verified": true
+      },
+      "BF16_full_prefix_vs_cached_max_abs": 0.0859375,
+      "BF16_R1_exact": true
+    },
+    {
+      "model": "fixed-s",
+      "load_seconds": 4.003637689864263,
+      "coverage": {
+        "keys": 42,
+        "parameters": 303579648,
+        "unused_keys": [],
+        "manifest_verified": true
+      },
+      "BF16_full_prefix_vs_cached_max_abs": 0.0703125,
+      "BF16_R1_exact": true
+    }
+  ],
+  "torch": "2.11.0+cu130",
+  "device": "NVIDIA GB10",
+  "platform": "Linux-6.17.0-1026-nvidia-aarch64-with-glibc2.39",
+  "dtype": "BF16",
+  "backend": "custom source-faithful PyTorch SDPA port",
+  "min_host_available_bytes": 34055696384,
+  "study_sha256": "20a032005a53e3012d00ef52c5004661e1a8dda22d253bfeedc4eb26bd61e478",
+  "source_sha256": {
+    "reference_model.py": "124bd97a6024f9f72016d2bc7f6159d74c5c3c04c41754664a7d4efdbb54efd3",
+    "qualify.py": "37a261d1de8b593dd6988b9bf19e230155d94de5b10e36dfc863add64b50fa43",
+    "run_study.py": "b1574ac49c6a56a617e23918b1680edc25af961f1695e147920ff1492723748c"
+  },
+  "limitations": [
+    "No official fused-backend numerical equivalence established",
+    "Whole-host available memory overlaps unrelated workloads",
+    "Batch1 short-context synthetic timings are not paper H200 batch8/8192 benchmark",
+    "KV payload excludes GQA temporaries and allocator overhead",
+    "Three authored passages are illustrative, not representative benchmark"
+  ]
+}
