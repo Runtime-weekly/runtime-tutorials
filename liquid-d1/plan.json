@@ -1,0 +1,95 @@
+{
+  "calls": [
+    {
+      "asset": "public-001",
+      "rule": "A",
+      "condition": "primary"
+    },
+    {
+      "asset": "public-002",
+      "rule": "A",
+      "condition": "primary"
+    },
+    {
+      "asset": "public-003",
+      "rule": "A",
+      "condition": "primary"
+    },
+    {
+      "asset": "public-001",
+      "rule": "B",
+      "condition": "primary"
+    },
+    {
+      "asset": "public-002",
+      "rule": "B",
+      "condition": "primary"
+    },
+    {
+      "asset": "public-003",
+      "rule": "B",
+      "condition": "primary"
+    },
+    {
+      "asset": "public-001",
+      "rule": "A",
+      "condition": "reversed_options"
+    },
+    {
+      "asset": "public-001",
+      "rule": "B",
+      "condition": "reversed_options"
+    },
+    {
+      "asset": "public-002",
+      "rule": "A",
+      "condition": "reversed_options"
+    },
+    {
+      "asset": "public-002",
+      "rule": "B",
+      "condition": "reversed_options"
+    },
+    {
+      "asset": "public-003",
+      "rule": "A",
+      "condition": "reversed_options"
+    },
+    {
+      "asset": "public-003",
+      "rule": "B",
+      "condition": "reversed_options"
+    },
+    {
+      "asset": "public-001",
+      "rule": "A",
+      "condition": "image_removed"
+    },
+    {
+      "asset": "public-001",
+      "rule": "B",
+      "condition": "image_removed"
+    },
+    {
+      "asset": "public-002",
+      "rule": "A",
+      "condition": "image_removed"
+    },
+    {
+      "asset": "public-002",
+      "rule": "B",
+      "condition": "image_removed"
+    },
+    {
+      "asset": "public-003",
+      "rule": "A",
+      "condition": "image_removed"
+    },
+    {
+      "asset": "public-003",
+      "rule": "B",
+      "condition": "image_removed"
+    }
+  ],
+  "scope": "18 calls on3 known public photos.6 primary,6 choice-order controls,6 image-removed calls repeating2 unique prompts. No held-out accuracy claim."
+}

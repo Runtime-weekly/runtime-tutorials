@@ -1,0 +1,58 @@
+{
+  "assets": [
+    {
+      "id": "public-001",
+      "sha256": "52c922f59b89f7e06c5f6717455f992bc6fc41472df3e472d0fe81d380ea49d6",
+      "labels": {
+        "A": "READY",
+        "B": "WAIT"
+      },
+      "labeler_kind": "agent_visual_review",
+      "public_known_sample": true,
+      "source": {
+        "source_record": "https://commons.wikimedia.org/wiki/File:Apples_and_bananas_in_bowl.jpg",
+        "creator": "Dj Galaxy",
+        "license": "Public domain dedication",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Apples_and_bananas_in_bowl.jpg",
+        "original_sha256": "5100df907d9babaa90fdffa3b23ddafb857de2d9b9e6dc18ac0f8f927d233fde",
+        "processing": "orientation correction; RGB; aspect-preserving max384px Lanczos; fresh pixel-only PNG; no crop"
+      }
+    },
+    {
+      "id": "public-002",
+      "sha256": "4e5ef1c8b0a63da1cb2fe975f1f290a70a6e2695c74bef4f5ee52a3c4baf19ff",
+      "labels": {
+        "A": "WAIT",
+        "B": "READY"
+      },
+      "labeler_kind": "agent_visual_review",
+      "public_known_sample": true,
+      "source": {
+        "source_record": "https://commons.wikimedia.org/wiki/File:Apple_on_table.jpg",
+        "creator": "Kim Siever",
+        "license": "Public domain dedication",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Apple_on_table.jpg",
+        "original_sha256": "1e716e7849d6e5959cbfa06847e37b01edd0ef044c02f2de022435d7b2ac312e",
+        "processing": "orientation correction; RGB; aspect-preserving max384px Lanczos; fresh pixel-only PNG; no crop"
+      }
+    },
+    {
+      "id": "public-003",
+      "sha256": "6236d5ac6f3e0aadd065535d06b45789fab09749c04756c19929116cd27790ca",
+      "labels": {
+        "A": "WAIT",
+        "B": "WAIT"
+      },
+      "labeler_kind": "agent_visual_review",
+      "public_known_sample": true,
+      "source": {
+        "source_record": "https://isorepublic.com/photo/banana/",
+        "creator": "Stanley Dai",
+        "license": "CC0",
+        "original_url": "https://isorepublic.com/wp-content/uploads/2018/11/isorepublic-banana-1-1100x733.jpg",
+        "original_sha256": "236bd98ef0bd241d8baf58e1914b48dd5e4275a1a3810239beaf4ea8f0efacca",
+        "processing": "orientation correction; RGB; aspect-preserving max384px Lanczos; fresh pixel-only PNG; no crop"
+      }
+    }
+  ]
+}
